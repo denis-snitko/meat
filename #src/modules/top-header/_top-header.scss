@@ -1,0 +1,74 @@
+.top-header {
+  padding: 18px 0 13px 0;
+  background-color: #fafadd;
+  
+  &__region {
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+    
+    a {
+      font-size: 16px;
+      text-decoration: underline;
+      color: #37aaff;
+      
+      &:hover {
+        text-decoration: none; 
+      }
+    }
+    
+    &::before {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      display: inline-block;
+      width: 14px;
+      height: 21px;
+      content: '';
+      background: url('../img/icons/map-badge.png') no-repeat center center;
+    }
+  }
+  
+  &__menu {
+    display: flex;
+    
+    li {
+      padding-right: 14px;
+      font-size: 13px;
+    }
+    
+    a {
+      font-size: inherit;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  &__sign {
+    position: relative;
+    padding-left: 20px;
+    font-size: 13px;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      display: inline-block;
+      width: 14px;
+      height: 17px;
+      content: '';
+      background: url('../img/icons/sign.png') no-repeat center center;
+    }
+  }
+}
