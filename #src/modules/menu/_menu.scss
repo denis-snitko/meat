@@ -1,0 +1,37 @@
+.menu {
+  background-color: #8ac864;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fefefe;
+
+    a {
+      display: inline-block;
+      padding: 21px 14px;
+      color: inherit;
+      transition: $base-transition;
+
+      &:hover {
+        background-color: #73a952;
+      }
+    }
+    
+    &--catalog {
+      a {
+        padding-right: 32px;  
+        padding-left: 32px;
+        
+        &::before {
+          padding-right: 10px;
+          content: url('../img/icons/catalog-menu.png');
+        }
+      }
+    }
+  }
+}

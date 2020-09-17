@@ -1,0 +1,88 @@
+.main-body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1 1 auto;
+}
+
+.container {
+  @include container();
+}
+
+.row-flex {
+  @include row-flex()
+}
+
+.col-2,
+.col-2-5,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-10 {
+  @include col();
+  //border: $base-border;
+}
+
+.col-2 {
+  @include size(2)
+}
+
+.col-2-5 {
+  @include size(2.5)
+}
+
+.col-3 {
+  @include size(3)
+}
+
+.col-4 {
+  @include size(4)
+}
+
+.col-5 {
+  @include size(5)
+}
+
+.col-6 {
+  @include size(6)
+}
+
+.col-7 {
+  @include size(7)
+}
+
+.col-10 {
+  @include size(10)
+}
+
+.logo {
+  &__img {
+    display: block;
+    width: 195px;
+    height: 93px;
+  }
+}
+
+.social-block {
+  padding-top: 14px;
+  &__link {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 36px;
+    height: 36px;
+  }
+}

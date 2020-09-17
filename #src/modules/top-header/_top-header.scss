@@ -2,6 +2,10 @@
   padding: 18px 0 13px 0;
   background-color: #fafadd;
   
+  .row-flex {
+    align-items: center;
+  }
+  
   &__region {
     position: relative;
     padding-left: 20px;
@@ -19,7 +23,7 @@
     
     &::before {
       position: absolute;
-      top: -5px;
+      top: -3px;
       left: 0;
       display: inline-block;
       width: 14px;

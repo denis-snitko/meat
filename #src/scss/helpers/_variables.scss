@@ -1,0 +1,27 @@
+// Modular grid
+$base-module: 8px;
+$base-line-height: 24px;
+
+// Fonts
+$base-typeface:  'PT Sans', sans-serif;
+$second-typeface:  'bloggersans', sans-serif;
+$base-font-size: 14px;
+$large-font-size: 34px;
+$medium-font-size: 18px;
+$small-font-size: 13px;
+
+// Colors
+$base-text-color: #4d4d4d;;
+$note-text-color: #999;
+$link-color: #4F7FAF;
+$link-over-color: #DF665A;
+$button-text-color: #fff;
+$body-color: #fff;
+$border-color: #b6b6b6;
+
+// Borders
+$base-border: 1px solid $border-color;
+
+// Effects
+$link-underline-opacity: 0.5;
+$base-transition: 0.2s ease-in-out;
