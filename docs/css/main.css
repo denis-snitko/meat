@@ -831,7 +831,6 @@ body {
 
 .s-assortment {
   padding-top: 50px;
-  padding-bottom: 25px;
 }
 
 .s-assortment__btn {
@@ -924,6 +923,18 @@ body {
 
 .s-assortment-card--7 {
   background-color: #b9a280;
+}
+
+.s-popular {
+  padding: 25px 0;
+}
+
+.s-new-items {
+  padding: 25px 0;
+}
+
+.s-news {
+  padding: 25px 0;
 }
 
 /* END MAIN STYLES */
