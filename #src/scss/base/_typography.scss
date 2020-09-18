@@ -3,3 +3,10 @@ body {
     font-size: $base-font-size;
     color: $base-text-color;
 }
+
+.main-title {
+    color: #fefefe;
+    font-family: $second-typeface;
+    font-size: 50px;
+    font-weight: 700;
+}

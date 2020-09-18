@@ -201,7 +201,7 @@ function clean() {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, grid, gulp.parallel(html, css, js, img, fonts), fontsStyle);
+let build = gulp.series(clean, grid, img, gulp.parallel(html, css, js, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;

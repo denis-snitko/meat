@@ -1,5 +1,7 @@
 .main-body {
   display: flex;
+  margin: 0 auto;
+  max-width: 1366px;
   min-height: 100%;
   flex-direction: column;
 }
@@ -13,7 +15,7 @@
 }
 
 .row-flex {
-  @include row-flex()
+  @include row-flex();
 }
 
 .col-2,
@@ -29,35 +31,35 @@
 }
 
 .col-2 {
-  @include size(2)
+  @include size(2);
 }
 
 .col-2-5 {
-  @include size(2.5)
+  @include size(2.5);
 }
 
 .col-3 {
-  @include size(3)
+  @include size(3);
 }
 
 .col-4 {
-  @include size(4)
+  @include size(4);
 }
 
 .col-5 {
-  @include size(5)
+  @include size(5);
 }
 
 .col-6 {
-  @include size(6)
+  @include size(6);
 }
 
 .col-7 {
-  @include size(7)
+  @include size(7);
 }
 
 .col-10 {
-  @include size(10)
+  @include size(10);
 }
 
 .logo {
@@ -74,7 +76,7 @@
     display: inline-block;
     margin-right: 10px;
     border-radius: 50%;
-    
+
     &:last-child {
       margin-right: 0;
     }
@@ -85,4 +87,8 @@
     width: 36px;
     height: 36px;
   }
+}
+
+.swiper-container-hero {
+  overflow: hidden;
 }
