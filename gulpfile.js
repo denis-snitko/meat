@@ -147,7 +147,7 @@ const options = {
     outputStyle: "scss",
     filename: "_smart-grid",
     columns: 12, // number of grid columns
-    offset: "30px", // gutter width - 1.875rem
+    offset: "20px", // gutter width - 1.875rem
     mobileFirst: false,
     mixinNames: {
         container: "container"
