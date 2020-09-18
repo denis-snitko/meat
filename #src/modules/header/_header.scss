@@ -1,19 +1,23 @@
 .header {
   padding: 23px 0 17px 0;
 
-  &__phone {
-    margin-bottom: 11px;
+  @include xl-block() {
+    .col-2 {
+      display: none;
+    }
 
-    a {
-      font-family: $second-typeface;
-      font-size: 20px;
-      font-weight: 700;
-      color: #8ac864;
-      transition: $base-transition;
+    .col-2-5 {
+      @include size(3);
+    }
 
-      &:hover {
-        color: #509a23;
-      }
+    .col-5 {
+      @include size(6);
+    }
+  }
+
+  &__green-phone {
+    @include xl-block() {
+      display: none;
     }
   }
 
@@ -30,11 +34,11 @@
       text-transform: uppercase;
       color: #939393;
 
-      border: 1px solid rgba(#939393, .5);
+      border: 1px solid rgba(#939393, 0.5);
       border-radius: 8px;
 
       &::placeholder {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
 
@@ -44,7 +48,7 @@
       right: 17px;
       width: 30px;
       height: 30px;
-      background: url('../img/icons/search.png') no-repeat center;
+      background: url("../img/icons/search.png") no-repeat center;
       border: none;
       transform: translateY(-50%);
     }
@@ -54,19 +58,33 @@
     display: flex;
     justify-content: flex-end;
     
+
     &-title {
       font-size: 20px;
       font-weight: 700;
+      
+      @include md-block() {
+        font-size: 16px;
+      }
     }
-    
+
     &-text {
       margin-right: 12px;
       text-align: end;
+
+      @include md-block() {
+        font-size: 11px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
       p {
         margin-bottom: 2px;
       }
     }
-    
+
     &-img {
       img {
         display: block;

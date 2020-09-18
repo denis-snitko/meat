@@ -1,15 +1,28 @@
 .s-news {
   padding: 25px 0;
 
+  @include sm-block() {
+    .col-6 {
+      @include size(12);
+    }
+  }
+
   &__base-btn {
     margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
+
+    @include sm-block() {
+      display: none;
+    }
   }
 }
 
 .news-item {
   // .news-item__img
+  @include sm-block() {
+    padding-bottom: 20px;
+  }
 
   &__img {
     max-height: 181px;

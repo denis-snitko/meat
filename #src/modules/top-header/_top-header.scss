@@ -1,15 +1,38 @@
 .top-header {
   padding: 18px 0 13px 0;
   background-color: #fafadd;
-  
+
+  @include md-block() {
+    .col-2 {
+      @include size(6);
+    }
+
+    .col-3 {
+      @include size(6);
+    }
+
+    .col-7 {
+      display: none;
+    }
+
+  }
+
   .row-flex {
     align-items: center;
+
+    @include md-block() {
+      justify-content: space-between;
+    }
   }
   
   &__region {
     position: relative;
     padding-left: 20px;
     font-size: 13px;
+
+    @include xl-block() {
+      display: none;
+    }
     
     a {
       font-size: 16px;
@@ -32,9 +55,26 @@
       background: url('../img/icons/map-badge.png') no-repeat center center;
     }
   }
+
+  &__green-phone {
+    display: none;
+
+    a {
+      font-size: 16px;
+    }
+
+    @include xl-block() {
+      display: block ;
+      margin-bottom: 0;
+    }
+  }
   
   &__menu {
     display: flex;
+
+    @include md-block() {
+      display: none;
+    }
     
     li {
       padding-right: 14px;
@@ -55,6 +95,10 @@
     position: relative;
     padding-left: 20px;
     font-size: 13px;
+
+    @include md-block() {
+      margin-right: auto;
+    }
 
     a {
       color: inherit;
