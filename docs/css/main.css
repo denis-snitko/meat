@@ -753,6 +753,37 @@ body {
   text-transform: uppercase;
 }
 
+.seo-main-title,
+.seo-sub-title {
+  margin-bottom: 6px;
+  font-family: "bloggersans", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.seo-sub-title {
+  font-size: 20px;
+}
+
+.seo-text {
+  margin-bottom: 12px;
+  line-height: 17px;
+}
+
+.seo-list {
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+.seo-list li {
+  padding-bottom: 4px;
+  list-style: disc;
+}
+
+.seo-list li:last-child {
+  padding-bottom: 0;
+}
+
 .swiper-container-wrapper {
   position: relative;
 }
