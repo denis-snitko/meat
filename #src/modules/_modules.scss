@@ -1,9 +1,11 @@
-@import "./top-header/top-header";
-@import "./header/header";
-@import "./menu/menu";
-@import "./hero/hero";
+@import "./s-top-header/s-top-header";
+@import "./s-header/s-header";
+@import "./s-menu/s-menu";
+@import "./s-hero/s-hero";
 
 @import "./s-assortment/s-assortment";
 @import "./s-popular/s-popular";
 @import "./s-new-items/s-new-items";
 @import "./s-news/s-news";
+
+@import "./s-footer/s-footer";

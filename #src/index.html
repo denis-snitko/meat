@@ -2,29 +2,32 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Мяско | Главная</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Мяско | Главная</title>
 </head>
 
 <body>
-    <div class="main-body">
-        @@include('modules/top-header/_top-header.html')
-        @@include('modules/header/_header.html')
-        @@include('modules/menu/_menu.html')
-        @@include('modules/hero/_hero.html')
-        <main class="main-content">
-            @@include('modules/s-assortment/_s-assortment.html')
-            @@include('modules/s-popular/_s-popular.html')
-            @@include('modules/s-new-items/_s-new-items.html')
-            @@include('modules/s-news/_s-news.html')
-        </main>
-        <footer>footer</footer>
+  <div class="main-body">
+    @@include('modules/s-top-header/_s-top-header.html')
+    @@include('modules/s-header/_s-header.html')
+    @@include('modules/s-menu/_s-menu.html')
+    @@include('modules/s-hero/_s-hero.html')
+    <main class="main-content">
+      @@include('modules/s-assortment/_s-assortment.html')
+      @@include('modules/s-popular/_s-popular.html')
+      @@include('modules/s-new-items/_s-new-items.html')
+      @@include('modules/s-news/_s-news.html')
+    </main>
+    <div class="map">
+      <img src="./img/map.jpg" alt="">
     </div>
-    <script src="./js/vendors.js"></script>
-    <script src="./js/main.js"></script>
+    @@include('modules/s-footer/_s-footer.html')
+  </div>
+  <script src="./js/vendors.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

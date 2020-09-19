@@ -23,6 +23,7 @@
 .col-2-5,
 .col-3,
 .col-4,
+.col-4-5,
 .col-5,
 .col-6,
 .col-7,
@@ -49,6 +50,10 @@
 
 .col-4 {
   @include size(4);
+}
+
+.col-4-5 {
+  @include size(4.5);
 }
 
 .col-5 {
@@ -255,6 +260,19 @@
       background-color: #4d9a1e;
     }
   }
+}
+
+.map {
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.copyright {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .swiper-container-wrapper {
