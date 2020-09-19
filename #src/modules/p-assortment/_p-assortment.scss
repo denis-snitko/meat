@@ -1,3 +1,20 @@
 .p-assortment {
-  
+  &__row {
+    @include row-flex();
+    padding-bottom: 20px;
+  }
+
+  &__col-3 {
+    @include col();
+    @include size(3);
+  }
+
+  &__filter-btn {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+  }
+
+  &__filter {
+    border: 1px solid #000;
+  }
 }
