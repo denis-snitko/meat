@@ -1,0 +1,64 @@
+.p-about {
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__team {
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    position: relative;
+    width: 380px;
+    height: 352px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 80px 0 0 80px;
+      border-color: transparent transparent transparent #ffffff;
+    }
+
+    img {
+      display: block;
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__person {
+    text-align: center;
+
+    img {
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 194px;
+      height: 194px;
+      background-color: #e5e5e5;
+      border-radius: 50%;
+    }
+
+    &-title {
+      margin-bottom: 16px;
+      color: #2d2d2d;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+
+    &-place {
+      font-size: 14px;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 35%;
+  }
+}

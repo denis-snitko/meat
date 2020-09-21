@@ -27,6 +27,7 @@
 .col-5,
 .col-6,
 .col-7,
+.col-8,
 .col-9,
 .col-9-5,
 .col-10 {
@@ -68,6 +69,10 @@
 
 .col-7 {
   @include size(7);
+}
+
+.col-8 {
+  @include size(8);
 }
 
 .col-9 {
@@ -298,8 +303,10 @@
 }
 
 .seo-text {
-  margin-bottom: 12px;
-  line-height: 17px;
+  p {
+    margin-bottom: 12px;
+    line-height: 17px;
+  }
 }
 
 .seo-list {

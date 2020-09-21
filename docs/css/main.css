@@ -486,6 +486,7 @@ body {
 .col-5,
 .col-6,
 .col-7,
+.col-8,
 .col-9,
 .col-9-5,
 .col-10 {
@@ -530,6 +531,10 @@ body {
 
 .col-7 {
   width: calc(58.33333% - 20px);
+}
+
+.col-8 {
+  width: calc(66.66667% - 20px);
 }
 
 .col-9 {
@@ -779,7 +784,7 @@ body {
   font-size: 20px;
 }
 
-.seo-text {
+.seo-text p {
   margin-bottom: 12px;
   line-height: 17px;
 }
@@ -1880,6 +1885,70 @@ body {
 
 .p-shops .shop-item__mail::before {
   content: url("../img/icons/icon-mail.png");
+}
+
+.p-about__text {
+  margin-bottom: 30px;
+}
+
+.p-about__team {
+  margin-bottom: 40px;
+}
+
+.p-about__img {
+  position: relative;
+  width: 380px;
+  height: 352px;
+}
+
+.p-about__img::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 0 0 80px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+.p-about__img img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-about__person {
+  text-align: center;
+}
+
+.p-about__person img {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 194px;
+  height: 194px;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+}
+
+.p-about__person-title {
+  margin-bottom: 16px;
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.p-about__person-place {
+  font-size: 14px;
+}
+
+.p-about .swiper-button-prev,
+.p-about .swiper-button-next {
+  top: 35%;
 }
 
 /* END MAIN STYLES */
