@@ -313,9 +313,43 @@
       padding-bottom: 0;
     }
   }
-
 }
 
+.filter-btn {
+  .filter-btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .filter-btn__btn {
+    padding: 8px 11px;
+    font-size: 14px;
+    text-decoration: underline;
+
+    color: #4d4d4d;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #b6b6b6;
+    outline: none;
+    transition: $base-transition;
+
+    &:hover {
+      border: 1px solid #4d4d4d;
+    }
+  }
+  .filter-btn__sort {
+    select {
+      padding: 8px 11px;
+      color: #c1c1c1;
+      border-radius: 8px;
+      border: 1px solid #b6b6b6;
+      outline: none;
+    }
+  }
+}
+
+// SWIPER
 .swiper-container-wrapper {
   position: relative;
 }

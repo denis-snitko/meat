@@ -104,19 +104,48 @@
       <section class="p-assortment">
   <div class="container">
 
-    breadcrumbs
+    <div class="s-breadcrumbs">
+    <ul class="s-breadcrumbs__list">
+      <li class="s-breadcrumbs__item">
+        <a href="">Главная</a>
+      </li>
+      <li class="s-breadcrumbs__item">
+        <a href="">Каталог товаров</a>
+      </li>
+      <li class="s-breadcrumbs__item">
+        Свинина
+      </li>
+    </ul>
+</div>
 
     <h2 class="second-title">Свинина</h2>
 
     <div class="row-flex">
       <div class="col-2-5">
         <div class="p-assortment__filter">
-          Filter
+          filter
         </div>
       </div>
       <div class="col-9-5">
-        <div class="p-assortment__filter-btn">
-          filter-btn
+        <div class="p-assortment__filter-btn filter-btn">
+          <div class="filter-btn__wrapper">
+            <button class="filter-btn__btn">Праздничное меню</button>
+            <button class="filter-btn__btn">Детское меню</button>
+            <button class="filter-btn__btn">Пост</button>
+            <button class="filter-btn__btn">Стейки</button>
+            <button class="filter-btn__btn">Шашлыки и гриль</button>
+            <button class="filter-btn__btn">Фарш</button>
+            <div class="filter-btn__sort">
+              <form action="" method="GET">
+                <span>Сортировка:</span>
+                <select name="sort">
+                  <option value="default">По умолчанию</option>
+                  <option value="priceUp">По цене (вверх)</option>
+                  <option value="priceDown">По цене (вниз)</option>
+                </select>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="p-assortment__row">
           <div class="p-assortment__col-3">
