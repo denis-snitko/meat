@@ -64,4 +64,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
+
+  //FILTER HIDE / SHOW
+
+    const filterTrigger = document.querySelectorAll('.filter__sub-title');
+    
+    filterTrigger.forEach((el)=> {
+      el.addEventListener('click', (event) => {
+        event.target.classList.toggle('filter__sub-title--arrow-right')
+        event.target.nextElementSibling.classList.toggle('hide-filter-list')
+      })
+    })
+
+    
 });

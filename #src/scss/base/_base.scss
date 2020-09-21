@@ -389,13 +389,13 @@
     border: 2px solid rgba(#c2c2c2, 0.5);
     border-right: none;
     transition: $base-transition;
-    
+
     &:first-child {
       border-radius: 6px 0 0 6px;
     }
 
     &:last-child {
-    border-right: 2px solid rgba(#c2c2c2, 0.5);
+      border-right: 2px solid rgba(#c2c2c2, 0.5);
 
       border-radius: 0 6px 6px 0;
     }
@@ -413,10 +413,104 @@
   .pagination__item--active {
     background-color: #8ac864;
     border-right: 2px solid #8ac864;
-  
-   a {
+
+    a {
       color: #ffffff;
     }
+  }
+}
+
+.filter {
+  
+  &__sub-title {
+    position: relative;
+    padding-bottom: 10px;
+    margin: 16px 0 12px 0;
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b6b6b6;
+    cursor: pointer;
+    
+    &::after {
+      content: url('../img/icons/arrow-down-icon.svg');
+      position: absolute;
+      top: 0;
+      right: 3px;
+    }
+
+    &--arrow-right {
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &__list {
+    transition: all .3s linear;
+    li {
+      padding-bottom: 10px;
+    }
+  }
+  
+  .hide-filter-list {
+    display: none;
+  }
+}
+
+.custom-checkbox {
+  &__label {
+    display: inline-flex;
+    align-items: baseline;
+    cursor: pointer;
+  }
+
+  &__base {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__new {
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #4d4d4d;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.15s linear;
+  }
+
+  &__new::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #8ac864;
+    border-radius: 2px;
+    transition: all 0.15s linear;
+  }
+
+  &__base:checked + &__new::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__base:focus + &__new {
+    border: 1px solid #8ac864;
+  }
+
+  &__text {
+    padding: 0 5px;
+    font-size: 14px;
+    color: $base-text-color;
   }
 }
 
@@ -424,6 +518,7 @@
 .swiper-container-wrapper {
   position: relative;
 }
+
 .swiper-container-hero {
   overflow: hidden;
 }
