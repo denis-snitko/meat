@@ -1,0 +1,115 @@
+.p-shops {
+  &__search {
+    background-color: #fff;
+
+    position: absolute;
+    margin-top: 30px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+    border-radius: 8px;
+
+    form {
+      position: relative;
+      width: 100%;
+    }
+
+    input {
+      padding: 17px 64px 17px 17px;
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #939393;
+      background-color: #f8f6f6;
+      border: none;
+      border-bottom: 1px solid rgba(#939393, 0.5);
+      border-radius: 8px 8px 0 0;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      width: 30px;
+      height: 30px;
+      background: url("../img/icons/search.png") no-repeat center;
+      border: none;
+      transform: translateY(-50%);
+    }
+  }
+
+  .p-shops__list {
+  }
+
+  .p-shops__item {
+    padding: 17px;
+    border-bottom: 1px solid #939393;
+  }
+
+  .shop-item {
+    display: flex;
+    
+    &__img {
+      width: 125px;
+      height: 116px;
+      margin-right: 19px;
+      
+      img {
+        display: block;
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    
+    &__body {
+    }
+    
+    &__address {
+      max-width: 125px;
+      margin-bottom: 20px;
+    }
+
+    &__time, &__tel, &__mail {
+      position: relative;
+      display: block;
+      margin-bottom: 1px;
+      padding-left: 22px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &__time {
+      &::before {
+        content: url('../img/icons/icon-time.png');
+      }
+    }
+    
+    &__tel {
+      color: #37aaff;
+      &::before {
+        content: url('../img/icons/icon-phone1.png');
+        left: 2px;
+      }
+    }
+
+    &__mail {
+      color: inherit;
+      &::before {
+        content: url('../img/icons/icon-mail.png');
+      }
+    }
+  }
+}

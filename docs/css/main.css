@@ -751,6 +751,10 @@ body {
   background-color: #4d9a1e;
 }
 
+.map {
+  position: relative;
+}
+
 .map img {
   display: block;
   width: 100%;
@@ -1743,6 +1747,139 @@ body {
   color: #ffffff;
   background-color: #f24946;
   border: 1px solid #f24946;
+}
+
+.p-shops__search {
+  background-color: #fff;
+  position: absolute;
+  margin-top: 30px;
+  max-width: 380px;
+  width: 100%;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+  border-radius: 8px;
+}
+
+.p-shops__search form {
+  position: relative;
+  width: 100%;
+}
+
+.p-shops__search input {
+  padding: 17px 64px 17px 17px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #939393;
+  background-color: #f8f6f6;
+  border: none;
+  border-bottom: 1px solid rgba(147, 147, 147, 0.5);
+  border-radius: 8px 8px 0 0;
+}
+
+.p-shops__search input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.p-shops__search input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.p-shops__search input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.p-shops__search input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.p-shops__search input::placeholder {
+  opacity: 0.5;
+}
+
+.p-shops__search button {
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icons/search.png") no-repeat center;
+  border: none;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.p-shops .p-shops__item {
+  padding: 17px;
+  border-bottom: 1px solid #939393;
+}
+
+.p-shops .shop-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-shops .shop-item__img {
+  width: 125px;
+  height: 116px;
+  margin-right: 19px;
+}
+
+.p-shops .shop-item__img img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-shops .shop-item__address {
+  max-width: 125px;
+  margin-bottom: 20px;
+}
+
+.p-shops .shop-item__time,
+.p-shops .shop-item__tel,
+.p-shops .shop-item__mail {
+  position: relative;
+  display: block;
+  margin-bottom: 1px;
+  padding-left: 22px;
+}
+
+.p-shops .shop-item__time::before,
+.p-shops .shop-item__tel::before,
+.p-shops .shop-item__mail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.p-shops .shop-item__time::before {
+  content: url("../img/icons/icon-time.png");
+}
+
+.p-shops .shop-item__tel {
+  color: #37aaff;
+}
+
+.p-shops .shop-item__tel::before {
+  content: url("../img/icons/icon-phone1.png");
+  left: 2px;
+}
+
+.p-shops .shop-item__mail {
+  color: inherit;
+}
+
+.p-shops .shop-item__mail::before {
+  content: url("../img/icons/icon-mail.png");
 }
 
 /* END MAIN STYLES */
