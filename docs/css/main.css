@@ -2154,6 +2154,13 @@ body {
     margin-right: 20px;
   }
 
+  .p-shops__search {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
   .p-about .col-4,
   .p-about .col-8 {
     width: calc(100% - 20px);

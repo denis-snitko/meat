@@ -9,6 +9,13 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
     border-radius: 8px;
 
+    @include md-block() {
+      position: relative;
+      max-width: 450px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
     form {
       position: relative;
       width: 100%;
