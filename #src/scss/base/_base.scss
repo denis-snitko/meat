@@ -7,7 +7,44 @@
 }
 
 .main-content {
+  position: relative;
   flex: 1 1 auto;
+  overflow: hidden;
+
+  &__bg-img {
+    position: absolute;
+    z-index: -1;
+
+    &--1 {
+      top: -10px;
+      left: -10px;
+    }
+
+    &--2 {
+      top: 120px;
+      right: 0px;
+    }
+
+    &--2a {
+      top: 1450px;
+      right: 0px;
+    }
+
+    &--3 {
+      top: 430px;
+      left: 0;
+    }
+
+    &--4 {
+      top: 450px;
+      right: 0px;
+    }
+
+    &--4a {
+      top: 1120px;
+      left: -40px;
+    }
+  }
 }
 
 .container {
@@ -165,6 +202,7 @@
   height: 355px;
   border-radius: 12px;
   border: 1px solid #b6b6b6;
+  background-color: #fff;
 
   // .main-card__img
 
@@ -429,7 +467,6 @@
 }
 
 .filter {
-  
   &__sub-title {
     position: relative;
     padding-bottom: 10px;
@@ -440,9 +477,9 @@
     text-transform: uppercase;
     border-bottom: 1px solid #b6b6b6;
     cursor: pointer;
-    
+
     &::after {
-      content: url('../img/icons/arrow-down-icon.svg');
+      content: url("../img/icons/arrow-down-icon.svg");
       position: absolute;
       top: 0;
       right: 3px;
@@ -456,12 +493,12 @@
   }
 
   &__list {
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     li {
       padding-bottom: 10px;
     }
   }
-  
+
   .hide-filter-list {
     display: none;
   }

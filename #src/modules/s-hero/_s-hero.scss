@@ -32,7 +32,9 @@
     transition: $base-transition;
 
     &:hover {
-      border: 2px solid rgba(#ffffff, 1);
+      color: #ffffff;
+      background-color: #ff3f3f;
+      border: 2px solid #ff3f3f;
     }
   }
 }
