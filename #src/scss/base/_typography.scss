@@ -27,6 +27,10 @@ body {
     font-family: $second-typeface;
     font-size: 50px;
     font-weight: 700;
+
+    @include sm-block() {
+        font-size: 26px;
+    }
 }
 
 .second-title {

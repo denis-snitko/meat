@@ -1,9 +1,14 @@
 .hero {
   color: #ffffff;
+
   &__content {
     height: 559px;
     background-repeat: no-repeat !important;
     background-position: center !important;
+
+    @include sm-block() {
+      height: 500px;
+    }
   }
 
   &__body {
@@ -13,6 +18,10 @@
 
   &__title {
     margin-bottom: 42px;
+
+    @include sm-block() {
+      margin-bottom: 25px;
+    }
   }
 
   &__descr {
@@ -27,7 +36,7 @@
     font-size: 20px;
     font-weight: 700;
     border-radius: 6px;
-    border: 2px solid rgba(#ffffff, .5);
+    border: 2px solid rgba(#ffffff, 0.5);
     text-transform: uppercase;
     transition: $base-transition;
 

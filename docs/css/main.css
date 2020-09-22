@@ -1170,7 +1170,7 @@ body {
   display: inline-block;
   width: 14px;
   height: 21px;
-  content: '';
+  content: "";
   background: url("../img/icons/map-badge.png") no-repeat center center;
 }
 
@@ -1223,7 +1223,7 @@ body {
   display: inline-block;
   width: 14px;
   height: 17px;
-  content: '';
+  content: "";
   background: url("../img/icons/sign.png") no-repeat center center;
 }
 
@@ -2224,11 +2224,11 @@ body {
   }
 
   .top-header .col-2 {
-    width: calc(50% - 20px);
+    width: calc(25% - 20px);
   }
 
   .top-header .col-3 {
-    width: calc(50% - 20px);
+    width: calc(75% - 20px);
   }
 
   .top-header .col-7 {
@@ -2334,12 +2334,32 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 26px;
+  }
+
   .second-title {
     font-size: 24px;
   }
 
   .pagination a {
     padding: 13px;
+  }
+
+  .top-header .col-2 {
+    width: calc(33.33333% - 20px);
+  }
+
+  .top-header .col-3 {
+    width: calc(66.66667% - 20px);
+  }
+
+  .hero__content {
+    height: 500px;
+  }
+
+  .hero__title {
+    margin-bottom: 25px;
   }
 
   .s-assortment .col-1-71 {
@@ -2419,5 +2439,19 @@ body {
     max-width: 290px;
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .top-header .col-2 {
+    width: calc(50% - 20px);
+  }
+
+  .top-header .col-3 {
+    width: calc(50% - 20px);
+  }
+
+  .top-header__green-phone a {
+    font-size: 15px;
   }
 }

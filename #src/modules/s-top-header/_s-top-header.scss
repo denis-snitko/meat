@@ -2,19 +2,22 @@
   padding: 18px 0 13px 0;
   background-color: #fafadd;
 
+  .col-2 {
+    @include size-md(3);
+    @include size-sm(4);
+    @include size-xs(6);
+  }
+  
+  .col-3 {
+    @include size-md(9);
+    @include size-sm(8);
+    @include size-xs(6);
+  }
+
   @include md-block() {
-    .col-2 {
-      @include size(6);
-    }
-
-    .col-3 {
-      @include size(6);
-    }
-
     .col-7 {
       display: none;
     }
-
   }
 
   .row-flex {
@@ -24,7 +27,7 @@
       justify-content: space-between;
     }
   }
-  
+
   &__region {
     position: relative;
     padding-left: 20px;
@@ -33,17 +36,17 @@
     @include xl-block() {
       display: none;
     }
-    
+
     a {
       font-size: 16px;
       text-decoration: underline;
       color: #37aaff;
-      
+
       &:hover {
-        text-decoration: none; 
+        text-decoration: none;
       }
     }
-    
+
     &::before {
       position: absolute;
       top: -3px;
@@ -51,8 +54,8 @@
       display: inline-block;
       width: 14px;
       height: 21px;
-      content: '';
-      background: url('../img/icons/map-badge.png') no-repeat center center;
+      content: "";
+      background: url("../img/icons/map-badge.png") no-repeat center center;
     }
   }
 
@@ -61,26 +64,29 @@
 
     a {
       font-size: 16px;
+      @include xs-block() {
+        font-size: 15px;
+      }
     }
 
     @include xl-block() {
-      display: block ;
+      display: block;
       margin-bottom: 0;
     }
   }
-  
+
   &__menu {
     display: flex;
 
     @include md-block() {
       display: none;
     }
-    
+
     li {
       padding-right: 14px;
       font-size: 13px;
     }
-    
+
     a {
       font-size: inherit;
       color: inherit;
@@ -90,7 +96,7 @@
       }
     }
   }
-  
+
   &__sign {
     position: relative;
     padding-left: 20px;
@@ -115,8 +121,8 @@
       display: inline-block;
       width: 14px;
       height: 17px;
-      content: '';
-      background: url('../img/icons/sign.png') no-repeat center center;
+      content: "";
+      background: url("../img/icons/sign.png") no-repeat center center;
     }
   }
 }
