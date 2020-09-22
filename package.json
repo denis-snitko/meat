@@ -23,11 +23,13 @@
     "gulp-ttf2woff2": "^3.0.0",
     "gulp-uglify-es": "^2.0.0",
     "stylelint": "^13.6.0",
-    "stylelint-order": "^4.1.0"
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
-    "smart-grid": "^2.1.2",
     "jquery": "^3.5.1",
+    "smart-grid": "^2.1.2",
     "swiper": "^5.4.5"
   }
 }

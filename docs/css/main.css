@@ -1724,8 +1724,8 @@ body {
   content: url("../img/icons/filter-icon.png");
   position: absolute;
   top: 50%;
-  left: 15px;
   width: 19px;
+  left: 15px;
   height: 21px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
