@@ -4,7 +4,24 @@ body {
     color: $base-text-color;
 }
 
-// TODO Линия в заголовке
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.title-line {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+
+    &::after {
+        content: url('../img/line-for-title.png');
+        position: absolute;
+        bottom: 50%;
+    }
+}
+
 .main-title {
     color: #fefefe;
     font-family: $second-typeface;

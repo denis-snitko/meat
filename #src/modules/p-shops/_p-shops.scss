@@ -30,7 +30,7 @@
       }
     }
 
-    button {
+    &-btn {
       position: absolute;
       top: 50%;
       right: 17px;
@@ -42,12 +42,25 @@
     }
   }
 
+  &__btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #8ac864;
+    border: none;
+    border-radius: 0 0 8px 8px;
+
+  }
+
   .p-shops__list {
   }
 
   .p-shops__item {
     padding: 17px;
     border-bottom: 1px solid #939393;
+
+    &:last-child {
+      border-bottom: none ;
+    }
   }
 
   .shop-item {

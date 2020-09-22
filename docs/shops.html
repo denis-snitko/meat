@@ -118,14 +118,17 @@
     </ul>
 </div>
 
-    <h2 class="second-title">Наши магазины</h2>
+    <div class="title-wrapper">
+      <h2 class="second-title">Наши магазины</h2>
+      <span class="title-line"></span>
+    </div>
   </div>
   <div class="map">
     <div class="container">
       <div class="p-shops__search">
         <form action="#">
           <input type="text" name="searchShop" placeholder="Введите адрес">
-          <button type="submit"></button>
+          <button class="p-shops__search-btn" type="submit"></button>
         </form>
 
         <ul class="p-shops__list">
@@ -196,8 +199,23 @@
           </li>
         </ul>
 
-       <!-- TODO Зеленая кнопка Здесь -->
-
+        <button class="p-shops__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="11" viewBox="0 0 17 11">
+            <defs>
+              <clipPath id="zzvma">
+                <path fill="#fff"
+                  d="M8.01 10.56a1.237 1.237 0 0 1-.05-.1.885.885 0 0 1-.17-.146L.318 2.041C-.047 1.638-.109.915.18.426.467-.064.996-.133 1.36.27l7.282 8.062 7-7.97c.366-.416.896-.344 1.185.16.289.505.227 1.25-.138 1.666L9.194 10.72c-.365.416-.895.344-1.184-.16z" />
+              </clipPath>
+            </defs>
+            <g>
+              <g>
+                <path fill="none" stroke="#fff" stroke-miterlimit="20" stroke-width="4"
+                  d="M8.01 10.56a1.237 1.237 0 0 1-.05-.1.885.885 0 0 1-.17-.146L.318 2.041C-.047 1.638-.109.915.18.426.467-.064.996-.133 1.36.27l7.282 8.062 7-7.97c.366-.416.896-.344 1.185.16.289.505.227 1.25-.138 1.666L9.194 10.72c-.365.416-.895.344-1.184-.16z"
+                  clip-path="url(&quot;#zzvma&quot;)" />
+              </g>
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
     <img src="./img/map-big.jpg" alt="">

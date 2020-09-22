@@ -62,4 +62,25 @@
       border: 1px solid #f24946;
     }
   }
+
+  &__base-btn {
+    position: relative;
+    padding-left: 24px;
+    background-color: #ffffff;
+    
+    &::before {
+      content: url('../img/icons/circle-arrow.png');
+      position: absolute;
+      top: 50%;
+      left: 14px;
+      width: 24px;
+      height: 20px;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: #f24946;
+    }
+  }
 }
