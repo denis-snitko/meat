@@ -1,5 +1,29 @@
 .footer {
-  padding: 40px 0;
+  @include sm-block() {
+    padding: 20px 0;
+  }
+
+  .col-2-5 {
+    @include size-lg(3);
+    @include size-sm(12);
+
+    @include sm-block() {
+    }
+  }
+
+  .col-4-5 {
+    @include size-lg(6);
+    @include size-sm(12);
+  }
+
+  @include sm-block() {
+    &__logo-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  padding: 40px 0 20px 0;
   color: #ffffff;
   background-color: #8ac864;
 
@@ -9,15 +33,20 @@
   }
 
   &__green-phone {
-    margin-bottom: 40px;
-
     p {
       margin-bottom: 8px;
       color: $base-text-color;
+      @include sm-block() {
+        margin-bottom: 4px;
+      }
     }
 
     a {
       color: inherit;
+
+      @include md-block() {
+        font-size: 16px;
+      }
 
       &:hover {
         color: inherit;
@@ -26,10 +55,23 @@
   }
 
   &__copyright {
+    margin-top: 10px;
     color: $base-text-color;
   }
 
   &__menu {
+    &--first {
+      @include sm-block() {
+        display: none;
+      }
+    }
+
+    &--second {
+      @include lg-block() {
+        display: none;
+      }
+    }
+
     .menu__list {
       display: block;
     }
@@ -58,10 +100,17 @@
       font-family: $second-typeface;
       font-size: 24px;
       font-weight: 500;
+
+      @include md-block() {
+        font-size: 18px;
+      }
     }
 
     &-form {
       margin-bottom: 50px;
+      @include sm-block() {
+        margin-bottom: 20px;
+      }
 
       form {
         display: flex;
@@ -70,6 +119,7 @@
 
       input {
         max-width: 220px;
+        width: 100%;
         padding: 18px 64px 18px 17px;
         font-weight: bold;
         text-transform: uppercase;
@@ -78,6 +128,11 @@
         border: 1px solid #939393;
         border-radius: 8px;
 
+        @include md-block() {
+          max-width: 100%;
+          margin-right: 20px;
+        }
+
         &::placeholder {
           opacity: 0.5;
         }
@@ -85,7 +140,7 @@
 
       button {
         width: 140px;
-        padding: 14px 0;
+        padding: 14px;
 
         color: #ffffff;
         font-size: 14px;

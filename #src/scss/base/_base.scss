@@ -15,6 +15,10 @@
     position: absolute;
     z-index: -1;
 
+    @include md-block() {
+      display: none;
+    }
+
     &--1 {
       top: -10px;
       left: -10px;
@@ -588,8 +592,18 @@
   }
 }
 
+.swiper-button-prev {
+  @include xl-block() {
+    left: -15px;
+  }
+}
+
 .swiper-button-next {
   right: -22px;
   left: auto;
   transform: translateY(-50%) rotate(180deg);
+
+  @include xl-block() {
+    right: -15px;
+  }
 }

@@ -1,4 +1,10 @@
 .p-about {
+
+  .col-4,
+  .col-8 {
+    @include size-md(12);
+  }
+
   &__text {
     margin-bottom: 30px;
   }
@@ -9,8 +15,16 @@
 
   &__img {
     position: relative;
-    width: 380px;
-    height: 352px;
+
+    @include md-block() {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 10px;
+    }    
+
+    @include sm-block() {
+      width: 100%;
+    }
 
     &::before {
       content: "";
@@ -26,8 +40,7 @@
 
     img {
       display: block;
-      width: inherit;
-      height: inherit;
+      width: 100%;
       object-fit: cover;
     }
   }

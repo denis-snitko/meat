@@ -35,4 +35,8 @@ body {
     font-family: $second-typeface;
     font-size: 35px;
     font-weight: 700;
+    
+    @include sm-block() {
+        font-size: 24px;
+      }
 }
