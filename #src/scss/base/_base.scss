@@ -379,7 +379,6 @@
     @include lg-block() {
       justify-content: flex-start;
     }
-    
   }
 
   .filter-btn__btn {
@@ -399,7 +398,6 @@
       border: 1px solid #4d4d4d;
     }
 
-    
     @include lg-block() {
       margin-right: 10px;
     }
@@ -494,7 +492,6 @@
 }
 
 .filter {
-  
   &__sub-title {
     position: relative;
     padding-bottom: 10px;
@@ -512,7 +509,7 @@
       position: absolute;
       top: 0;
       right: 3px;
-      
+
       @include lg-block() {
         transform: rotate(-90deg);
       }
@@ -531,21 +528,19 @@
 
   &__list {
     @include lg-block() {
-      display: none;
+      @include dispalyNone(0.3s);
     }
 
-    transition: all 0.3s linear;
-    
     li {
       padding-bottom: 10px;
     }
   }
 
   .hide-filter-list {
-    display: none;
+    @include dispalyNone(0.3s);
 
     @include lg-block() {
-      display: block;
+      @include dispalyBlock(0.3s);
     }
   }
 }

@@ -1011,18 +1011,55 @@ body {
           transform: rotate(-90deg);
 }
 
-.filter__list {
-  -webkit-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
 .filter__list li {
   padding-bottom: 10px;
 }
 
 .filter .hide-filter-list {
-  display: none;
+  -webkit-animation: displayNone 0.3s forwards;
+          animation: displayNone 0.3s forwards;
+}
+
+@-webkit-keyframes displayNone {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+
+  99% {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    display: none;
+  }
+}
+
+@keyframes displayNone {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+
+  99% {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    display: none;
+  }
 }
 
 .custom-checkbox__label {
@@ -1330,7 +1367,11 @@ body {
 }
 
 .burger-menu__list {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.25s visibility, 0.25s opacity;
+  -o-transition: 0.25s visibility, 0.25s opacity;
+  transition: 0.25s visibility, 0.25s opacity;
   min-width: 260px;
   margin-top: 5px;
   padding: 10px 0;
@@ -1350,7 +1391,8 @@ body {
 }
 
 .burger-menu--show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu {
@@ -2179,12 +2221,96 @@ body {
   }
 
   .filter__list {
-    display: none;
+    -webkit-animation: displayNone 0.3s forwards;
+            animation: displayNone 0.3s forwards;
   }
 
+@-webkit-keyframes displayNone {
+    0% {
+      visibility: visible;
+      opacity: 1;
+      height: 100%;
+    }
+
+    99% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    100% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      display: none;
+    }
+}
+
+@keyframes displayNone {
+    0% {
+      visibility: visible;
+      opacity: 1;
+      height: 100%;
+    }
+
+    99% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    100% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      display: none;
+    }
+}
+
   .filter .hide-filter-list {
-    display: block;
+    -webkit-animation: displayBlock 0.3s forwards;
+            animation: displayBlock 0.3s forwards;
   }
+
+@-webkit-keyframes displayBlock {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    99% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    100% {
+      visibility: visible;
+      opacity: 1;
+      height: 100%;
+    }
+}
+
+@keyframes displayBlock {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    99% {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+
+    100% {
+      visibility: visible;
+      opacity: 1;
+      height: 100%;
+    }
+}
 
   .menu__item a {
     padding-right: 13px;

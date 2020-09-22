@@ -129,7 +129,8 @@
   }
 
   &__list {
-    display: none;
+    @include hide(0.25s);
+
     min-width: 260px;
     margin-top: 5px;
     padding: 10px 0;
@@ -149,6 +150,6 @@
   }
 
   &--show {
-    display: block;
+    @include show();
   }
 }
