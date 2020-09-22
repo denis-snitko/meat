@@ -13,16 +13,17 @@ document.addEventListener('DOMContentLoaded', () => {
   itemSwiper.forEach(swiper => {
     new Swiper(swiper.children, {
       slidesPerView: 1,
+      // spaceBetween: 60,
 
       breakpoints: {
-        400: {
+        460: {
           slidesPerView: 2,
-          spaceBetween: 30,
+          spaceBetween: 50,
           
         },
         576: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 40,
           
         },
         768: {
@@ -76,5 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
 
+  // BURGER HIDE / SHOW
+
+  const burgerTrigger = document.querySelector('.burger-menu__icon');
+
+  burgerTrigger.addEventListener('click', function (event) {
+    this.nextElementSibling.classList.toggle('burger-menu--show')
+  })
     
 });

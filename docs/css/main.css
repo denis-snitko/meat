@@ -683,7 +683,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
-  width: 204px;
   height: 355px;
   border-radius: 12px;
   border: 1px solid #b6b6b6;
@@ -1307,6 +1306,51 @@ body {
   display: block;
   width: 66px;
   height: 60px;
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 0;
+  width: 43px;
+  height: 43px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.burger-menu__icon {
+  width: 100%;
+  height: 100%;
+  background: url("../img/icons/catalog-menu.png") no-repeat center;
+  background-color: #8ac864;
+  border-radius: 8px;
+}
+
+.burger-menu__list {
+  display: none;
+  min-width: 260px;
+  margin-top: 5px;
+  padding: 10px 0;
+  background-color: #8ac864;
+  border-radius: 8px;
+}
+
+.burger-menu__list li {
+  padding: 10px 20px;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.burger-menu__list a {
+  color: inherit;
+}
+
+.burger-menu--show {
+  display: block;
 }
 
 .menu {
@@ -2074,6 +2118,8 @@ body {
   }
 
   .header .col-5 {
+    position: relative;
+    margin-top: 20px;
     width: calc(50% - 20px);
   }
 
@@ -2090,6 +2136,22 @@ body {
   .s-assortment .col-1-71 {
     width: calc(25% - 20px);
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1130px) and (max-width: 768px) {
+  .header .col-2-5 {
+    width: calc(50% - 20px);
+  }
+
+  .header .col-5 {
+    width: calc(100% - 20px);
+  }
+
+  .header .col-5 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -2122,6 +2184,16 @@ body {
 
   .filter .hide-filter-list {
     display: block;
+  }
+
+  .menu__item a {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  .menu__item--catalog a {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .footer .col-2-5 {
@@ -2177,6 +2249,10 @@ body {
     margin-right: auto;
   }
 
+  .header__search {
+    margin-left: 70px;
+  }
+
   .header__cart-title {
     font-size: 16px;
   }
@@ -2187,6 +2263,14 @@ body {
 
   .header__cart-text p {
     margin-bottom: 0;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
   }
 
   .s-assortment .col-1-71 {
@@ -2317,6 +2401,12 @@ body {
 
   .p-about__img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .main-card {
+    margin: 0 30px;
   }
 }
 

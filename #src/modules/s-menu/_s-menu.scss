@@ -1,6 +1,10 @@
 .menu {
   background-color: #8ac864;
 
+  @include md-block() {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -17,19 +21,29 @@
       color: inherit;
       transition: $base-transition;
 
+      @include lg-block() {
+        padding-right: 13px;
+        padding-left: 13px;
+      }
+
       &:hover {
         background-color: #73a952;
       }
     }
-    
+
     &--catalog {
       a {
-        padding-right: 32px;  
+        padding-right: 32px;
         padding-left: 32px;
-        
+
+        @include lg-block() {
+          padding-right: 0;
+          padding-left: 0;
+        }
+
         &::before {
           padding-right: 10px;
-          content: url('../img/icons/catalog-menu.png');
+          content: url("../img/icons/catalog-menu.png");
         }
       }
     }
