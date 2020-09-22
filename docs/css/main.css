@@ -867,6 +867,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -876,6 +878,7 @@ body {
 }
 
 .filter-btn .filter-btn__btn {
+  margin-bottom: 10px;
   padding: 8px 11px;
   font-size: 14px;
   text-decoration: underline;
@@ -891,6 +894,10 @@ body {
 
 .filter-btn .filter-btn__btn:hover {
   border: 1px solid #4d4d4d;
+}
+
+.filter-btn .filter-btn__sort {
+  margin-bottom: 10px;
 }
 
 .filter-btn .filter-btn__sort select {
@@ -1733,6 +1740,7 @@ body {
 }
 
 .p-assortment__col-3 {
+  padding-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
@@ -1748,6 +1756,7 @@ body {
 .p-assortment__filter {
   margin-bottom: 14px;
   padding: 0 15px;
+  background-color: #ffffff;
   border-radius: 12px;
   border: 1px solid #b6b6b6;
 }
@@ -1819,6 +1828,10 @@ body {
 .p-assortment__base-btn:hover {
   background-color: #ffffff;
   color: #f24946;
+}
+
+.p-assortment__pagination {
+  margin-bottom: 20px;
 }
 
 .p-shops__search {
@@ -2081,6 +2094,36 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .filter-btn .filter-btn__wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .filter-btn .filter-btn__btn {
+    margin-right: 10px;
+  }
+
+  .filter__sub-title::after {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+
+  .filter__sub-title--arrow-right::after {
+    -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+
+  .filter__list {
+    display: none;
+  }
+
+  .filter .hide-filter-list {
+    display: block;
+  }
+
   .footer .col-2-5 {
     width: calc(25% - 20px);
   }
@@ -2091,6 +2134,15 @@ body {
 
   .footer__menu--second {
     display: none;
+  }
+
+  .p-assortment .col-2-5,
+  .p-assortment .col-9-5 {
+    width: calc(100% - 20px);
+  }
+
+  .p-assortment__filter-reset {
+    margin-bottom: 20px;
   }
 }
 
@@ -2154,6 +2206,30 @@ body {
     margin-right: 20px;
   }
 
+  .p-assortment__col-3 {
+    width: calc(33.33333% - 20px);
+  }
+
+  .p-assortment__base-btn {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .p-assortment .pagination {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .p-assortment__pagination {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .p-shops__search {
     position: relative;
     max-width: 450px;
@@ -2176,6 +2252,10 @@ body {
 @media screen and (max-width: 576px) {
   .second-title {
     font-size: 24px;
+  }
+
+  .pagination a {
+    padding: 13px;
   }
 
   .s-assortment .col-1-71 {
@@ -2227,7 +2307,27 @@ body {
     margin-bottom: 20px;
   }
 
+  .p-assortment__col-3 {
+    width: calc(50% - 20px);
+  }
+
+  .p-assortment .main-card {
+    width: auto;
+  }
+
   .p-about__img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .p-assortment__col-3 {
+    width: calc(100% - 20px);
+  }
+
+  .p-assortment .main-card {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

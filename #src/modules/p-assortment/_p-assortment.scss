@@ -1,12 +1,35 @@
 .p-assortment {
+  .col-2-5,
+  .col-9-5 {
+    @include size-lg(12);
+  }
+
   &__row {
     @include row-flex();
     padding-bottom: 20px;
   }
 
   &__col-3 {
+    padding-bottom: 20px;
     @include col();
     @include size(3);
+    @include size-md(4);
+    @include size-sm(6);
+
+    @media screen and (max-width: 440px) {
+      @include size(12);
+    }
+  }
+
+  .main-card {
+    @include sm-block() {
+      width: auto;
+    }
+    @media screen and (max-width: 440px) {
+      max-width: 290px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__filter-btn {
@@ -16,6 +39,8 @@
   &__filter {
     margin-bottom: 14px;
     padding: 0 15px;
+    background-color: #ffffff;
+
     border-radius: 12px;
     border: 1px solid #b6b6b6;
   }
@@ -54,12 +79,15 @@
     border-radius: 12px;
     border: 1px solid #b6b6b6;
     transition: $base-transition;
-    
+
     &:hover {
-      
       color: #ffffff;
       background-color: #f24946;
       border: 1px solid #f24946;
+    }
+
+    @include lg-block() {
+      margin-bottom: 20px;
     }
   }
 
@@ -67,9 +95,9 @@
     position: relative;
     padding-left: 24px;
     background-color: #ffffff;
-    
+
     &::before {
-      content: url('../img/icons/circle-arrow.png');
+      content: url("../img/icons/circle-arrow.png");
       position: absolute;
       top: 50%;
       left: 14px;
@@ -81,6 +109,27 @@
     &:hover {
       background-color: #ffffff;
       color: #f24946;
+    }
+
+    @include md-block() {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include md-block() {
+    .pagination {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__pagination {
+    margin-bottom: 20px;
+
+    @include md-block() {
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
