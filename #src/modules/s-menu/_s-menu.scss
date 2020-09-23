@@ -32,18 +32,45 @@
     }
 
     &--catalog {
-      a {
-        padding-right: 32px;
-        padding-left: 32px;
+      position: relative;
+      padding: 21px 32px;
+      transition: $base-transition;
+      cursor: pointer;
 
-        @include lg-block() {
-          padding-right: 0;
-          padding-left: 0;
+      @include lg-block() {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &::before {
+        padding-right: 10px;
+        content: url("../img/icons/catalog-menu.png");
+      }
+
+      &:hover {
+        background-color: #73a952;
+      }
+
+      .sub-menu {
+        @include hide(0.25s);
+        border: 1px solid #000;
+        position: absolute;
+        left: 0;
+        z-index: 100;
+        min-width: 260px;
+        margin-top: 22px;
+        padding: 10px 0;
+        background-color: #8ac864;
+        border-radius: 8px;
+
+        a {
+          width: 100%;
+          padding: 14px;
+          font-size: 16px;
         }
 
-        &::before {
-          padding-right: 10px;
-          content: url("../img/icons/catalog-menu.png");
+        &--show {
+          @include show();
         }
       }
     }

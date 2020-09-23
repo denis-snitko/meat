@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
         460: {
           slidesPerView: 2,
           spaceBetween: 50,
-          
+
         },
         576: {
           slidesPerView: 3,
           spaceBetween: 40,
-          
+
         },
         768: {
           slidesPerView: 4,
@@ -61,17 +61,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
+  // SUB-MENU HIDE / SHOW
 
-  //FILTER HIDE / SHOW
+  const subMenuTrigger = document.querySelector('.menu__item--catalog');
 
-    const filterTrigger = document.querySelectorAll('.filter__sub-title');
-    
-    filterTrigger.forEach((el)=> {
-      el.addEventListener('click', (event) => {
-        event.target.classList.toggle('filter__sub-title--arrow-right')
-        event.target.nextElementSibling.classList.toggle('hide-filter-list')
-      })
+  subMenuTrigger.addEventListener('click', (event) => {
+    event.target.querySelector('.sub-menu').classList.toggle('sub-menu--show')
+  })
+
+  // FILTER HIDE / SHOW
+
+  const filterTrigger = document.querySelectorAll('.filter__sub-title');
+
+  filterTrigger.forEach((el) => {
+    el.addEventListener('click', (event) => {
+      event.target.classList.toggle('filter__sub-title--arrow-right')
+      event.target.nextElementSibling.classList.toggle('hide-filter-list')
     })
+  })
 
   // BURGER HIDE / SHOW
 
@@ -80,5 +87,5 @@ document.addEventListener('DOMContentLoaded', () => {
   burgerTrigger.addEventListener('click', function (event) {
     this.nextElementSibling.classList.toggle('burger-menu--show')
   })
-    
+
 });

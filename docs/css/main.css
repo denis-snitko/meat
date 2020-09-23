@@ -1427,14 +1427,50 @@ body {
   background-color: #73a952;
 }
 
-.menu__item--catalog a {
-  padding-right: 32px;
-  padding-left: 32px;
+.menu__item--catalog {
+  position: relative;
+  padding: 21px 32px;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.menu__item--catalog a::before {
+.menu__item--catalog::before {
   padding-right: 10px;
   content: url("../img/icons/catalog-menu.png");
+}
+
+.menu__item--catalog:hover {
+  background-color: #73a952;
+}
+
+.menu__item--catalog .sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.25s visibility, 0.25s opacity;
+  -o-transition: 0.25s visibility, 0.25s opacity;
+  transition: 0.25s visibility, 0.25s opacity;
+  border: 1px solid #000;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  min-width: 260px;
+  margin-top: 22px;
+  padding: 10px 0;
+  background-color: #8ac864;
+  border-radius: 8px;
+}
+
+.menu__item--catalog .sub-menu a {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+}
+
+.menu__item--catalog .sub-menu--show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hero {
@@ -2317,7 +2353,7 @@ body {
     padding-left: 13px;
   }
 
-  .menu__item--catalog a {
+  .menu__item--catalog {
     padding-right: 0;
     padding-left: 0;
   }
