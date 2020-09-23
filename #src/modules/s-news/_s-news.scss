@@ -1,12 +1,6 @@
 .s-news {
   padding: 25px 0;
 
-  @include sm-block() {
-    .col-6 {
-      @include size(12);
-    }
-  }
-
   &__base-btn {
     margin-top: 24px;
     margin-left: auto;
@@ -28,7 +22,7 @@
     max-height: 181px;
     margin-bottom: 17px;
     border-radius: 12px;
-    
+
     img {
       display: block;
       width: 100%;
@@ -69,7 +63,7 @@
       font-size: 14px;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 50%;
         left: 0;
@@ -77,7 +71,7 @@
         display: inline-block;
         width: 17px;
         height: 14px;
-        background: url('../img/icons/time.png') no-repeat center;
+        background: url("../img/icons/time.png") no-repeat center;
       }
     }
 

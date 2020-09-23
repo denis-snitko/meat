@@ -1,19 +1,19 @@
 .footer {
-  @include sm-block() {
+  @include md-block() {
     padding: 20px 0;
-  }
-
-  .col-2-5 {
-    @include size-lg(3);
-    @include size-sm(12);
-
-    @include sm-block() {
+    .menu {
+      display: block;
     }
   }
 
-  .col-4-5 {
-    @include size-lg(6);
-    @include size-sm(12);
+  .col-3 {
+    @include size-md(4);
+    @include size-sm(14);
+  }
+
+  .col-5 {
+    @include size-md(6);
+    @include size-sm(14);
   }
 
   @include sm-block() {
@@ -67,7 +67,7 @@
     }
 
     &--second {
-      @include lg-block() {
+      @include md-block() {
         display: none;
       }
     }
@@ -130,7 +130,7 @@
 
         @include md-block() {
           max-width: 100%;
-          margin-right: 20px;
+          margin-right: 5px;
         }
 
         &::placeholder {

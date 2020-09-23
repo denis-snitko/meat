@@ -1,8 +1,7 @@
 .p-about {
-
-  .col-4,
-  .col-8 {
-    @include size-md(12);
+  .col-5,
+  .col-9 {
+    @include size-sm(14);
   }
 
   &__text {
@@ -16,14 +15,10 @@
   &__img {
     position: relative;
 
-    @include md-block() {
+    @include sm-block() {
       width: 80%;
       margin: 0 auto;
       margin-top: 10px;
-    }    
-
-    @include sm-block() {
-      width: 100%;
     }
 
     &::before {
