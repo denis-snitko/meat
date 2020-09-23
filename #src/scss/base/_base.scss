@@ -60,6 +60,7 @@
 }
 
 .col-2,
+.col-2-5,
 .col-3,
 .col-4,
 .col-5,
@@ -70,7 +71,6 @@
 .col-10,
 .col-11 {
   @include col();
-  // border: 1px solid #ccc;
 }
 
 .col-2 {
@@ -144,7 +144,10 @@
 }
 
 .social-block {
+  display: flex;
+  justify-content: center;
   padding-top: 14px;
+
   &__link {
     display: inline-block;
     margin-right: 10px;
