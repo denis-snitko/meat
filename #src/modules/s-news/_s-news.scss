@@ -30,6 +30,10 @@
       object-fit: cover;
       border-radius: 12px;
     }
+
+    a {
+      display: block;
+    }
   }
 
   // .news-item__body
@@ -44,6 +48,14 @@
     font-family: $second-typeface;
     font-size: 20px;
     font-weight: 500;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   // .news-item__descr
@@ -78,10 +90,9 @@
     a {
       color: #37aaff;
       font-size: 16px;
-      text-decoration: underline;
 
       &:hover {
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
   }

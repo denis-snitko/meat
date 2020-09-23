@@ -1,23 +1,16 @@
 .header {
   padding: 23px 0 17px 0;
 
-  @include xl-block() {
-    .col-2 {
+  .row-flex {
+    @include xl-block() {
+      align-items: center;
+    }
+  }
+
+  .col-2 {
+    @include xl-block() {
       display: none;
     }
-
-    // .col-2-5 {
-    //   @include size(3);
-    //   @include size-md(6);
-    // }
-
-    // .col-5 {
-    //   position: relative;
-
-    //   @include size(6);
-    //   @include size-md(12);
-    //
-    // }
   }
 
   .col-3 {

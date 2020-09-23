@@ -98,14 +98,15 @@
     }
   }
 
+  &__sign-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   &__sign {
     position: relative;
     padding-left: 20px;
     font-size: 13px;
-
-    @include md-block() {
-      margin-right: auto;
-    }
 
     a {
       color: inherit;

@@ -672,6 +672,14 @@ body {
   border-radius: 12px;
   border: 1px solid #b6b6b6;
   background-color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.main-card:hover {
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .main-card__img {
@@ -689,6 +697,10 @@ body {
   padding-bottom: 20px;
 }
 
+.main-card__img a {
+  display: block;
+}
+
 .main-card__img img {
   display: block;
   -o-object-fit: cover;
@@ -700,6 +712,11 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 14px;
+  text-decoration: underline;
+  color: inherit;
+}
+
+.main-card__descr:hover {
   text-decoration: underline;
 }
 
@@ -1124,7 +1141,7 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: -22px;
   z-index: 10;
   -webkit-transform: translateY(-50%);
@@ -1222,6 +1239,15 @@ body {
 
 .top-header__menu a:hover {
   text-decoration: underline;
+}
+
+.top-header__sign-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .top-header__sign {
@@ -1582,8 +1608,10 @@ body {
 }
 
 .s-assortment-card {
+  display: block;
   text-align: center;
   border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.75);
   overflow: hidden;
 }
 
@@ -1602,21 +1630,30 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 125px;
+  overflow: hidden;
+}
+
+.s-assortment-card__img img {
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.s-assortment-card:hover .s-assortment-card__text {
+  text-decoration: underline;
+}
+
+.s-assortment-card:hover .s-assortment-card__img img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .s-assortment-card__text {
   padding: 10px 0;
   background-color: rgba(255, 255, 255, 0.75);
-}
-
-.s-assortment-card__text a {
   color: #2d2d2d;
   font-size: 18px;
-  text-decoration: underline;
-}
-
-.s-assortment-card__text a:hover {
-  text-decoration: none;
 }
 
 .s-assortment-card--1 {
@@ -1655,6 +1692,10 @@ body {
   padding: 25px 0;
 }
 
+.s-popular .swiper-container {
+  padding: 10px;
+}
+
 .s-new-items {
   padding: 25px 0;
 }
@@ -1684,11 +1725,23 @@ body {
   border-radius: 12px;
 }
 
+.news-item__img a {
+  display: block;
+}
+
 .news-item__title {
   margin-bottom: 10px;
   font-family: "bloggersans", sans-serif;
   font-size: 20px;
   font-weight: 500;
+}
+
+.news-item__title a {
+  color: inherit;
+}
+
+.news-item__title a:hover {
+  text-decoration: underline;
 }
 
 .news-item__descr {
@@ -1720,11 +1773,10 @@ body {
 .news-item__details a {
   color: #37aaff;
   font-size: 16px;
-  text-decoration: underline;
 }
 
 .news-item__details a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .footer {
@@ -1752,6 +1804,12 @@ body {
 }
 
 .footer__copyright {
+  margin-top: 30px;
+  color: #4d4d4d;
+}
+
+.footer__copyright--down {
+  display: none;
   margin-top: 10px;
   color: #4d4d4d;
 }
@@ -2171,11 +2229,6 @@ body {
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1120px) {
-  .logo__img {
-    width: 130px;
-    height: 61px;
-  }
-
   .swiper-button-prev {
     left: -15px;
   }
@@ -2191,6 +2244,12 @@ body {
   .top-header__green-phone {
     display: block;
     margin-bottom: 0;
+  }
+
+  .header .row-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .header .col-2 {
@@ -2217,6 +2276,11 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .logo__img {
+    width: 130px;
+    height: 61px;
+  }
+
   .filter-btn .filter-btn__wrapper {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -2380,10 +2444,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-
-  .top-header__sign {
-    margin-right: auto;
   }
 
   .header .col-3 {
@@ -2563,6 +2623,14 @@ body {
 
   .footer__green-phone p {
     margin-bottom: 4px;
+  }
+
+  .footer__copyright {
+    display: none;
+  }
+
+  .footer__copyright--down {
+    display: block;
   }
 
   .footer__menu--first {

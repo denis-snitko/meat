@@ -30,10 +30,12 @@
         </ul>
       </div>
       <div class="col-2">
-        <div class="top-header__sign">
-          <a href="">Регистрация</a>
-          <span> / </span>
-          <a href="">Вход</a>
+        <div class="top-header__sign-wrapper">
+          <div class="top-header__sign">
+            <a href="">Регистрация</a>
+            <span> / </span>
+            <a href="">Вход</a>
+          </div>
         </div>
       </div>
     </div>
@@ -192,74 +194,74 @@
 
     <div class="row-flex">
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--1">
+        <a class="s-assortment-card s-assortment-card--1" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-1.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Свинина</a>
+            Свинина
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--2">
+        <a class="s-assortment-card s-assortment-card--2" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-2.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Говядина</a>
+            Говядина
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--3">
+        <a class="s-assortment-card s-assortment-card--3" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-3.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Курица</a>
+            Курица
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--4">
+        <a class="s-assortment-card s-assortment-card--4" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-4.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Индейка</a>
+            Индейка
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--5">
+        <a class="s-assortment-card s-assortment-card--5" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-5.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Полуфабрикаты</a>
+            Полуфабрикаты
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--6">
+        <a class="s-assortment-card s-assortment-card--6" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-6.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Специи</a>
+            Специи
           </div>
-        </div>
+        </a>
       </div>
       <div class="col-2">
-        <div class="s-assortment-card s-assortment-card--7">
+        <a class="s-assortment-card s-assortment-card--7" href="">
           <div class="s-assortment-card__img">
             <img src="./img/assortment/img-7.png" alt="">
           </div>
           <div class="s-assortment-card__text">
-            <a href="">Кулинария</a>
+            Кулинария
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <a class="base-btn s-assortment__base-btn" href="">Весь ассортимент</a>
@@ -272,148 +274,162 @@
       <span class="title-line"></span>
     </div>
     <div class="swiper-container-wrapper">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-1.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Блинчики с мясом 450г</p>
-            </div>
-            <div class="main-card__price">
-              <p>210</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="2">
-                <span class="js-plus">+</span>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-1.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Блинчики с мясом 450г
+              </a>
+              <div class="main-card__price">
+                <p>210</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="2">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-2.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Фарш Домашний Окраина (свинина, говядина) 500г</p>
-            </div>
-            <div class="main-card__price">
-              <p>510</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="1">
-                <span class="js-plus">+</span>
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-2.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Фарш Домашний Окраина (свинина, говядина) 500г
+              </a>
+              <div class="main-card__price">
+                <p>510</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="1">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-3.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Сосиски с натуральным молоком Окраина в оболочке амицел 0,8-1,3кг</p>
-            </div>
-            <div class="main-card__price">
-              <p>250</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="1">
-                <span class="js-plus">+</span>
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-3.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Сосиски с натуральным молоком Окраина в оболочке амицел 0,8-1,3кг
+              </a>
+              <div class="main-card__price">
+                <p>250</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="1">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-4.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Сардельки с натуральным молоком Окраина 230г шт</p>
-            </div>
-            <div class="main-card__price">
-              <p>40</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="1">
-                <span class="js-plus">+</span>
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-4.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Сардельки с натуральным молоком Окраина 230г шт
+              </a>
+              <div class="main-card__price">
+                <p>40</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="1">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-5.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Ребрышки Cвиные Окраина копчено-вареные 700-1300г</p>
-            </div>
-            <div class="main-card__price">
-              <p>450</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="1">
-                <span class="js-plus">+</span>
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-5.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Ребрышки Cвиные Окраина копчено-вареные 700-1300г
+              </a>
+              <div class="main-card__price">
+                <p>450</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="1">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-1.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Фарш Домашний Окраина (свинина, говядина) 500г</p>
-            </div>
-            <div class="main-card__price">
-              <p>510</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="1">
-                <span class="js-plus">+</span>
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-6.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Фарш Домашний Окраина (свинина, говядина) 500г
+              </a>
+              <div class="main-card__price">
+                <p>510</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="1">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="main-card">
-            <div class="main-card__img">
-              <img src="./img/catalog/item-2.jpg" alt="">
-            </div>
-            <div class="main-card__descr">
-              <p>Фарш Домашний Окраина (свинина, говядина) 500г</p>
-            </div>
-            <div class="main-card__price">
-              <p>510</p>
-              <div class="main-card__price-count">
-                <span class="js-minus">-</span>
-                <input class="js-count" type="text" name="amount" value="1">
-                <span class="js-plus">+</span>
+          <div class="swiper-slide">
+            <div class="main-card">
+              <div class="main-card__img">
+                <a href="">
+                  <img src="./img/catalog/item-2.jpg" alt="">
+                </a>
               </div>
+              <a class="main-card__descr" href="">
+                Фарш Домашний Окраина (свинина, говядина) 500г
+              </a>
+              <div class="main-card__price">
+                <p>510</p>
+                <div class="main-card__price-count">
+                  <span class="js-minus">-</span>
+                  <input class="js-count" type="text" name="amount" value="1">
+                  <span class="js-plus">+</span>
+                </div>
+              </div>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
-            <button class="main-card__btn"><span>В козину</span></button>
           </div>
         </div>
       </div>
-    </div>
       <!-- Add Arrows -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+    </div>
   </div>
-</div>
 </section>
       <section class="s-new-items">
   <div class="container">
@@ -440,7 +456,7 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -459,7 +475,7 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -478,7 +494,7 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -497,7 +513,7 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -516,7 +532,7 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -535,7 +551,7 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -554,14 +570,14 @@
                   <span class="js-plus">+</span>
                 </div>
               </div>
-              <button class="main-card__btn"><span>В козину</span></button>
+              <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
         </div>
       </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>
@@ -575,10 +591,12 @@
       <div class="col-7">
         <div class="news-item">
           <div class="news-item__img">
-            <img src="./img/news-1.jpg" alt="">
+            <a href="">
+              <img src="./img/news-1.jpg" alt="">
+            </a>
           </div>
           <div class="news-item__body">
-            <div class="news-item__title">Рыбный ряд</div>
+            <div class="news-item__title"><a href="">Рыбный ряд</a></div>
             <div class="news-item__descr">
               <p>
                 Друзья! Наш рыбный ряд стал еще больше и еще разнообразнее. У нас открылись новые точки с живой и
@@ -596,10 +614,12 @@
       <div class="col-7">
         <div class="news-item">
           <div class="news-item__img">
-            <img src="./img/news-2.jpg" alt="">
+            <a href="">
+              <img src="./img/news-2.jpg" alt="">
+            </a>
           </div>
           <div class="news-item__body">
-            <div class="news-item__title">Фестиваль вкусной и здоровой пищи</div>
+            <div class="news-item__title"><a href="">Фестиваль вкусной и здоровой пищи</a></div>
             <div class="news-item__descr">
               <p>
                 Приглашаем Вас на дегустации и консультации по колбасам и деликатесам торговой марки «Деревня Мясково»,
@@ -635,6 +655,9 @@
           <div class="green-phone footer__green-phone">
             <p>Телефон горячей линии:</p>
             <a href="tel:+74953690010">+7 (495) 369-00-10</a>
+          </div>
+          <div class="copyright footer__copyright">
+            <p>&copy; 2010 - 2020 ТМ «#МЯСКО»</p>
           </div>
         </div>
       </div>
@@ -688,7 +711,7 @@
         </div>
       </div>
     </div>
-    <div class="copyright footer__copyright">
+    <div class="copyright footer__copyright--down">
       <p>&copy; 2010 - 2020 ТМ «#МЯСКО»</p>
     </div>
   </div>
