@@ -381,7 +381,7 @@ body {
 
 .filter-btn {
   .filter-btn__wrapper {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
@@ -392,6 +392,7 @@ body {
   }
 
   .filter-btn__btn {
+    margin-right: 12px;
     margin-bottom: 10px;
     padding: 8px 11px;
     font-size: 14px;
@@ -414,6 +415,7 @@ body {
   }
 
   .filter-btn__sort {
+    display: inline-block;
     margin-bottom: 10px;
 
     select {
@@ -502,6 +504,10 @@ body {
 }
 
 .filter {
+  @include md-block() {
+    display: none;
+  }
+
   &__sub-title {
     position: relative;
     padding-bottom: 10px;
@@ -519,28 +525,16 @@ body {
       position: absolute;
       top: 0;
       right: 3px;
-
-      @include lg-block() {
-        transform: rotate(-90deg);
-      }
     }
 
     &--arrow-right {
       &::after {
         transform: rotate(-90deg);
-
-        @include lg-block() {
-          transform: rotate(-360deg);
-        }
       }
     }
   }
 
   &__list {
-    @include lg-block() {
-      @include dispalyNone(0.3s);
-    }
-
     li {
       padding-bottom: 10px;
     }
@@ -548,10 +542,6 @@ body {
 
   .hide-filter-list {
     @include dispalyNone(0.3s);
-
-    @include lg-block() {
-      @include dispalyBlock(0.3s);
-    }
   }
 }
 

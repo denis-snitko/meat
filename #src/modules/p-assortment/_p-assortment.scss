@@ -12,14 +12,14 @@
 
   .col-3,
   .col-11 {
-    @include size-lg(14);
+    @include size-md(14);
   }
 
   &__col-3-5 {
     padding-bottom: 20px;
     @include col();
     @include size(3.5);
-    @include size-md(4.66);
+    @include size-lg(4.66);
     @include size-sm(7);
     @include size-sm400(14);
   }
@@ -51,6 +51,10 @@
 
     border-radius: 12px;
     border: 1px solid #b6b6b6;
+
+    @include md-block() {
+      display: inline-block;
+    }
   }
 
   &__filter-title {
@@ -72,6 +76,14 @@
       width: 19px;
       height: 21px;
       transform: translateY(-50%);
+    }
+
+    @include md-block() {
+      border-radius: 12px;
+      border-bottom: none;
+      padding-top: 8px;
+      padding-right: 18px;
+      padding-bottom: 8px;
     }
   }
 
@@ -96,6 +108,10 @@
 
     @include lg-block() {
       margin-bottom: 20px;
+    }
+
+    @include md-block() {
+      display: none;
     }
   }
 
