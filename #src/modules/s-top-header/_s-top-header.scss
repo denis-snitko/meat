@@ -112,6 +112,11 @@
     padding-left: 20px;
     font-size: 13px;
 
+    @include xs-block() {
+      padding-left: 17px;
+      white-space: nowrap;
+    }
+
     a {
       color: inherit;
 
@@ -121,13 +126,13 @@
     }
 
     &::before {
+      content: "";
       position: absolute;
       top: -3px;
       left: 0;
       display: inline-block;
       width: 14px;
       height: 17px;
-      content: "";
       background: url("../img/icons/sign.png") no-repeat center center;
     }
   }

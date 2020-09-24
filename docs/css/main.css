@@ -1277,13 +1277,13 @@ body {
 }
 
 .top-header__sign::before {
+  content: "";
   position: absolute;
   top: -3px;
   left: 0;
   display: inline-block;
   width: 14px;
   height: 17px;
-  content: "";
   background: url("../img/icons/sign.png") no-repeat center center;
 }
 
@@ -3017,6 +3017,11 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .top-header__sign {
+    padding-left: 17px;
+    white-space: nowrap;
+  }
+
   .header .col-2-5 {
     width: calc(50% - 20px);
   }
