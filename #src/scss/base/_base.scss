@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .main-body {
   display: flex;
   margin: 0 auto;
@@ -7,7 +11,6 @@
 }
 
 .main-content {
-  position: relative;
   flex: 1 1 auto;
   overflow: hidden;
 
@@ -20,33 +23,34 @@
     }
 
     &--1 {
-      top: -10px;
-      left: -10px;
+      top: 850px;
+      left: 0;
     }
 
     &--2 {
-      top: 120px;
+      top: 900px;
       right: 0px;
     }
 
     &--2a {
-      top: 1450px;
+      top: 2300px;
       right: 0px;
     }
 
     &--3 {
-      top: 430px;
+      top: 1250px;
       left: 0;
     }
 
     &--4 {
-      top: 450px;
+      top: 1250px;
       right: 0px;
     }
 
     &--4a {
-      top: 1120px;
-      left: -40px;
+      top: 1800px;
+      left: 0;
+      transform: rotate(180deg);
     }
   }
 }
@@ -615,7 +619,7 @@
 .swiper-button-next {
   position: absolute;
   top: 45%;
-  left: -22px;
+  left: -10px;
   z-index: 10;
   transform: translateY(-50%);
   width: 45px;
@@ -632,17 +636,10 @@
 }
 
 .swiper-button-prev {
-  @include xl-block() {
-    left: -15px;
-  }
 }
 
 .swiper-button-next {
-  right: -22px;
+  right: -10px;
   left: auto;
   transform: translateY(-50%) rotate(180deg);
-
-  @include xl-block() {
-    right: -15px;
-  }
 }

@@ -1,9 +1,21 @@
 .s-assortment {
   padding-top: 50px;
 
+  @include md-block() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @include xl-block() {
     .row-flex {
       justify-content: center;
+    }
+  }
+
+  .title-wrapper {
+    @include md-block() {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
@@ -28,6 +40,7 @@
   border-radius: 12px;
   background-color: rgba(#ffffff, 0.75);
   overflow: hidden;
+  transition: $base-transition;
 
   &__img {
     display: flex;
@@ -46,8 +59,8 @@
     text-decoration: underline;
   }
 
-  &:hover &__img img {
-    transform: scale(1.1);
+  &:hover {
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.5);
   }
 
   &__text {

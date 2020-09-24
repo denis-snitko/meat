@@ -1,6 +1,11 @@
 .header {
   padding: 23px 0 17px 0;
 
+  @include md-block() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .row-flex {
     flex-wrap: nowrap;
     @include md-block() {

@@ -3,30 +3,44 @@
 
   &__content {
     height: 559px;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    @include sm-block() {
-      height: 500px;
+    @include md-block() {
+      height: 319px;
+      background-size: cover;
     }
   }
 
   &__body {
     max-width: 532px;
     padding-top: 140px;
+
+    @include md-block() {
+      padding-top: 75px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__title {
     margin-bottom: 42px;
 
-    @include sm-block() {
-      margin-bottom: 25px;
+    @include md-block() {
+      max-width: 280px;
+      margin-bottom: 22px;
+      font-size: 26px;
     }
   }
 
   &__descr {
     margin-bottom: 56px;
     font-size: 16px;
+
+    @include md-block() {
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
   }
 
   &__btn {
@@ -44,6 +58,11 @@
       color: #ffffff;
       background-color: #ff3f3f;
       border: 2px solid #ff3f3f;
+    }
+
+    @include md-block() {
+      font-size: 13px;
+      padding: 13px;
     }
   }
 }

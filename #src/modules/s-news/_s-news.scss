@@ -1,6 +1,24 @@
 .s-news {
   padding: 25px 0;
 
+  .second-title {
+    @include md-block() {
+      font-size: 36px;
+    }
+  }
+
+  .title-wrapper {
+    @include md-block() {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @include md-block() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   &__base-btn {
     margin-top: 24px;
     margin-left: auto;

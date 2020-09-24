@@ -1,10 +1,15 @@
 .s-breadcrumbs {
   padding: 20px 0;
-  
+
+  @include md-block() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   color: #939393;
   font-size: 14px;
   // .s-breadcrumbs__list
-  
+
   &__list {
     display: flex;
   }
@@ -16,7 +21,7 @@
     padding-right: 20px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       right: 6px;
@@ -24,7 +29,7 @@
       display: inline-block;
       width: 5px;
       height: 5px;
-      background-color: #939393; 
+      background-color: #939393;
       border-radius: 50%;
     }
 

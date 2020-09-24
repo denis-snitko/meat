@@ -463,6 +463,10 @@ body {
 
 /* Base styles */
 
+body {
+  position: relative;
+}
+
 .main-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,7 +481,6 @@ body {
 }
 
 .main-content {
-  position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -490,33 +493,36 @@ body {
 }
 
 .main-content__bg-img--1 {
-  top: -10px;
-  left: -10px;
+  top: 850px;
+  left: 0;
 }
 
 .main-content__bg-img--2 {
-  top: 120px;
+  top: 900px;
   right: 0px;
 }
 
 .main-content__bg-img--2a {
-  top: 1450px;
+  top: 2300px;
   right: 0px;
 }
 
 .main-content__bg-img--3 {
-  top: 430px;
+  top: 1250px;
   left: 0;
 }
 
 .main-content__bg-img--4 {
-  top: 450px;
+  top: 1250px;
   right: 0px;
 }
 
 .main-content__bg-img--4a {
-  top: 1120px;
-  left: -40px;
+  top: 1800px;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .container {
@@ -1149,7 +1155,7 @@ body {
 .swiper-button-next {
   position: absolute;
   top: 45%;
-  left: -22px;
+  left: -10px;
   z-index: 10;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1171,7 +1177,7 @@ body {
 }
 
 .swiper-button-next {
-  right: -22px;
+  right: -10px;
   left: auto;
   -webkit-transform: translateY(-50%) rotate(180deg);
       -ms-transform: translateY(-50%) rotate(180deg);
@@ -1222,6 +1228,7 @@ body {
 
 .top-header__green-phone {
   display: none;
+  white-space: nowrap;
 }
 
 .top-header__green-phone a {
@@ -1232,6 +1239,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
 }
 
 .top-header__menu li {
@@ -1464,6 +1472,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #fefefe;
+  white-space: nowrap;
 }
 
 .menu__item a {
@@ -1531,8 +1540,8 @@ body {
 
 .hero__content {
   height: 559px;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero__body {
@@ -1587,7 +1596,7 @@ body {
 }
 
 .s-breadcrumbs__item::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 6px;
@@ -1638,6 +1647,9 @@ body {
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.75);
   overflow: hidden;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .s-assortment-card__img {
@@ -1668,10 +1680,9 @@ body {
   text-decoration: underline;
 }
 
-.s-assortment-card:hover .s-assortment-card__img img {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+.s-assortment-card:hover {
+  -webkit-box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.5);
 }
 
 .s-assortment-card__text {
@@ -1723,6 +1734,10 @@ body {
 
 .s-new-items {
   padding: 25px 0;
+}
+
+.s-new-items .swiper-container {
+  padding: 10px;
 }
 
 .s-news {
@@ -1805,9 +1820,15 @@ body {
 }
 
 .footer {
-  padding: 40px 0 20px 0;
+  padding: 26px 0 20px 0;
   color: #ffffff;
   background-color: #8ac864;
+}
+
+.footer .social-block {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .footer__logo {
@@ -1975,7 +1996,7 @@ body {
 .p-assortment__filter-title {
   position: relative;
   margin: 0 -15px;
-  padding: 18px 43px;
+  padding: 16px 43px;
   color: #4d4d4d;
   font-size: 20px;
   font-weight: 700;
@@ -2020,6 +2041,8 @@ body {
 
 .p-assortment__base-btn {
   position: relative;
+  margin-left: 26%;
+  padding: 16px 0;
   padding-left: 24px;
   background-color: #ffffff;
 }
@@ -2039,10 +2062,6 @@ body {
 .p-assortment__base-btn:hover {
   background-color: #ffffff;
   color: #f24946;
-}
-
-.p-assortment__pagination {
-  margin-bottom: 20px;
 }
 
 .p-shops__search {
@@ -2254,14 +2273,6 @@ body {
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1120px) {
-  .swiper-button-prev {
-    left: -15px;
-  }
-
-  .swiper-button-next {
-    right: -15px;
-  }
-
   .s-assortment .row-flex {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2407,8 +2418,12 @@ body {
   }
 
   .menu__item--catalog {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 13px;
+  }
+
+  .footer__logo img {
+    width: 157px;
+    height: 75px;
   }
 
   .p-assortment .col-3,
@@ -2422,16 +2437,31 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .title-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .second-title {
+    padding-bottom: 9px;
+    font-size: 24px;
+  }
+
   .main-content__bg-img {
     display: none;
   }
 
+  .top-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .top-header .col-2 {
-    width: calc(28.57143% - 20px);
+    width: calc(35.71429% - 20px);
   }
 
   .top-header .col-3 {
-    width: calc(28.57143% - 20px);
+    width: calc(21.42857% - 20px);
   }
 
   .top-header .col-9 {
@@ -2455,6 +2485,11 @@ body {
   .top-header__green-phone {
     display: block;
     margin-bottom: 0;
+  }
+
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header .row-flex {
@@ -2487,12 +2522,86 @@ body {
     margin-bottom: 0;
   }
 
-  .menu {
-    display: none;
+  .menu__item {
+    font-size: 16px;
+  }
+
+  .hero__content {
+    height: 319px;
+    background-size: cover;
+  }
+
+  .hero__body {
+    padding-top: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero__title {
+    max-width: 280px;
+    margin-bottom: 22px;
+    font-size: 26px;
+  }
+
+  .hero__descr {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+
+  .hero__btn {
+    font-size: 13px;
+    padding: 13px;
+  }
+
+  .s-breadcrumbs {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .s-assortment {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .s-assortment .title-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .s-popular {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .s-popular .main-card {
+    width: 218px;
+  }
+
+  .s-new-items {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .s-new-items .main-card {
+    width: 218px;
+  }
+
+  .s-news .second-title {
+    font-size: 36px;
+  }
+
+  .s-news .title-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .s-news {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer {
-    padding: 20px 0;
+    padding: 36px 20px 40px 20px;
   }
 
   .footer .menu {
@@ -2515,37 +2624,61 @@ body {
     display: none;
   }
 
+  .footer__menu .menu__item {
+    margin-bottom: 22px;
+  }
+
   .footer .footer__subscribe-title {
     font-size: 18px;
   }
 
+  .footer .footer__subscribe-form {
+    margin-bottom: 41px;
+  }
+
   .footer .footer__subscribe-form input {
     max-width: 100%;
-    margin-right: 5px;
+  }
+
+  .footer .footer__subscribe-form button {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .p-assortment__row {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
   }
 
   .p-assortment__col-3-5 {
     width: calc(33.28571% - 20px);
   }
 
-  .p-assortment__base-btn {
-    margin: 0 auto;
-    margin-bottom: 20px;
+  .p-assortment__filter-btn {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .p-assortment .pagination {
-    margin-left: auto;
-    margin-right: auto;
+  .p-assortment__base-btn {
+    margin-left: 0;
   }
 
   .p-assortment__pagination {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .p-assortment__pagination {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .p-assortment .seo-content {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .p-shops__search {
@@ -2559,10 +2692,6 @@ body {
 @media screen and (max-width: 576px) {
   .main-title {
     font-size: 26px;
-  }
-
-  .second-title {
-    font-size: 24px;
   }
 
   .col-7 {
@@ -2630,12 +2759,10 @@ body {
     display: block;
   }
 
-  .hero__content {
-    height: 500px;
-  }
-
-  .hero__title {
-    margin-bottom: 25px;
+  .menu {
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .s-assortment .col-2 {

@@ -2,6 +2,12 @@
   &__row {
     @include row-flex();
     padding-bottom: 20px;
+
+    @include md-block() {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 0;
+    }
   }
 
   .col-3,
@@ -31,6 +37,11 @@
 
   &__filter-btn {
     margin-bottom: 20px;
+
+    @include md-block() {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__filter {
@@ -45,7 +56,7 @@
   &__filter-title {
     position: relative;
     margin: 0 -15px;
-    padding: 18px 43px;
+    padding: 16px 43px;
     color: #4d4d4d;
     font-size: 20px;
     font-weight: 700;
@@ -90,6 +101,8 @@
 
   &__base-btn {
     position: relative;
+    margin-left: 26%;
+    padding: 16px 0;
     padding-left: 24px;
     background-color: #ffffff;
 
@@ -109,24 +122,26 @@
     }
 
     @include md-block() {
-      margin: 0 auto;
-      margin-bottom: 20px;
-    }
-  }
-
-  @include md-block() {
-    .pagination {
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0;
     }
   }
 
   &__pagination {
-    margin-bottom: 20px;
+    @include md-block() {
+      margin-bottom: 20px;
+    }
 
     @include md-block() {
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  @include md-block() {
+    .seo-content {
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 }

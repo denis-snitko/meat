@@ -1,8 +1,10 @@
 .menu {
   background-color: #8ac864;
 
-  @include md-block() {
+  @include sm-block() {
     display: none;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   &__list {
@@ -14,6 +16,11 @@
     font-size: 18px;
     font-weight: 700;
     color: #fefefe;
+    white-space: nowrap;
+
+    @include md-block() {
+      font-size: 16px;
+    }
 
     a {
       display: inline-block;
@@ -38,8 +45,8 @@
       cursor: pointer;
 
       @include lg-block() {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 13px;
+        // padding-left: 0;
       }
 
       &::before {

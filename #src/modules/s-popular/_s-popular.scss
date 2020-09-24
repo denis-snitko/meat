@@ -1,6 +1,17 @@
 .s-popular {
   padding: 25px 0;
 
+  @include md-block() {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-card {
+    @include md-block() {
+      width: 218px;
+    }
+  }
+
   .swiper-container {
     padding: 10px;
   }

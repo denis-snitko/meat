@@ -8,6 +8,11 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
+
+    @include md-block() {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 .title-line {
@@ -16,7 +21,7 @@ body {
     margin-left: 25px;
 
     &::after {
-        content: url('../img/line-for-title.png');
+        content: url("../img/line-for-title.png");
         position: absolute;
         bottom: 50%;
     }
@@ -39,8 +44,9 @@ body {
     font-family: $second-typeface;
     font-size: 35px;
     font-weight: 700;
-    
-    @include sm-block() {
+
+    @include md-block() {
+        padding-bottom: 9px;
         font-size: 24px;
-      }
+    }
 }

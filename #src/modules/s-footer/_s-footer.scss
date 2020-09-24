@@ -1,6 +1,10 @@
 .footer {
+  .social-block {
+    justify-content: flex-start;
+  }
+
   @include md-block() {
-    padding: 20px 0;
+    padding: 36px 20px 40px 20px;
     .menu {
       display: block;
     }
@@ -23,13 +27,20 @@
     }
   }
 
-  padding: 40px 0 20px 0;
+  padding: 26px 0 20px 0;
   color: #ffffff;
   background-color: #8ac864;
 
   &__logo {
     display: inline-block;
     margin-bottom: 27px;
+
+    img {
+      @include lg-block() {
+        width: 157px;
+        height: 75px;
+      }
+    }
   }
 
   &__green-phone {
@@ -87,6 +98,10 @@
     .menu__item {
       margin-bottom: 28px;
 
+      @include md-block() {
+        margin-bottom: 22px;
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -116,6 +131,11 @@
 
     &-form {
       margin-bottom: 50px;
+
+      @include md-block() {
+        margin-bottom: 41px;
+      }
+
       @include sm-block() {
         margin-bottom: 20px;
       }
@@ -138,7 +158,6 @@
 
         @include md-block() {
           max-width: 100%;
-          margin-right: 5px;
         }
 
         &::placeholder {
@@ -165,6 +184,11 @@
           color: #ff3f3f;
           background-color: #ffffff;
           border: 1px solid #ff3f3f;
+        }
+
+        @include md-block() {
+          padding-left: 7px;
+          padding-right: 7px;
         }
       }
     }

@@ -2,14 +2,19 @@
   padding: 18px 0 13px 0;
   background-color: #fafadd;
 
+  @include md-block() {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .col-2 {
     @include size-lg(3);
-    @include size-md(4);
+    @include size-md(5);
     @include size-sm(7);
   }
 
   .col-3 {
-    @include size-md(4);
+    @include size-md(3);
     @include size-sm(7);
   }
 
@@ -62,6 +67,7 @@
 
   &__green-phone {
     display: none;
+    white-space: nowrap;
 
     a {
       font-size: 16px;
@@ -78,6 +84,7 @@
 
   &__menu {
     display: flex;
+    white-space: nowrap;
 
     @include sm-block() {
       display: none;
