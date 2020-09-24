@@ -2238,7 +2238,7 @@ body {
 .p-shops .shop-item__time::before,
 .p-shops .shop-item__tel::before,
 .p-shops .shop-item__mail::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2751,10 +2751,29 @@ body {
   }
 
   .p-shops__search {
-    position: relative;
-    max-width: 450px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    max-width: 283px;
+    left: 30px;
+  }
+
+  .p-shops .shop-item__img {
+    width: 92px;
+    height: 85px;
+    margin-right: 14px;
+  }
+
+  .p-shops .shop-item__body {
+    font-size: 13px;
+  }
+
+  .p-shops .shop-item__time,
+  .p-shops .shop-item__tel,
+  .p-shops .shop-item__mail {
+    margin-bottom: 3px;
+  }
+
+  .p-shops .title-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .p-about .col-5 {
@@ -2961,6 +2980,12 @@ body {
 
   .p-assortment .main-card {
     width: auto;
+  }
+
+  .p-shops__search {
+    position: relative;
+    max-width: auto;
+    width: 100%;
   }
 
   .p-about .col-5,
