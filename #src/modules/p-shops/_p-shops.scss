@@ -1,4 +1,10 @@
 .p-shops {
+  &__container {
+    @include md-block() {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
   &__search {
     background-color: #fff;
 
@@ -12,11 +18,12 @@
     @include md-block() {
       max-width: 283px;
       left: 30px;
+      margin-bottom: 33px;
     }
 
     @include sm-block() {
-      position: relative;
-      max-width: auto;
+      position: static;
+      max-width: 100%;
       width: 100%;
     }
 
@@ -68,6 +75,11 @@
     padding: 17px;
     border-bottom: 1px solid #939393;
 
+    @include xs-block() {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
     &:last-child {
       border-bottom: none;
     }
@@ -85,6 +97,10 @@
         width: 92px;
         height: 85px;
         margin-right: 14px;
+      }
+
+      @include xs-block() {
+        margin-right: 10px;
       }
 
       img {

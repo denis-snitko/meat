@@ -2750,9 +2750,15 @@ body {
     margin-right: 20px;
   }
 
+  .p-shops__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .p-shops__search {
     max-width: 283px;
     left: 30px;
+    margin-bottom: 33px;
   }
 
   .p-shops .shop-item__img {
@@ -2983,8 +2989,8 @@ body {
   }
 
   .p-shops__search {
-    position: relative;
-    max-width: auto;
+    position: static;
+    max-width: 100%;
     width: 100%;
   }
 
@@ -3101,6 +3107,15 @@ body {
   .header__cart-img img {
     width: 49px;
     height: 48px;
+  }
+
+  .p-shops .p-shops__item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .p-shops .shop-item__img {
+    margin-right: 10px;
   }
 }
 
