@@ -1866,6 +1866,7 @@ body {
 
 .footer__menu .menu__item {
   margin-bottom: 28px;
+  white-space: normal;
 }
 
 .footer__menu .menu__item:last-child {
@@ -2625,7 +2626,7 @@ body {
   }
 
   .footer__menu .menu__item {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .footer .footer__subscribe-title {
@@ -2698,6 +2699,10 @@ body {
     width: calc(100% - 20px);
   }
 
+  .main-card {
+    padding: 15px;
+  }
+
   .pagination a {
     padding: 13px;
   }
@@ -2747,6 +2752,11 @@ body {
     margin-left: 70px;
   }
 
+  .header__search input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   .header__cart-title {
     font-size: 20px;
   }
@@ -2769,8 +2779,34 @@ body {
     width: calc(33.28571% - 20px);
   }
 
+  .s-popular .main-card {
+    width: auto;
+    margin: 0 11px;
+  }
+
+  .s-popular .swiper-button-prev {
+    left: -2px;
+  }
+
+  .s-popular .swiper-button-next {
+    right: -2px;
+  }
+
+  .s-new-items .main-card {
+    width: auto;
+    margin: 0 11px;
+  }
+
+  .s-new-items .swiper-button-prev {
+    left: -2px;
+  }
+
+  .s-new-items .swiper-button-next {
+    right: -2px;
+  }
+
   .s-news__base-btn {
-    display: none;
+    padding: 18px 0;
   }
 
   .news-item {
@@ -2794,8 +2830,18 @@ body {
             justify-content: space-between;
   }
 
+  .footer__logo img {
+    width: 130px;
+    height: 63px;
+  }
+
+  .footer__green-phone {
+    text-align: right;
+  }
+
   .footer__green-phone p {
     margin-bottom: 4px;
+    font-size: 13px;
   }
 
   .footer__copyright {
@@ -2812,6 +2858,11 @@ body {
 
   .footer .footer__subscribe-form {
     margin-bottom: 20px;
+  }
+
+  .footer .footer__subscribe-form button {
+    position: relative;
+    right: 10px;
   }
 
   .p-assortment__col-3-5 {
@@ -2857,8 +2908,39 @@ body {
     font-size: 12px;
   }
 
+  .hero__content {
+    height: 148px;
+  }
+
+  .hero__body {
+    padding-top: 32px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    max-width: 140px;
+    font-size: 13px;
+  }
+
+  .hero__descr {
+    display: none;
+  }
+
+  .hero__btn {
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  .s-assortment {
+    padding-top: 20px;
+  }
+
   .s-assortment .col-2 {
     width: calc(50% - 20px);
+  }
+
+  .s-assortment__base-btn {
+    margin-top: 0;
   }
 
   .p-assortment__col-3-5 {
@@ -2873,5 +2955,11 @@ body {
 
   .header .col-3 {
     width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__green-phone a {
+    font-size: 14px;
   }
 }

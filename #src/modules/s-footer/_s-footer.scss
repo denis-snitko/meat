@@ -40,15 +40,26 @@
         width: 157px;
         height: 75px;
       }
+
+      @include sm-block() {
+        width: 130px;
+        height: 63px;
+      }
     }
   }
 
   &__green-phone {
+    @include sm-block() {
+      text-align: right;
+    }
+
     p {
       margin-bottom: 8px;
       color: $base-text-color;
+
       @include sm-block() {
         margin-bottom: 4px;
+        font-size: 13px;
       }
     }
 
@@ -57,6 +68,10 @@
 
       @include md-block() {
         font-size: 16px;
+      }
+
+      @media screen and (max-width: 320px) {
+        font-size: 14px;
       }
 
       &:hover {
@@ -97,9 +112,10 @@
 
     .menu__item {
       margin-bottom: 28px;
+      white-space: normal;
 
       @include md-block() {
-        margin-bottom: 22px;
+        margin-bottom: 25px;
       }
 
       &:last-child {
@@ -189,6 +205,11 @@
         @include md-block() {
           padding-left: 7px;
           padding-right: 7px;
+        }
+
+        @include sm-block() {
+          position: relative;
+          right: 10px;
         }
       }
     }

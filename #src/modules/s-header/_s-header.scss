@@ -75,6 +75,11 @@
       &::placeholder {
         opacity: 0.5;
       }
+
+      @include sm-block() {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
     }
 
     button {

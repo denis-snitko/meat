@@ -25,13 +25,12 @@
     margin-right: auto;
 
     @include sm-block() {
-      display: none;
+      padding: 18px 0;
     }
   }
 }
 
 .news-item {
-  // .news-item__img
   @include sm-block() {
     padding-bottom: 20px;
   }
@@ -54,12 +53,8 @@
     }
   }
 
-  // .news-item__body
-
   &__body {
   }
-
-  // .news-item__title
 
   &__title {
     margin-bottom: 10px;
@@ -76,13 +71,9 @@
     }
   }
 
-  // .news-item__descr
-
   &__descr {
     margin-bottom: 30px;
   }
-
-  // .news-item__details
 
   &__details {
     span {

@@ -10,9 +10,26 @@
     @include md-block() {
       width: 218px;
     }
+
+    @include sm-block() {
+      width: auto;
+      margin: 0 11px;
+    }
   }
 
   .swiper-container {
     padding: 10px;
+  }
+
+  .swiper-button-prev {
+    @include sm-block() {
+      left: -2px;
+    }
+  }
+
+  .swiper-button-next {
+    @include sm-block() {
+      right: -2px;
+    }
   }
 }

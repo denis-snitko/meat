@@ -10,6 +10,10 @@
       height: 319px;
       background-size: cover;
     }
+
+    @include sm400-block() {
+      height: 148px;
+    }
   }
 
   &__body {
@@ -21,6 +25,10 @@
       padding-left: 20px;
       padding-right: 20px;
     }
+
+    @include sm400-block() {
+      padding-top: 32px;
+    }
   }
 
   &__title {
@@ -31,6 +39,12 @@
       margin-bottom: 22px;
       font-size: 26px;
     }
+
+    @include sm400-block() {
+      margin-bottom: 16px;
+      max-width: 140px;
+      font-size: 13px;
+    }
   }
 
   &__descr {
@@ -40,6 +54,10 @@
     @include md-block() {
       font-size: 13px;
       margin-bottom: 22px;
+    }
+
+    @include sm400-block() {
+      display: none;
     }
   }
 
@@ -63,6 +81,11 @@
     @include md-block() {
       font-size: 13px;
       padding: 13px;
+    }
+
+    @include sm400-block() {
+      margin-bottom: 16px;
+      font-size: 13px;
     }
   }
 }
