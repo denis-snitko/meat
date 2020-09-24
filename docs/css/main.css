@@ -1578,6 +1578,35 @@ body {
   border: 2px solid #ff3f3f;
 }
 
+.hero .swiper-container-hero {
+  position: relative;
+}
+
+.swiper-hero-button-prev,
+.swiper-hero-button-next {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-hero-button-prev:hover svg g,
+.swiper-hero-button-next:hover svg g {
+  opacity: 1;
+}
+
+.swiper-hero-button-prev {
+  left: 420px;
+  top: 407px;
+}
+
+.swiper-hero-button-next {
+  left: 480px;
+  top: 404px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .s-breadcrumbs {
   padding: 20px 0;
   color: #939393;
@@ -2554,6 +2583,16 @@ body {
     padding: 13px;
   }
 
+  .swiper-hero-button-prev {
+    left: 220px;
+    top: 213px;
+  }
+
+  .swiper-hero-button-next {
+    left: 270px;
+    top: 210px;
+  }
+
   .s-breadcrumbs {
     padding-left: 20px;
     padding-right: 20px;
@@ -2929,6 +2968,14 @@ body {
   .hero__btn {
     margin-bottom: 16px;
     font-size: 13px;
+  }
+
+  .swiper-hero-button-prev {
+    display: none;
+  }
+
+  .swiper-hero-button-next {
+    display: none;
   }
 
   .s-assortment {

@@ -88,4 +88,49 @@
       font-size: 13px;
     }
   }
+
+  .swiper-container-hero {
+    position: relative;
+  }
+}
+
+.swiper-hero-button-prev,
+.swiper-hero-button-next {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+
+  &:hover svg {
+    g {
+      opacity: 1;
+    }
+  }
+}
+
+.swiper-hero-button-prev {
+  left: 420px;
+  top: 407px;
+
+  @include md-block() {
+    left: 220px;
+    top: 213px;
+  }
+
+  @include sm400-block() {
+    display: none;
+  }
+}
+.swiper-hero-button-next {
+  left: 480px;
+  top: 404px;
+  transform: rotate(180deg);
+
+  @include md-block() {
+    left: 270px;
+    top: 210px;
+  }
+
+  @include sm400-block() {
+    display: none;
+  }
 }

@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   let swiper = new Swiper('.swiper-container-hero', {
-    loop: true
+    loop: true,
+
+    navigation: {
+      nextEl: '.swiper-hero-button-next',
+      prevEl: '.swiper-hero-button-prev'
+    }
+
   });
 
 
