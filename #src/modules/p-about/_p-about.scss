@@ -4,12 +4,32 @@
     @include size-sm(14);
   }
 
+  .col-5 {
+    @include size-md(6);
+  }
+
+  .col-9 {
+    @include size-md(8);
+  }
+
   &__text {
     margin-bottom: 30px;
+
+    @include md-block() {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include sm-block() {
+      margin-bottom: 20px;
+    }
   }
 
   &__team {
     margin-bottom: 40px;
+    @include sm-block() {
+      margin-bottom: 30px;
+    }
   }
 
   &__img {
@@ -19,6 +39,10 @@
       width: 80%;
       margin: 0 auto;
       margin-top: 10px;
+    }
+
+    @include sm-block() {
+      width: 100%;
     }
 
     &::before {
@@ -65,8 +89,27 @@
     }
   }
 
+  .title-wrapper {
+    @include md-block() {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
-    top: 35%;
+    top: 45%;
+  }
+
+  .swiper-button-prev {
+    @include md-block {
+      left: 0;
+    }
+  }
+
+  .swiper-button-next {
+    @include md-block {
+      right: 0;
+    }
   }
 }
