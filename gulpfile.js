@@ -1,5 +1,3 @@
-// Test!!!
-
 let projectFolder = require("path").basename("docs");
 let sourceFolder = "#src";
 
