@@ -1205,14 +1205,11 @@ body {
   font-size: 13px;
 }
 
-.top-header__region a {
+.top-header__region span {
   font-size: 16px;
   text-decoration: underline;
   color: #37aaff;
-}
-
-.top-header__region a:hover {
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .top-header__region::before {
@@ -1288,6 +1285,38 @@ body {
   height: 17px;
   content: "";
   background: url("../img/icons/sign.png") no-repeat center center;
+}
+
+.top-header .region-popup {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.25s visibility, 0.25s opacity;
+  -o-transition: 0.25s visibility, 0.25s opacity;
+  transition: 0.25s visibility, 0.25s opacity;
+  position: absolute;
+  top: 25px;
+  left: 95px;
+  background-color: #ffffff;
+  border: 1px solid rgba(147, 147, 147, 0.5);
+  border-radius: 8px;
+}
+
+.top-header .region-popup__list {
+  padding: 15px 20px;
+}
+
+.top-header .region-popup__item {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.top-header .region-popup__item:hover {
+  text-decoration: underline;
+}
+
+.top-header .region-popup--show {
+  visibility: visible;
+  opacity: 1;
 }
 
 .header {
@@ -2800,10 +2829,6 @@ body {
     font-size: 20px;
   }
 
-  .header__cart-text {
-    font-size: 14px;
-  }
-
   .burger-menu {
     display: block;
   }
@@ -2943,10 +2968,6 @@ body {
     font-size: 16px;
   }
 
-  .header__cart-text {
-    font-size: 12px;
-  }
-
   .hero__content {
     height: 148px;
   }
@@ -3002,6 +3023,16 @@ body {
 
   .header .col-3 {
     width: calc(50% - 20px);
+  }
+
+  .header__cart-text {
+    margin-right: 6px;
+    font-size: 11px;
+  }
+
+  .header__cart-img img {
+    width: 49px;
+    height: 48px;
   }
 }
 

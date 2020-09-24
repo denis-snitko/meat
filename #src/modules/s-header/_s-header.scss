@@ -127,16 +127,13 @@
         }
       }
 
+      @include xs-block() {
+        margin-right: 6px;
+        font-size: 11px;
+      }
+
       p {
         margin-bottom: 2px;
-      }
-
-      @include sm-block() {
-        font-size: 14px;
-      }
-
-      @include sm400-block() {
-        font-size: 12px;
       }
     }
 
@@ -145,6 +142,11 @@
         display: block;
         width: 66px;
         height: 60px;
+
+        @include xs-block() {
+          width: 49px;
+          height: 48px;
+        }
       }
     }
   }

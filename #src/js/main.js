@@ -94,4 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
     this.nextElementSibling.classList.toggle('burger-menu--show')
   })
 
+  // REGION
+
+  const regionTrigger = document.querySelector('.top-header__region span');
+  const regionPopup = document.querySelector('.region-popup');
+
+  regionTrigger.addEventListener('click', () => {
+    regionPopup.classList.toggle('region-popup--show')
+  })
+
 });

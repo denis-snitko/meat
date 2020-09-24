@@ -43,14 +43,11 @@
       display: none;
     }
 
-    a {
+    span {
       font-size: 16px;
       text-decoration: underline;
       color: #37aaff;
-
-      &:hover {
-        text-decoration: none;
-      }
+      cursor: pointer;
     }
 
     &::before {
@@ -132,6 +129,33 @@
       height: 17px;
       content: "";
       background: url("../img/icons/sign.png") no-repeat center center;
+    }
+  }
+
+  .region-popup {
+    @include hide(0.25s);
+    position: absolute;
+    top: 25px;
+    left: 95px;
+    background-color: #ffffff;
+    border: 1px solid rgba(147, 147, 147, 0.5);
+    border-radius: 8px;
+
+    &__list {
+      padding: 15px 20px;
+    }
+
+    &__item {
+      padding: 5px 0;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &--show {
+      @include show();
     }
   }
 }
