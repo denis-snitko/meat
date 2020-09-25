@@ -25,11 +25,27 @@ body {
     &--1 {
       top: 850px;
       left: 0;
+
+      &-about {
+        top: 230px;
+      }
+
+      &-assort {
+        top: 230px;
+      }
     }
 
     &--2 {
       top: 900px;
       right: 0px;
+
+      &-about {
+        top: 380px;
+      }
+
+      &-assort {
+        top: 380px;
+      }
     }
 
     &--2a {
@@ -40,11 +56,27 @@ body {
     &--3 {
       top: 1250px;
       left: 0;
+
+      &-about {
+        top: 730px;
+      }
+
+      &-assort {
+        top: 730px;
+      }
     }
 
     &--4 {
       top: 1250px;
       right: 0px;
+
+      &-about {
+        top: 750px;
+      }
+
+      &-assort {
+        top: 750px;
+      }
     }
 
     &--4a {

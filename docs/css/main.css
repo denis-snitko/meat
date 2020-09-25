@@ -497,9 +497,25 @@ body {
   left: 0;
 }
 
+.main-content__bg-img--1-about {
+  top: 230px;
+}
+
+.main-content__bg-img--1-assort {
+  top: 230px;
+}
+
 .main-content__bg-img--2 {
   top: 900px;
   right: 0px;
+}
+
+.main-content__bg-img--2-about {
+  top: 380px;
+}
+
+.main-content__bg-img--2-assort {
+  top: 380px;
 }
 
 .main-content__bg-img--2a {
@@ -512,9 +528,25 @@ body {
   left: 0;
 }
 
+.main-content__bg-img--3-about {
+  top: 730px;
+}
+
+.main-content__bg-img--3-assort {
+  top: 730px;
+}
+
 .main-content__bg-img--4 {
   top: 1250px;
   right: 0px;
+}
+
+.main-content__bg-img--4-about {
+  top: 750px;
+}
+
+.main-content__bg-img--4-assort {
+  top: 750px;
 }
 
 .main-content__bg-img--4a {
@@ -1304,7 +1336,7 @@ body {
 }
 
 .top-header .region-popup__list {
-  padding: 15px 20px;
+  padding: 9px 12px;
 }
 
 .top-header .region-popup__item {

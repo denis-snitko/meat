@@ -2,25 +2,26 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.css" />
   <title>Мяско | О компании</title>
 </head>
 
 <body>
+  <img class="main-content__bg-img main-content__bg-img--1 main-content__bg-img--1-about" src="./img/bg-img-1.png"
+    alt="" />
+  <img class="main-content__bg-img main-content__bg-img--2 main-content__bg-img--2-about" src="./img/bg-img-2.png"
+    alt="" />
+  <img class="main-content__bg-img main-content__bg-img--3 main-content__bg-img--3-about" src="./img/bg-img-3.png"
+    alt="" />
+  <img class="main-content__bg-img main-content__bg-img--4 main-content__bg-img--4-about" src="./img/bg-img-4.png"
+    alt="" />
   <div class="main-body">
-    @@include('modules/s-top-header/_s-top-header.html')
-    @@include('modules/s-header/_s-header.html')
+    @@include('modules/s-top-header/_s-top-header.html') @@include('modules/s-header/_s-header.html')
     @@include('modules/s-menu/_s-menu.html')
-    <main class="main-content">
-      <img class="main-content__bg-img main-content__bg-img--1" src="./img/bg-img-1.png" alt="">
-      <img class="main-content__bg-img main-content__bg-img--2" src="./img/bg-img-2.png" alt="">
-      <img class="main-content__bg-img main-content__bg-img--3" src="./img/bg-img-3.png" alt="">
-      <img class="main-content__bg-img main-content__bg-img--4" src="./img/bg-img-4.png" alt="">
-      @@include('modules/p-about/_p-about.html')
-    </main>
+    <main class="main-content">@@include('modules/p-about/_p-about.html')</main>
     @@include('modules/s-footer/_s-footer.html')
   </div>
   <script src="./js/vendors.js"></script>
