@@ -6,7 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     navigation: {
       nextEl: '.swiper-hero-button-next',
       prevEl: '.swiper-hero-button-prev'
-    }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
   });
 
@@ -78,12 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // FILTER HIDE / SHOW
 
   const filterTrigger = document.querySelectorAll('.filter__sub-title');
+  const filterSubTrigger = document.querySelector('.p-assortment__filter-title--trigger')
+  const mainFilter = document.querySelector('.p-assortment__filter')
 
   filterTrigger.forEach((el) => {
     el.addEventListener('click', (event) => {
       event.target.classList.toggle('filter__sub-title--arrow-right')
       event.target.nextElementSibling.classList.toggle('hide-filter-list')
     })
+  })
+
+  filterSubTrigger.addEventListener('click', () => {
+    if (mainFilter.style.display == 'block')
+      mainFilter.setAttribute('style', 'display: none')
+    else {
+      mainFilter.setAttribute('style', 'display: block')
+    }
   })
 
   // BURGER HIDE / SHOW
@@ -103,4 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
     regionPopup.classList.toggle('region-popup--show')
   })
 
+
+
+
+
 });
+
+
