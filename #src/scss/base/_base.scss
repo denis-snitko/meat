@@ -468,6 +468,10 @@ body {
       border-radius: 8px;
       border: 1px solid #b6b6b6;
       outline: none;
+
+      @media screen and (max-width: 340px) {
+        padding: 8px 0;
+      }
     }
   }
 }
