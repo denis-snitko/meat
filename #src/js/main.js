@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })
 
+  // COUNTER
 
   elMinusBtn.forEach(el => {
     el.addEventListener('click', (event) => {
@@ -106,9 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mainFilter.setAttribute('style', 'display: block')
       }
     })
-    console.log('true');
-  } else {
-    console.log(1);
+
   }
 
 

@@ -3258,6 +3258,10 @@ button.swiper-pagination-bullet {
   .p-assortment__col-3-5 {
     width: calc(100% - 20px);
   }
+
+  .p-assortment__filter {
+    top: 185px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -3282,14 +3286,6 @@ button.swiper-pagination-bullet {
   .header__cart-img img {
     width: 49px;
     height: 48px;
-  }
-
-  .p-assortment__filter {
-    top: 185px;
-  }
-
-  .p-assortment__filter {
-    top: 185px;
   }
 
   .p-shops .p-shops__item {

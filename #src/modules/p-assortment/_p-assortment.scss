@@ -71,13 +71,13 @@
       top: 145px;
     }
 
-    @include xs-block() {
+    @include sm400-block() {
       top: 185px;
     }
 
-    @include xs-block() {
-      top: 185px;
-    }
+    // @include xs-block() {
+    //   top: 185px;
+    // }
   }
 
   &__filter-title {
