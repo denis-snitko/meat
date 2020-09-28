@@ -62,6 +62,27 @@ document.addEventListener('DOMContentLoaded', () => {
         prevEl: swiper.querySelector('.swiper-button-prev')
       }
     });
+
+    let sMounterThumbs = new Swiper('.swiper-container--thumbs', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      watchSlidesVisibility: true,
+      initialSlide: true,
+      // loop: true
+    });
+
+    let sMounterProduct = new Swiper('.swiper-container--product', {
+      slidesPerView: 1,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: sMounterThumbs
+      }
+    });
+
   })
 
   // COUNTER
@@ -172,5 +193,21 @@ $(function () {
       )
     }
   })
+
+  $(".tab__content").hide();
+  $(".tab__content:first").show();
+
+  $("ul.tabs__nav li").click(function () {
+    let activeTab = $(this).attr("data-tab");
+
+    $(".tab__content").hide();
+    $("#" + activeTab).fadeIn();
+
+    $("ul.tabs__nav li").removeClass("tabs__nav--active");
+    $(this).addClass("tabs__nav--active");
+
+    $(".tab-accordeon").removeClass("tab-accordeon--active");
+    $(".tab-accordeon[data-tab^='" + activeTab + "']").addClass("tab-accordeon--active");
+  });
 
 });
