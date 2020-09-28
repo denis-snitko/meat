@@ -3652,6 +3652,15 @@ body.okayNav-loaded {
   margin-bottom: 22px;
 }
 
+.p-cart__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .p-cart__btn {
   margin-bottom: 20px;
   padding: 18px 35px;
@@ -3897,6 +3906,23 @@ body.okayNav-loaded {
 
 .ordering-block__privacy a:hover {
   text-decoration: underline;
+}
+
+.order-details__form textarea {
+  width: 100%;
+  height: 153px;
+  margin-bottom: 20px;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid #b6b6b6;
+}
+
+.order-details__form .p-cart__btn {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* END MAIN STYLES */

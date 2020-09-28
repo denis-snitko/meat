@@ -5,6 +5,11 @@
     margin-bottom: 22px;
   }
 
+  &__btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   &__btn {
     margin-bottom: 20px;
     padding: 18px 35px;
@@ -221,6 +226,29 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+.order-details {
+  &__form {
+    textarea {
+      width: 100%;
+      height: 153px;
+      margin-bottom: 20px;
+      padding: 11px;
+
+      font-size: 14px;
+      font-weight: 400;
+
+      border-radius: 8px;
+      border: 1px solid #b6b6b6;
+    }
+
+    .p-cart__btn {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
   }
 }
