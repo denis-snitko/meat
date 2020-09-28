@@ -3644,6 +3644,130 @@ body.okayNav-loaded {
   font-weight: 400;
 }
 
+.p-cart {
+  padding-bottom: 71px;
+}
+
+.p-cart__cart-item {
+  margin-bottom: 22px;
+}
+
+.p-cart__btn {
+  margin-bottom: 20px;
+  padding: 18px 35px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #8ac864;
+  border-radius: 8px;
+  border: 1px solid #8ac864;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.p-cart__btn:hover {
+  color: #8ac864;
+  background-color: #ffffff;
+}
+
+.cart-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px 14px 15px;
+  border-radius: 12px;
+  border: 1px solid #b6b6b6;
+}
+
+.cart-item__img img {
+  width: 138px;
+  height: 85px;
+}
+
+.cart-item__title {
+  width: 225px;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cart-item__price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cart-item__close {
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 68px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #b6b6b6;
+}
+
+.counter span {
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.counter input {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  text-align: center;
+}
+
+.warning-block {
+  position: relative;
+  padding: 17px 40px 17px 95px;
+  color: #4d4d4d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #e3f7ff;
+  border-radius: 12px;
+  border: 1px solid #b6b6b6;
+}
+
+.warning-block::before {
+  content: url("../img/icons/icon-warning.png");
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1120px) {
