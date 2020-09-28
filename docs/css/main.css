@@ -3768,6 +3768,137 @@ body.okayNav-loaded {
   height: 45px;
 }
 
+.ordering-block {
+  padding-bottom: 18px;
+  border-radius: 12px;
+  border: 1px solid #b6b6b6;
+}
+
+.ordering-block .p-cart__btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ordering-block__title {
+  padding: 15px 0;
+  color: #ffffff;
+  font-family: "bloggersans", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #8ac864;
+  border-radius: 12px 12px 0 0;
+}
+
+.ordering-block__form {
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.ordering-block__form input {
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid #b6b6b6;
+  color: #939393;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ordering-block__form input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.ordering-block__form input::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+.ordering-block__form input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.ordering-block__form input::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.ordering-block__form input::placeholder {
+  text-transform: uppercase;
+}
+
+.ordering-block__counter-item h4 {
+  color: #b6b6b6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ordering-block__counter-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  padding-bottom: 12px;
+}
+
+.ordering-block__counter-price .text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ordering-block__counter-price .price {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ordering-block__counter-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 14px;
+}
+
+.ordering-block__counter-total h4 {
+  color: #b6b6b6;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.ordering-block__counter-total p {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.ordering-block__counter-total p span {
+  color: #8ac864;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.ordering-block__privacy {
+  padding: 0 10px;
+  text-align: center;
+  color: #b6b6b6;
+  font-size: 10px;
+}
+
+.ordering-block__privacy a {
+  color: #8ac864;
+}
+
+.ordering-block__privacy a:hover {
+  text-decoration: underline;
+}
+
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1120px) {
