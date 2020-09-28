@@ -51,7 +51,7 @@ function browserSync() {
         server: {
             baseDir: "./" + projectFolder + "/"
         },
-        port: 3000,
+        port: 4000,
         notify: false
     })
 }
@@ -176,6 +176,7 @@ const options = {
         }
     }
 };
+
 function grid(done) {
     smartGrid("./#src/scss/vendor/import/", options);
     done();
@@ -203,7 +204,7 @@ function clean() {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, grid, img, gulp.parallel(html, css, js, fonts), fontsStyle);
+let build = gulp.series(clean, grid, gulp.parallel(html, css, js, img, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
