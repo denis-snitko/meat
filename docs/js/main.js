@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 1,
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-p',
+        prevEl: '.swiper-button-prev-p',
       },
       thumbs: {
         swiper: sMounterThumbs
