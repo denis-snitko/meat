@@ -306,7 +306,7 @@
               <span class="title-line"></span>
             </div>
 
-            <div class="p-cart__order-wrapper">
+            <div class="p-cart__order-wrapper" style="margin-bottom: 0;">
               <div class="custom-checkbox">
                 <label class="custom-checkbox__label">
                   <input class="custom-checkbox__base" type="radio" name="delivery" checked>
@@ -342,7 +342,7 @@
               <div class="order-details__col-5">
                 <label class="order-details__label">
                   <h5>Город</h5>
-                  <input type="text" name="city">
+                  <input type="text" name="city" value="Москва">
                 </label>
               </div>
             </div>
@@ -433,6 +433,11 @@
               <h3 class="second-title">Промокод</h3>
               <span class="title-line"></span>
             </div>
+
+            <label class="order-details__label order-details__label--promo">
+              <input type="text" name="promo" placeholder="Введите номер купона"> 
+              <button>Применить промокод</button>
+            </label>
 
             <div class="title-wrapper">
               <h3 class="second-title">Комментарий к заказу</h3>

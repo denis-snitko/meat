@@ -33,7 +33,8 @@
 
   &__order-wrapper {
     display: flex;
-    // padding-bottom: 49px;
+    margin-bottom: 49px;
+
   }
 
   .custom-checkbox {
@@ -57,14 +58,13 @@
     }
 
     &__new {
-      flex-shrink: 0;
       position: relative;
       display: inline-block;
       width: 100%;
       height: auto;
-      padding: 10px 13px;
+      padding: 8px 13px;
       font-size: 14px;
-      border: 1px solid #8ac864;
+      border: 1px solid #b6b6b6;
       border-radius: 8px;
       overflow: hidden;
       transition: all 0.15s linear;
@@ -75,13 +75,10 @@
     }
 
     &__base:checked + .custom-checkbox__new {
-      background-color: #8ac864;
       color: #ffffff;
+      background-color: #8ac864;
+      border: 1px solid #8ac864;
     }
-  }
-
-  .title-wrapper {
-    margin-top: 49px;
   }
 }
 
@@ -314,7 +311,6 @@
   &__col-5,
   &__col-9 {
     @include col();
-    // border: 1px solid #000;
   }
 
   &__col-4 {
@@ -330,8 +326,7 @@
   }
 
   &__label {
-    // width: 100%;
-
+    display: block;
     h5 {
       margin-bottom: 6px;
       font-size: 14px;
@@ -342,15 +337,35 @@
     input,
     select {
       width: 100%;
-      padding: 10px;
+      padding: 8px 10px;
       font-size: 14px;
       color: #4d4d4d;
       border-radius: 8px;
       border: 1px solid #b6b6b6;
     }
 
-    input {
-      
+    &--promo {
+      margin-bottom: 49px;
+      input {
+        width: auto;
+        margin-right: 10px;
+      }
+
+      button {
+        display: inline-block;
+        padding: 8px 13px;
+        font-size: 14px;
+        color: #ffffff;
+        background: #8ac864;
+        border: 1px solid #8ac864;
+        border-radius: 8px;
+        transition: all 0.15s linear;
+
+        &:hover {
+          color: #8ac864;
+          background: #ffffff;
+        }
+      }
     }
   }
 }
