@@ -41,6 +41,24 @@
     }
   }
 
+  .s-popular .swiper-container {
+    @include sm-block() {
+      padding: 0;
+    }
+  }
+
+  .s-popular .swiper-button-prev {
+    @include sm-block() {
+      left: -12px;
+    }
+  }
+  
+  .s-popular .swiper-button-next {
+    @include sm-block() {
+      right: -12px;
+    }
+  }
+
   &__title {
     color: #8ac864;
     font-family: $second-typeface;

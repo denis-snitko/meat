@@ -4886,6 +4886,18 @@ body.okayNav-loaded {
     padding-left: 20px;
   }
 
+  .p-product .s-popular .swiper-container {
+    padding: 0;
+  }
+
+  .p-product .s-popular .swiper-button-prev {
+    left: -12px;
+  }
+
+  .p-product .s-popular .swiper-button-next {
+    right: -12px;
+  }
+
   .p-product__price-body {
     padding-top: 20px;
   }
