@@ -1,3 +1,5 @@
+
+
 body {
   position: relative;
 }
@@ -673,6 +675,10 @@ body {
   height: 100%;
   padding-top: 40px;
   overflow-x: hidden;
+
+  @include md-block() {
+    padding-top: 25px;
+  }
 }
 
 .tabs {
@@ -680,6 +686,11 @@ body {
     display: flex;
     text-align: center;
     border-bottom: 1px solid #b6b6b6;
+
+    @include md-block() {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
 
   ul.tabs__nav li {
@@ -715,6 +726,11 @@ body {
   .tab__content {
     display: none;
     padding: 20px 0;
+
+    @include md-block() {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
 
