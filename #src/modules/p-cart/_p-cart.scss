@@ -30,6 +30,55 @@
       background-color: #ffffff;
     }
   }
+
+  &__order-wrapper {
+    display: flex;
+   
+  }
+
+  .custom-checkbox {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__label {
+      display: inline-flex;
+      align-items: baseline;
+      cursor: pointer;
+    }
+  
+    &__base {
+      position: absolute;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  
+    &__new {
+      flex-shrink: 0;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      padding: 10px 13px;
+      font-size: 14px;
+      border: 1px solid #8ac864;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.15s linear;
+    }
+  
+    &__new::before {
+      display: none;
+    }
+  
+    &__base:checked + .custom-checkbox__new {
+      background-color: #8ac864;
+      color: #ffffff;
+    }
+  }
 }
 
 // CART-ITEM

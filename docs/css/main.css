@@ -3695,6 +3695,63 @@ body.okayNav-loaded {
   background-color: #ffffff;
 }
 
+.p-cart__order-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-cart .custom-checkbox {
+  margin-right: 22px;
+}
+
+.p-cart .custom-checkbox:last-child {
+  margin-right: 0;
+}
+
+.p-cart .custom-checkbox__label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+}
+
+.p-cart .custom-checkbox__base {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.p-cart .custom-checkbox__new {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 10px 13px;
+  font-size: 14px;
+  border: 1px solid #8ac864;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.p-cart .custom-checkbox__new::before {
+  display: none;
+}
+
+.p-cart .custom-checkbox__base:checked + .custom-checkbox__new {
+  background-color: #8ac864;
+  color: #ffffff;
+}
+
 .cart-item {
   display: -webkit-box;
   display: -ms-flexbox;
