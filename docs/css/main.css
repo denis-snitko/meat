@@ -3661,6 +3661,15 @@ body.okayNav-loaded {
   padding-bottom: 71px;
 }
 
+.p-cart .col-3 {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.p-cart .col-11 {
+  padding-left: 20px;
+}
+
 .p-cart__cart-item {
   margin-bottom: 22px;
 }
@@ -4591,6 +4600,23 @@ body.okayNav-loaded {
 
   .p-product__total {
     margin-top: 6px;
+  }
+
+  .p-cart .col-3 {
+    width: calc(35.71429% - 20px);
+  }
+
+  .p-cart .col-11 {
+    width: calc(64.28571% - 20px);
+  }
+
+  .p-cart .title-wrapper {
+    padding-left: 15px;
+    margin-right: 20px;
+  }
+
+  .cart-item__title {
+    font-size: 14px;
   }
 }
 
