@@ -8,7 +8,10 @@
       <span class="title-line"></span>
     </div>
 
+
     <div class="row-flex">
+      <button class="p-cart__btn p-cart__btn--order">Оформить заказ</button>
+
       <div class="col-11">
 
         <div class="cart-item p-cart__cart-item">
@@ -16,14 +19,14 @@
             <img src="./img/catalog/item-2.jpg" alt="">
           </div>
           <div class="cart-item__price-wrapper">
-          <div class="cart-item__title">
-            <h3>Фарш Домашний Окраина (свинина, говядина) 500г</h3>
-          </div>
+            <div class="cart-item__title">
+              <h3>Фарш Домашний Окраина (свинина, говядина) 500г</h3>
+            </div>
             <div class="cart-item__counter">
               <div class="counter">
-                <span>-</span>
-                <input type="text" name="cartCount" value="1">
-                <span>+</span>
+                <span class="js-minus">-</span>
+                <input class="js-count" type="text" name="cartCount" value="1">
+                <span class="js-plus">+</span>
               </div>
             </div>
             <div class="cart-item__price">215 &#8381;</div>
@@ -55,14 +58,14 @@
             <img src="./img/catalog/item-2.jpg" alt="">
           </div>
           <div class="cart-item__price-wrapper">
-          <div class="cart-item__title">
-            <h3>Фарш Домашний Окраина (свинина, говядина) 500г</h3>
-          </div>
+            <div class="cart-item__title">
+              <h3>Фарш Домашний Окраина (свинина, говядина) 500г</h3>
+            </div>
             <div class="cart-item__counter">
               <div class="counter">
-                <span>-</span>
-                <input type="text" name="cartCount" value="1">
-                <span>+</span>
+                <span class="js-minus">-</span>
+                <input class="js-count" type="text" name="cartCount" value="1">
+                <span class="js-plus">+</span>
               </div>
             </div>
             <div class="cart-item__price">215 &#8381;</div>
@@ -94,14 +97,14 @@
             <img src="./img/catalog/item-4.jpg" alt="">
           </div>
           <div class="cart-item__price-wrapper">
-          <div class="cart-item__title">
-            <h3>Фарш Домашний Окраина (свинина, говядина) 500г</h3>
-          </div>
+            <div class="cart-item__title">
+              <h3>Фарш Домашний Окраина (свинина, говядина) 500г</h3>
+            </div>
             <div class="cart-item__counter">
               <div class="counter">
-                <span>-</span>
-                <input type="text" name="cartCount" value="1">
-                <span>+</span>
+                <span class="js-minus">-</span>
+                <input class="js-count" type="text" name="cartCount" value="1">
+                <span class="js-plus">+</span>
               </div>
             </div>
             <div class="cart-item__price">215 &#8381;</div>
@@ -215,29 +218,29 @@
                 </label>
               </div>
             </div>
-            <div class="p-cart__order-wrapper">
-              <div class="custom-checkbox">
+            <div class="p-cart__order-wrapper p-cart__order-wrapper--time">
+              <div class="custom-checkbox custom-checkbox--time">
                 <label class="custom-checkbox__label">
                   <input class="custom-checkbox__base" type="radio" name="deliveryTime" checked>
                   <span class="custom-checkbox__new">С 9:30 до 15:00</span>
                 </label>
               </div>
 
-              <div class="custom-checkbox">
+              <div class="custom-checkbox custom-checkbox--time">
                 <label class="custom-checkbox__label">
                   <input class="custom-checkbox__base" type="radio" name="deliveryTime">
                   <span class="custom-checkbox__new">С 15:00 до 21:00</span>
                 </label>
               </div>
 
-              <div class="custom-checkbox">
+              <div class="custom-checkbox custom-checkbox--time">
                 <label class="custom-checkbox__label">
                   <input class="custom-checkbox__base" type="radio" name="deliveryTime">
                   <span class="custom-checkbox__new">С 12:00 до 18:00</span>
                 </label>
               </div>
 
-              <div class="custom-checkbox">
+              <div class="custom-checkbox custom-checkbox--time">
                 <label class="custom-checkbox__label">
                   <input class="custom-checkbox__base" type="radio" name="deliveryTime">
                   <span class="custom-checkbox__new">В течении дня</span>
@@ -301,45 +304,51 @@
 
       <div class="col-3">
         <div class="ordering-block">
-          <p class="ordering-block__body">
-          <div class="ordering-block__title">Оформить заказ</div>
-          <form action="" class="ordering-block__form">
-            <div><input type="text" placeholder="Ваше имя" name="orderingName" required></div>
-            <div><input type="text" placeholder="Ваш телефон" name="orderingPhone" required></div>
-            <div><input type="email" placeholder="Ваш email" name="orderingMail" required></div>
-
-            <div class="ordering-block__counter">
-              <div class="ordering-block__counter-item">
-                <h4>Товаров:</h4>
-                <div class="ordering-block__counter-price">
-                  <p class="text"><span>1</span> шт.</p>
-                  <p class="price"><span>385</span> &#8381;</p>
-                </div>
-              </div>
-              <div class="ordering-block__counter-item">
-                <h4>Доставка:</h4>
-                <div class="ordering-block__counter-price">
-                  <p class="text">Доставка курьером</p>
-                  <p class="price"><span>185</span> &#8381;</p>
-                </div>
-              </div>
-              <div class="ordering-block__counter-total">
-                <h4>Итого:</h4>
-                <p><span>685</span> &#8381;</p>
-              </div>
+          <div class="ordering-block__body">
+            <div class="ordering-block__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23">
+                <path fill="#8ac864"
+                  d="M.31 1.723L1.69.277 12 10.117 22.31.278l1.38 1.446L13.448 11.5l10.242 9.777-1.38 1.446L12 12.883l-10.31 9.84-1.38-1.446L10.552 11.5z" />
+              </svg>
             </div>
+            <div class="ordering-block__title">Оформить заказ</div>
+            <form action="" class="ordering-block__form">
+              <div><input type="text" placeholder="Ваше имя" name="orderingName" required></div>
+              <div><input type="text" placeholder="Ваш телефон" name="orderingPhone" required></div>
+              <div><input type="email" placeholder="Ваш email" name="orderingMail" required></div>
 
-            <button class="p-cart__btn" type="submit">Оформить заказ</button>
-          </form>
-          <div class="ordering-block__privacy">
-            <p>Нажимая кнопку, вы даете согласие на обработку ваших персональных данных.
-              <a href="">Политика конфиденциальности</a>
-            </p>
+              <div class="ordering-block__counter">
+                <div class="ordering-block__counter-item">
+                  <h4>Товаров:</h4>
+                  <div class="ordering-block__counter-price">
+                    <p class="text"><span>1</span> шт.</p>
+                    <p class="price"><span>385</span> &#8381;</p>
+                  </div>
+                </div>
+                <div class="ordering-block__counter-item">
+                  <h4>Доставка:</h4>
+                  <div class="ordering-block__counter-price">
+                    <p class="text">Доставка курьером</p>
+                    <p class="price"><span>185</span> &#8381;</p>
+                  </div>
+                </div>
+                <div class="ordering-block__counter-total">
+                  <h4>Итого:</h4>
+                  <p><span>685</span> &#8381;</p>
+                </div>
+              </div>
+
+              <button class="p-cart__btn" type="submit">Оформить заказ</button>
+            </form>
+            <div class="ordering-block__privacy">
+              <p>Нажимая кнопку, вы даете согласие на обработку ваших персональных данных.
+                <a href="">Политика конфиденциальности</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
   </div>
 </section>

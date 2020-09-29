@@ -1,29 +1,41 @@
 .p-cart {
+  position: relative;
+  padding-bottom: 70px;
+
   .col-3 {
-    @include size-md(5);
+    @include size-md(4.5);
 
     @include sm-block() {
-      display: none;
+      width: 0;
+      height: 0;
     }
-    // padding-left: 10px;
-    // padding-right: 20px;
+
+    @include md-block() {
+      padding-right: 20px;
+    }
   }
 
   .col-11 {
-    @include size-md(9);
+    @include size-md(9.5);
     @include size-sm(14);
-    // padding-left: 20px;
-    // padding-right: 10px;
-  }
 
-  .title-wrapper {
     @include md-block() {
-      // padding-left: 15px;
-      // margin-right: 20px;
+      padding-left: 20px;
+      padding-right: 10px;
+    }
+
+    @include sm-block() {
+      padding-right: 20px;
     }
   }
 
-  padding-bottom: 71px;
+  .title-wrapper {
+    @include md-block {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 14px;
+    }
+  }
 
   &__cart-item {
     margin-bottom: 22px;
@@ -36,7 +48,7 @@
 
   &__btn {
     margin-bottom: 20px;
-    padding: 18px 35px;
+    padding: 16px 30px;
     font-size: 14px;
     font-weight: 700;
     color: #ffffff;
@@ -57,11 +69,34 @@
     @include sm400-block() {
       width: 100%;
     }
+
+    &--order {
+      display: none;
+      width: 100%;
+      padding: 11px;
+      margin-left: 30px;
+      margin-right: 30px;
+
+      @include sm-block() {
+        display: block;
+      }
+    }
   }
 
   &__order-wrapper {
     display: flex;
     margin-bottom: 49px;
+
+    @include md-block() {
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+
+    &--time {
+      @include sm400-block() {
+        justify-content: space-between;
+      }
+    }
   }
 
   .custom-checkbox {
@@ -69,10 +104,21 @@
 
     &:last-child {
       margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    @include md-block() {
+      margin-bottom: 22px;
+    }
+
+    @include sm400-block() {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 11px;
     }
 
     &__label {
-      display: inline-flex;
+      display: flex;
       align-items: baseline;
       cursor: pointer;
     }
@@ -89,12 +135,22 @@
       display: inline-block;
       width: 100%;
       height: auto;
-      padding: 8px 13px;
+      padding: 10px 13px;
       font-size: 14px;
       border: 1px solid #b6b6b6;
       border-radius: 8px;
       overflow: hidden;
       transition: all 0.15s linear;
+
+      @include md-block() {
+        padding: 10px 10px;
+      }
+
+      @include sm400-block() {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        text-align: center;
+      }
     }
 
     &__new::before {
@@ -105,6 +161,12 @@
       color: #ffffff;
       background-color: #8ac864;
       border: 1px solid #8ac864;
+    }
+
+    &--time {
+      @include sm400-block() {
+        width: 49%;
+      }
     }
   }
 }
@@ -123,11 +185,16 @@
     position: relative;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
   &__img {
     @include md-block() {
       margin-right: 16px;
+    }
+
+    @include sm400-block() {
+      margin-right: 0;
     }
 
     img {
@@ -282,6 +349,33 @@
 
   @include sm-block() {
     display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba($color: #ffffff, $alpha: .8);
+    border: none;
+  }
+
+  &__close {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+  }
+
+  &__body {
+    position: relative;
+    width: 270px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #b6b6b6;
+    border-radius: 13px;
   }
 
   &__title {
@@ -384,6 +478,13 @@
 }
 
 .order-details {
+  .title-wrapper {
+    @include md-block {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   &__form {
     textarea {
       width: 100%;
@@ -408,12 +509,20 @@
   &__row {
     @include row-flex();
     padding: 20px 0;
+
+    @include md-block() {
+      padding-bottom: 0;
+    }
   }
 
   &__col-4,
   &__col-5,
   &__col-9 {
     @include col();
+    @include size-md(14);
+    @include md-block() {
+      margin-bottom: 20px;
+    }
   }
 
   &__col-4 {
@@ -449,9 +558,15 @@
 
     &--promo {
       margin-bottom: 49px;
+
       input {
         width: auto;
         margin-right: 10px;
+
+        @include sm-block() {
+          width: 100%;
+          margin-bottom: 11px;
+        }
       }
 
       button {
@@ -467,6 +582,10 @@
         &:hover {
           color: #8ac864;
           background: #ffffff;
+        }
+
+        @include sm-block() {
+          width: 100%;
         }
       }
     }
