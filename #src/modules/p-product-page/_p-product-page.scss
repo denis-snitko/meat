@@ -59,6 +59,27 @@
     }
   }
 
+  .swiper-button-prev-p,
+  .swiper-button-next-p {
+    @include sm-block() {
+      width: 25px;
+      height: 25px;
+      background-size: 7px;
+    }
+  }
+  
+  .swiper-button-prev-p {
+    @include sm-block() {
+      left: 10px;
+    }
+  }
+ 
+  .swiper-button-next-p {
+    @include sm-block() {
+      right: 10px;
+    }
+  }
+
   &__title {
     color: #8ac864;
     font-family: $second-typeface;

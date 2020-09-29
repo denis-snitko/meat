@@ -4898,6 +4898,21 @@ body.okayNav-loaded {
     right: -12px;
   }
 
+  .p-product .swiper-button-prev-p,
+  .p-product .swiper-button-next-p {
+    width: 25px;
+    height: 25px;
+    background-size: 7px;
+  }
+
+  .p-product .swiper-button-prev-p {
+    left: 10px;
+  }
+
+  .p-product .swiper-button-next-p {
+    right: 10px;
+  }
+
   .p-product__price-body {
     padding-top: 20px;
   }
