@@ -4193,6 +4193,44 @@ body.okayNav-loaded {
     padding-right: 20px;
   }
 
+  .main_slider .owl-carousel .owl-nav button {
+    bottom: 96px;
+  }
+
+  .owl-dots {
+    bottom: 101px;
+  }
+
+  .main_slider .slide {
+    height: 319px;
+    padding-top: 25px;
+    padding-bottom: 85px;
+    padding-left: 25px;
+  }
+
+  .main_slider .bg {
+    height: 319px;
+  }
+
+  .main_slider .box {
+    max-width: 360px;
+  }
+
+  .main_slider .name {
+    font-size: 26px;
+  }
+
+  .main_slider .desc {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  .main_slider .link {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 40px;
+  }
+
   .top-header {
     padding-left: 20px;
     padding-right: 20px;
