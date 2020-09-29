@@ -894,6 +894,11 @@ body {
      object-fit: cover;
 }
 
+.ymaps-map {
+  -ms-touch-action: auto !important;
+      touch-action: auto !important;
+}
+
 .copyright {
   font-size: 14px;
   text-transform: uppercase;

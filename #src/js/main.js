@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+
+
   const elMinusBtn = document.querySelectorAll('.js-minus');
 
   const elPlusBtn = document.querySelectorAll('.js-plus');
