@@ -3375,6 +3375,10 @@ body.okayNav-loaded {
   padding-bottom: 70px;
 }
 
+.p-contacts .map {
+  height: 256px;
+}
+
 .contacts-block {
   padding-left: 125px;
   padding-bottom: 30px;
