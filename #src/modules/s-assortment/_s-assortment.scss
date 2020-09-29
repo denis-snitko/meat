@@ -6,6 +6,10 @@
     padding-right: 20px;
   }
 
+  @include sm-block() {
+    padding-top: 20px;
+  }
+
   @include sm400-block() {
     padding-top: 20px;
   }

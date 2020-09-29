@@ -1343,6 +1343,10 @@ body.okayNav-loaded {
   @include md-block() {
     right: calc(35% + 200px);
   }
+
+  @include sm-block() {
+    display: none;
+  }
 }
 
 .main_slider .owl-carousel .owl-nav button.owl-next {
@@ -1351,6 +1355,10 @@ body.okayNav-loaded {
   
   @include md-block() {
     right: calc(35% + 130px);
+  }
+
+  @include sm-block() {
+    display: none;
   }
 }
 
@@ -1382,6 +1390,10 @@ body.okayNav-loaded {
   @include md-block() {
     left: 65%;
     bottom: 101px;
+  }
+
+  @include sm-block() {
+    display: none;
   }
 }
 
@@ -1449,6 +1461,15 @@ body.okayNav-loaded {
     padding-bottom: 85px;
     padding-left: 25px;
   }
+
+  @include sm-block() {
+    height: 213px;
+  }
+  
+  @include sm400-block() {
+    height: 148px;
+    padding-bottom: 65px;
+  }
 }
 
 .main_slider .owl-loaded .slide,
@@ -1506,6 +1527,14 @@ body.okayNav-loaded {
   @include md-block() {
     height: 319px;
   }
+  
+  @include sm-block() {
+    height: 213px;
+  }
+
+  @include sm400-block() {
+    height: 148px;
+  }
 }
 
 .main_slider .box {
@@ -1515,6 +1544,10 @@ body.okayNav-loaded {
 
   @include md-block() {
     max-width: 360px;
+  }
+
+  @include sm400-block() {
+    max-width: 150px;
   }
 }
 
@@ -1528,6 +1561,10 @@ body.okayNav-loaded {
   @include md-block() {
     font-size: 26px;
   }
+
+  @include sm400-block() {
+    font-size: 13px;
+  }
 }
 
 .main_slider .desc {
@@ -1540,6 +1577,10 @@ body.okayNav-loaded {
   @include md-block() {
     margin-top: 20px;
     font-size: 13px;
+  }
+
+  @include sm-block() {
+    display: none;
   }
 }
 
@@ -1566,6 +1607,10 @@ body.okayNav-loaded {
     margin-top: 20px;
     font-size: 13px;
     line-height: 40px;
+  }
+
+  @include sm-block() {
+    display: none;
   }
 }
 
