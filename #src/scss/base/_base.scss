@@ -1352,7 +1352,7 @@ body.okayNav-loaded {
 .main_slider .owl-carousel .owl-nav button.owl-next {
   left: auto;
   right: calc(50% + 130px);
-  
+
   @include md-block() {
     right: calc(35% + 130px);
   }
@@ -1465,7 +1465,7 @@ body.okayNav-loaded {
   @include sm-block() {
     height: 213px;
   }
-  
+
   @include sm400-block() {
     height: 148px;
     padding-bottom: 65px;
@@ -1527,7 +1527,7 @@ body.okayNav-loaded {
   @include md-block() {
     height: 319px;
   }
-  
+
   @include sm-block() {
     height: 213px;
   }
