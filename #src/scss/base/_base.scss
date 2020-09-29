@@ -1339,15 +1339,27 @@ body.okayNav-loaded {
 .main_slider .owl-carousel .owl-nav button.owl-prev {
   left: auto;
   right: calc(50% + 200px);
+
+  @include md-block() {
+    right: calc(35% + 200px);
+  }
 }
 
 .main_slider .owl-carousel .owl-nav button.owl-next {
   left: auto;
   right: calc(50% + 130px);
+  
+  @include md-block() {
+    right: calc(35% + 130px);
+  }
 }
 
 .main_slider .owl-carousel .owl-nav button.owl-next:not(.disabled):hover {
   right: calc(50% + 102px);
+
+  @include md-block() {
+    right: calc(35% + 102px);
+  }
 }
 
 .owl-dots {
@@ -1368,6 +1380,7 @@ body.okayNav-loaded {
   pointer-events: none;
 
   @include md-block() {
+    left: 65%;
     bottom: 101px;
   }
 }

@@ -4197,7 +4197,20 @@ body.okayNav-loaded {
     bottom: 96px;
   }
 
+  .main_slider .owl-carousel .owl-nav button.owl-prev {
+    right: calc(35% + 200px);
+  }
+
+  .main_slider .owl-carousel .owl-nav button.owl-next {
+    right: calc(35% + 130px);
+  }
+
+  .main_slider .owl-carousel .owl-nav button.owl-next:not(.disabled):hover {
+    right: calc(35% + 102px);
+  }
+
   .owl-dots {
+    left: 65%;
     bottom: 101px;
   }
 
