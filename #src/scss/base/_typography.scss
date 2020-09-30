@@ -25,6 +25,10 @@ body {
         position: absolute;
         bottom: 50%;
     }
+
+    @include md-block() {
+        margin-top: 9px;
+    }
 }
 
 .main-title {
