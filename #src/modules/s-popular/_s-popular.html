@@ -7,8 +7,10 @@
     <div class="swiper-container-wrapper">
       <div class="swiper-container">
         <div class="swiper-wrapper">
+
           <div class="swiper-slide">
-            <div class="main-card main-card--sale">
+            <div class="main-card">
+
               <div class="main-card__img">
                 <a href="">
                   <img src="./img/catalog/item-1.jpg" alt="">
@@ -28,8 +30,13 @@
               <button class="main-card__btn"><span>В корзину</span></button>
             </div>
           </div>
+
           <div class="swiper-slide">
-            <div class="main-card">
+            <!-- SALE CARD     Add class -> main-card--sale -->
+            <div class="main-card main-card--sale">
+              <!-- SALE TIME -->
+              <p class="sale-text">Акция продлится до: 12.08.2020</p>
+              <!-- END SALE TIME -->
               <div class="main-card__img">
                 <a href="">
                   <img src="./img/catalog/item-2.jpg" alt="">
@@ -39,7 +46,10 @@
                 Фарш Домашний Окраина (свинина, говядина) 500г
               </a>
               <div class="main-card__price">
-                <p>510</p>
+                <p>210</p>
+                <!-- OLD PRICE -->
+                <p class="old-price">510&#8381;</p>
+                <!-- END OLD PRICE -->
                 <div class="main-card__price-count">
                   <span class="js-minus">-</span>
                   <input class="js-count" type="text" name="amount" value="1">

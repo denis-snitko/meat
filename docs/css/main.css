@@ -798,14 +798,6 @@ body {
   height: 14px;
 }
 
-.main-card__price .sale-price {
-  display: none;
-}
-
-.main-card__price .usual-price {
-  display: block;
-}
-
 .main-card__price-count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,15 +865,52 @@ body {
   background-color: #4d9a1e;
 }
 
-.main-card--sale .sale-price {
-  display: block;
-  color: #f24946;
+.main-card--sale {
+  position: relative;
 }
 
-.main-card--sale .usual-price {
+.main-card--sale .sale-text {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 110px;
+  font-size: 12px;
+  color: #f24946;
+  text-align: right;
+}
+
+.main-card--sale .main-card__price .old-price {
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
   color: #b6b6b6;
   font-size: 16px;
   font-weight: 700;
+}
+
+.main-card--sale .main-card__price .old-price::before {
+  display: none;
+}
+
+.main-card--sale .main-card__price .old-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: 44px;
+  height: 1px;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  background-color: #f24946;
+}
+
+.main-card--sale .main-card__price p {
+  color: #f24946;
+}
+
+.main-card--sale .main-card__price p::before {
+  content: url(../img/icons/rubble-sale.png);
 }
 
 .map {
@@ -1419,12 +1448,15 @@ button.swiper-pagination-bullet {
           transform: translate3d(0px, -50%, 0);
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-vertical
+> .swiper-pagination-bullets
+.swiper-pagination-bullet {
   margin: 6px 0;
   display: block;
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-container-vertical
+> .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1432,7 +1464,9 @@ button.swiper-pagination-bullet {
   width: 8px;
 }
 
-.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-vertical
+> .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+.swiper-pagination-bullet {
   display: inline-block;
   -webkit-transition: 200ms top, 200ms -webkit-transform;
   transition: 200ms top, 200ms -webkit-transform;
@@ -1441,11 +1475,14 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms top, 200ms -webkit-transform;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-container-horizontal
+> .swiper-pagination-bullets
+.swiper-pagination-bullet {
   margin: 0 4px;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+.swiper-container-horizontal
+> .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1453,7 +1490,9 @@ button.swiper-pagination-bullet {
   white-space: nowrap;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-horizontal
+> .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
+.swiper-pagination-bullet {
   -webkit-transition: 200ms left, 200ms -webkit-transform;
   transition: 200ms left, 200ms -webkit-transform;
   -o-transition: 200ms transform, 200ms left;
@@ -1461,7 +1500,9 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms left, 200ms -webkit-transform;
 }
 
-.swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+.swiper-container-horizontal.swiper-container-rtl
+> .swiper-pagination-bullets-dynamic
+.swiper-pagination-bullet {
   -webkit-transition: 200ms right, 200ms -webkit-transform;
   transition: 200ms right, 200ms -webkit-transform;
   -o-transition: 200ms transform, 200ms right;
