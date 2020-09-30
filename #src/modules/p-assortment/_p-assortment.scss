@@ -42,9 +42,13 @@
   }
 
   &__filter-btn {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 
     @include md-block() {
+      display: block;
+      flex-wrap: nowrap;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -74,10 +78,6 @@
     @include sm400-block() {
       top: 185px;
     }
-
-    // @include xs-block() {
-    //   top: 185px;
-    // }
   }
 
   &__filter-title {
@@ -179,6 +179,11 @@
     @include md-block() {
       margin-left: 0;
     }
+
+    @include sm-block() {
+      margin: auto;
+      margin-bottom: 18px;
+    }
   }
 
   &__pagination {
@@ -190,6 +195,10 @@
       justify-content: space-between;
       margin-left: 20px;
       margin-right: 20px;
+    }
+
+    @include sm-block() {
+      flex-wrap: wrap;
     }
   }
 

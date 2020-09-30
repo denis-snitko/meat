@@ -98,16 +98,19 @@
 
   .swiper-button-prev,
   .swiper-button-next {
-    top: 45%;
+    top: 37%;
   }
 
   .swiper-button-prev {
+    left: -25px;
     @include md-block {
       left: 0;
     }
   }
 
   .swiper-button-next {
+    right: -25px;
+
     @include md-block {
       right: 0;
     }

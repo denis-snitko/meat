@@ -262,6 +262,7 @@ body {
 
     img {
       display: block;
+      width: 100%;
       object-fit: cover;
     }
   }
@@ -503,6 +504,11 @@ body {
   margin-left: auto;
   display: flex;
   align-items: center;
+
+  @include sm-block() {
+    margin: auto;
+    margin-bottom: 10px;
+  }
 
   // .pagination__prev-btn
 

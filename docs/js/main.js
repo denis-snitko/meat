@@ -22,17 +22,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const orderPopUp = document.querySelector('.ordering-block');
   const orderClose = document.querySelector('.ordering-block__close');
 
-  let swiper = new Swiper('.swiper-container-hero', {
-    loop: true,
 
-    navigation: {
-      nextEl: '.swiper-hero-button-next',
-      prevEl: '.swiper-hero-button-prev'
-    },
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  let swiperCart = new Swiper('.swiper-container-cart', {
+    slidesPerView: 1,
+      // spaceBetween: 60,
 
+      breakpoints: {
+        400: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        }
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
   });
 
 

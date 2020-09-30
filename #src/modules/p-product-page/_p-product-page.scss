@@ -81,10 +81,22 @@
   }
 
   &__title {
+    position: relative;
+    margin-bottom: 16px;
+    padding-bottom: 18px;
     color: #8ac864;
     font-family: $second-typeface;
     font-size: 36px;
     font-weight: 700;
+    overflow: hidden;
+
+    &::after {
+      content: url('../img/line-for-title.png');
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+    }
 
     @include md-block() {
       position: absolute;
