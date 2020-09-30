@@ -25,28 +25,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let swiperCart = new Swiper('.swiper-container-cart', {
     slidesPerView: 1,
-      // spaceBetween: 60,
+    // spaceBetween: 60,
 
-      breakpoints: {
-        400: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        992: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        }
+    breakpoints: {
+      400: {
+        slidesPerView: 2,
+        spaceBetween: 30,
       },
 
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
       },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      }
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
 
 
@@ -230,6 +230,10 @@ $(function () {
     $(".tab-accordeon[data-tab^='" + activeTab + "']").addClass("tab-accordeon--active");
   });
 
-});
+  $('ul#primary-nav').moreMenu();
 
-$('ul#primary-nav').moreMenu();
+  $('.mm-menu').click(() => {
+    $('.mm-dropdown-menu').fadeToggle();
+  })
+
+});

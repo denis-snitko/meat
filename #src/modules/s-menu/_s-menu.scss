@@ -87,13 +87,14 @@
   width: 30px;
   height: 30px;
   font-size: 15px;
-  // padding-left: 2px;
   letter-spacing: 1.2px;
   color: #ffffff;
   text-align: center;
   line-height: 30px;
   background-color: #73a952;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .mm-menu .mm-dropdown-menu {
@@ -102,10 +103,6 @@
   z-index: 500;
   top: 56px;
   background: #8ac864;
-}
-
-.mm-menu:hover .mm-dropdown-menu {
-  display: block;
 }
 
 .mm-menu .mm-dropdown-menu {

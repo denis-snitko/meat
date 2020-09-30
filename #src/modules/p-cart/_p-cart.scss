@@ -1,8 +1,4 @@
 .p-cart {
-  span {
-    display: block;
-  }
-
   position: relative;
   padding-bottom: 70px;
 
@@ -507,6 +503,10 @@
 }
 
 .order-details {
+  span {
+    display: block;
+  }
+  
   .title-wrapper {
     @include md-block {
       margin-left: 0;

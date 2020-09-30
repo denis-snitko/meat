@@ -2653,6 +2653,7 @@ body.okayNav-loaded {
   line-height: 30px;
   background-color: #73a952;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .mm-menu .mm-dropdown-menu {
@@ -2661,10 +2662,6 @@ body.okayNav-loaded {
   z-index: 500;
   top: 56px;
   background: #8ac864;
-}
-
-.mm-menu:hover .mm-dropdown-menu {
-  display: block;
 }
 
 .mm-menu .mm-dropdown-menu .menu__item a {
@@ -3768,10 +3765,6 @@ body.okayNav-loaded {
   padding-bottom: 70px;
 }
 
-.p-cart span {
-  display: block;
-}
-
 .p-cart__cart-item {
   margin-bottom: 22px;
 }
@@ -4143,6 +4136,10 @@ body.okayNav-loaded {
 
 .ordering-block__privacy a:hover {
   text-decoration: underline;
+}
+
+.order-details span {
+  display: block;
 }
 
 .order-details__form textarea {
