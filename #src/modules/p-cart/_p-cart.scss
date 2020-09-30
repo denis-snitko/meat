@@ -31,9 +31,17 @@
 
   .title-wrapper {
     @include md-block {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 0;
+      margin-right: 0;
       margin-bottom: 14px;
+    }
+  }
+
+  &__title-wrapper {
+
+    @include md-block() {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
     }
   }
 
@@ -507,7 +515,7 @@
     display: block;
   }
   
-  .title-wrapper {
+  & .title-wrapper {
     @include md-block {
       margin-left: 0;
       margin-right: 0;

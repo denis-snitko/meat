@@ -4860,9 +4860,14 @@ body.okayNav-loaded {
   }
 
   .p-cart .title-wrapper {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 14px;
+  }
+
+  .p-cart__title-wrapper {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
 
   .p-cart__order-wrapper {
