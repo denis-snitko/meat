@@ -1,4 +1,8 @@
 .p-cart {
+  span {
+    display: block;
+  }
+
   position: relative;
   padding-bottom: 70px;
 
@@ -564,7 +568,7 @@
 
   &__label {
     display: block;
-    h5 {
+    & > span {
       margin-bottom: 6px;
       font-size: 14px;
       line-height: 14px;

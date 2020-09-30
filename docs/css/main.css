@@ -3561,13 +3561,14 @@ body.okayNav-loaded {
   margin-bottom: 21px;
 }
 
-.contacts-form__form label p {
+.contacts-form__form label > span {
+  display: inline-block;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
 }
 
-.contacts-form__form label p span {
+.contacts-form__form label > span span {
   color: #fc2121;
 }
 
@@ -3765,6 +3766,10 @@ body.okayNav-loaded {
 .p-cart {
   position: relative;
   padding-bottom: 70px;
+}
+
+.p-cart span {
+  display: block;
 }
 
 .p-cart__cart-item {
@@ -4194,7 +4199,7 @@ body.okayNav-loaded {
   display: block;
 }
 
-.order-details__label h5 {
+.order-details__label > span {
   margin-bottom: 6px;
   font-size: 14px;
   line-height: 14px;

@@ -144,7 +144,8 @@
       display: block;
       margin-bottom: 21px;
 
-      p {
+      & > span {
+        display: inline-block;
         margin-bottom: 10px;
         font-size: 14px;
         font-weight: 700;

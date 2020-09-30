@@ -34,7 +34,7 @@
           <button class="cart-item__close">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
               <defs>
-                <clipPath id="kkofa">
+                <clipPath id="kkofa1">
                   <path fill="#fff" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z" />
                 </clipPath>
               </defs>
@@ -43,7 +43,7 @@
                   <path fill="#ff3f3f" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z" />
                   <path fill="none" stroke="#ff3f3f" stroke-miterlimit="20" stroke-width="4"
                     d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z"
-                    clip-path="url(&quot;#kkofa&quot;)" />
+                    clip-path="url(&quot;#kkofa1&quot;)" />
                 </g>
                 <g>
                   <path fill="#fff"
@@ -73,7 +73,7 @@
           <button class="cart-item__close">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
               <defs>
-                <clipPath id="kkofa">
+                <clipPath id="kkofa2">
                   <path fill="#fff" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z" />
                 </clipPath>
               </defs>
@@ -82,7 +82,7 @@
                   <path fill="#ff3f3f" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z" />
                   <path fill="none" stroke="#ff3f3f" stroke-miterlimit="20" stroke-width="4"
                     d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z"
-                    clip-path="url(&quot;#kkofa&quot;)" />
+                    clip-path="url(&quot;#kkofa2&quot;)" />
                 </g>
                 <g>
                   <path fill="#fff"
@@ -112,7 +112,7 @@
           <button class="cart-item__close">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
               <defs>
-                <clipPath id="kkofa">
+                <clipPath id="kkofa3">
                   <path fill="#fff" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z" />
                 </clipPath>
               </defs>
@@ -121,7 +121,7 @@
                   <path fill="#ff3f3f" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z" />
                   <path fill="none" stroke="#ff3f3f" stroke-miterlimit="20" stroke-width="4"
                     d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0z"
-                    clip-path="url(&quot;#kkofa&quot;)" />
+                    clip-path="url(&quot;#kkofa3&quot;)" />
                 </g>
                 <g>
                   <path fill="#fff"
@@ -305,7 +305,7 @@
         </div>
 
         <div class="order-details">
-          <form action="" class="order-details__form">
+          <form action="#" class="order-details__form">
 
             <div class="title-wrapper">
               <h3 class="second-title">Адрес и способ доставки</h3>
@@ -338,7 +338,7 @@
             <div class="order-details__row">
               <div class="order-details__col-9">
                 <label class="order-details__label order-details__label--withing">
-                  <h5>Область</h5>
+                  <span>Область</span>
                   <select>
                     <option value="">В пределах МКАД</option>
                     <option value="">За МКАД</option>
@@ -347,7 +347,7 @@
               </div>
               <div class="order-details__col-5">
                 <label class="order-details__label">
-                  <h5>Город</h5>
+                  <span>Город</span>
                   <input type="text" name="city" value="Москва">
                 </label>
               </div>
@@ -356,19 +356,19 @@
             <div class="order-details__row">
               <div class="order-details__col-5">
                 <label class="order-details__label">
-                  <h5>Дом, улица, корпус, строение</h5>
+                  <span>Дом, улица, корпус, строение</span>
                   <input type="text" name="city">
                 </label>
               </div>
               <div class="order-details__col-5">
                 <label class="order-details__label">
-                  <h5>Квартира, подъезд, этаж</h5>
+                  <span>Квартира, подъезд, этаж</span>
                   <input type="text" name="city">
                 </label>
               </div>
               <div class="order-details__col-4">
                 <label class="order-details__label order-details__label--date">
-                  <h5>Дата и время доставки</h5>
+                  <span>Дата и время доставки</span>
                   <select>
                     <option value="">20 сентября 2020</option>
                     <option value="">21 сентября 2020</option>
@@ -449,12 +449,11 @@
               <h3 class="second-title">Комментарий к заказу</h3>
               <span class="title-line"></span>
             </div>
-            <textarea name="" placeholder="Ваш комментарий"></textarea>
+            <textarea name="comment" placeholder="Ваш комментарий"></textarea>
 
             <div class="p-cart__btn-wrapper">
               <button type="submit" class="p-cart__btn">Оформить заказ</button>
             </div>
-
           </form>
         </div>
 
@@ -471,7 +470,7 @@
               </svg>
             </div>
             <div class="ordering-block__title">Оформить заказ</div>
-            <form action="" class="ordering-block__form">
+            <form action="#" class="ordering-block__form">
               <div><input type="text" placeholder="Ваше имя" name="orderingName" required></div>
               <div><input type="text" placeholder="Ваш телефон" name="orderingPhone" required></div>
               <div><input type="email" placeholder="Ваш email" name="orderingMail" required></div>
