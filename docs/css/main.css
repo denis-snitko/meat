@@ -2569,6 +2569,7 @@ body.okayNav-loaded {
 }
 
 .menu__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2640,6 +2641,35 @@ body.okayNav-loaded {
 .menu__item--catalog .sub-menu--show {
   visibility: visible;
   opacity: 1;
+}
+
+.mm-menu {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 30px;
+  background-color: #73a952;
+  border-radius: 50%;
+}
+
+.mm-menu .mm-dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 500;
+  top: 56px;
+  background: #8ac864;
+}
+
+.mm-menu:hover .mm-dropdown-menu {
+  display: block;
+}
+
+.mm-menu .mm-dropdown-menu .menu__item a {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .hero {

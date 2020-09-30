@@ -231,3 +231,5 @@ $(function () {
   });
 
 });
+
+$('ul#primary-nav').moreMenu();
