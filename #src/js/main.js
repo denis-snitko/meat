@@ -127,8 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // SUB-MENU HIDE / SHOW
 
-  subMenuTrigger.addEventListener('click', (event) => {
-    event.target.querySelector('.sub-menu').classList.toggle('sub-menu--show')
+  window.addEventListener('click', (event) => {
+    if (event.target == subMenuTrigger) {
+      event.target.querySelector('.sub-menu').classList.toggle('sub-menu--show');
+    } else {
+      document.querySelector('.sub-menu').classList.remove('sub-menu--show');
+    }
   })
 
   // FILTER HIDE / SHOW
@@ -161,8 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // REGION
 
-  regionTrigger.addEventListener('click', () => {
-    regionPopup.classList.toggle('region-popup--show')
+  window.addEventListener('click', (event) => {
+    if (event.target == regionTrigger) {
+      regionPopup.classList.toggle('region-popup--show');
+    } else {
+      regionPopup.classList.remove('region-popup--show');
+    }
   })
 
   // OFFER 

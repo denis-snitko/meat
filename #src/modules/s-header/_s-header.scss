@@ -24,6 +24,7 @@
     @include size-xs(7);
 
     &--social {
+      padding-left: 24px;
       @include md-block() {
         display: none;
       }

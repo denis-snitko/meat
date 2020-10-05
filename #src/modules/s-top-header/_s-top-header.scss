@@ -81,6 +81,7 @@
 
   &__menu {
     display: flex;
+    margin-left: -16px;
     white-space: nowrap;
 
     @include sm-block() {
