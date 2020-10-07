@@ -38,7 +38,6 @@
   }
 
   &__title-wrapper {
-
     @include md-block() {
       margin-left: 20px !important;
       margin-right: 20px !important;
@@ -254,8 +253,10 @@
   }
 
   &__counter {
-    margin-left: 90px;
+    display: flex;
+    align-items: center;
     margin-right: 100px;
+    margin-left: 90px;
 
     @include md-block() {
       margin-top: 8px;
@@ -514,7 +515,7 @@
   span {
     display: block;
   }
-  
+
   & .title-wrapper {
     @include md-block {
       margin-left: 0;
@@ -592,7 +593,7 @@
       border-radius: 8px;
       border: 1px solid #b6b6b6;
     }
-    
+
     select {
       appearance: none;
     }

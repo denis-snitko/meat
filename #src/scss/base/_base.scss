@@ -308,10 +308,11 @@ body {
 
   &__price-count {
     display: flex;
-    width: 68px;
-    height: 30px;
     align-items: center;
     justify-content: space-around;
+    height: 30px;
+    width: 68px;
+    margin-left: auto;
 
     border-radius: 8px;
     border: 1px solid #b6b6b6;
@@ -1510,12 +1511,13 @@ body.okayNav-loaded {
   }
 
   @include sm-block() {
+    padding-bottom: 45px;
     height: 213px;
   }
 
   @include sm400-block() {
     height: 148px;
-    padding-bottom: 65px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1656,8 +1658,11 @@ body.okayNav-loaded {
     line-height: 40px;
   }
 
-  @include sm-block() {
-    display: none;
+  @include sm400-block() {
+    font-size: 10px;
+    line-height: 33px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1714,4 +1719,8 @@ body.okayNav-loaded {
       border-radius: inherit;
     }
   }
+}
+
+.weight {
+  padding-left: 3px;
 }

@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   })
 
+
   // COUNTER
 
   elMinusBtn.forEach(el => {
@@ -113,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (input.value == 1) {
         input.value = 1;
       } else {
-        input.value--;
+        input.value = (parseFloat(input.value) - 0.2).toFixed(1);
       }
     })
   })
@@ -121,9 +122,11 @@ document.addEventListener('DOMContentLoaded', () => {
   elPlusBtn.forEach(el => {
     el.addEventListener('click', (event) => {
       let input = event.target.previousElementSibling;
-      input.value++;
+
+      input.value = (parseFloat(input.value) + 0.2).toFixed(1);
     })
   })
+
 
   // SUB-MENU HIDE / SHOW
 
