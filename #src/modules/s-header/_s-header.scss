@@ -167,6 +167,21 @@
   height: 43px;
   transform: translateY(-50%);
 
+  .burger-ctalog-trigger {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+
+    &::after {
+      content: url("../img/icons/arrow-down-bottom.svg");
+      position: absolute;
+      top: -1px;
+      right: 0;
+      width: 15px;
+      height: 10px;
+    }
+  }
+
   &__icon {
     width: 100%;
     height: 100%;
@@ -178,14 +193,21 @@
   &__list {
     @include hide(0.25s);
 
-    min-width: 260px;
+    position: absolute;
+    z-index: 1100;
+    top: -160px;
+    left: -30px;
+
     margin-top: 5px;
     padding: 10px 0;
+
+    width: 100vw;
+    // height: 100vh;
+
     background-color: #8ac864;
-    border-radius: 8px;
 
     li {
-      padding: 10px 20px;
+      padding: 5px 20px;
       color: #fefefe;
       font-size: 18px;
       font-weight: 700;
@@ -196,11 +218,44 @@
     }
   }
 
-  &--show {
-    @include show();
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 15px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
   }
 
-  &__sub {
+  .sub-menu {
+    display: none;
+    p {
+      margin-top: 14px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .sub-menu__list {
+      a {
+        font-size: 14px;
+        font-weight: 400;
+
+        &:hover {
+          font-weight: 700;
+          text-decoration: underline;
+          background: none;
+        }
+      }
+    }
+  }
+
+  .sub-menu--block {
+    display: block;
+  }
+
+  &--show {
+    @include show();
   }
 
   &__sub-icon {
@@ -216,7 +271,4 @@
       transform: rotate(-90deg);
     }
   }
-}
-
-.burger-sub-menu {
 }

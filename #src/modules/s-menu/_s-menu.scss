@@ -3,8 +3,8 @@
 
   @include sm-block() {
     display: none;
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 
   &__list {
@@ -16,8 +16,8 @@
   &__item {
     font-size: 18px;
     font-weight: 700;
-    color: #fefefe;
     white-space: nowrap;
+    color: #fefefe;
 
     @include md-block() {
       font-size: 16px;
@@ -61,18 +61,57 @@
       .sub-menu {
         @include hide(0.25s);
         position: absolute;
-        left: 0;
         z-index: 100;
-        min-width: 260px;
+        top: 43px;
+        left: 0;
         margin-top: 22px;
-        padding: 10px 0;
-        background-color: #74aa53;
-        border-radius: 8px;
+        padding: 24px 32px;
+        min-width: 667px;
+        background-color: #77aa43;
 
-        a {
-          width: 100%;
-          padding: 14px;
-          font-size: 16px;
+        @include md-block() {
+          top: 40px;
+        }
+
+        p {
+          margin-bottom: 20px;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+
+        &__row {
+          display: flex;
+        }
+
+        &__left {
+          padding-right: 46px;
+          border-right: 1px solid #649233;
+        }
+
+        &__center {
+          padding-left: 46px;
+        }
+
+        &__right {
+          padding-top: 37px;
+          padding-left: 27px;
+        }
+
+        &__list {
+          a {
+            padding: 0 0 14px 0;
+
+            font-size: 14px;
+            font-weight: 400;
+
+            &:hover {
+              font-weight: 700;
+              text-decoration: underline;
+              background: none;
+            }
+          }
         }
 
         &--show {

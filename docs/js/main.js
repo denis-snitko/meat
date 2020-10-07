@@ -164,6 +164,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   burgerTrigger.addEventListener('click', function (event) {
     this.nextElementSibling.classList.toggle('burger-menu--show')
+
+
+  })
+
+
+  window.addEventListener('click', (event) => {
+    if (event.target.classList.contains('burger-ctalog-trigger')) {
+      document.querySelector('.burger__sub-menu').classList.toggle('sub-menu--block')
+    }
+
+    if (event.target.classList.contains('burger-menu__close')) {
+      document.querySelector('.burger-menu__list').classList.remove('burger-menu--show')
+    }
   })
 
   // REGION
