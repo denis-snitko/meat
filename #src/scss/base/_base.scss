@@ -194,6 +194,12 @@ body {
     &:last-child {
       margin-right: 0;
     }
+
+    transition: $base-transition;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
 
   &__img {
@@ -515,6 +521,7 @@ body {
   .filter-btn__sort {
     display: inline-block;
     margin-bottom: 10px;
+    margin-left: -1px;
 
     @include md-block() {
       display: flex;
@@ -539,6 +546,12 @@ body {
 
         pointer-events: none;
       }
+
+      &--trigger {
+        &::after {
+          transform: translateY(-50%) rotate(-180deg);
+        }
+      }
     }
 
     select {
@@ -553,7 +566,6 @@ body {
       appearance: none;
 
       cursor: pointer;
-
       @media screen and (max-width: 340px) {
         padding: 8px 0;
       }

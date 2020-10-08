@@ -363,6 +363,9 @@
 }
 
 .ordering-block {
+  position: fixed;
+  max-width: 218px;
+  width: 100%;
   .p-cart__btn {
     width: 100%;
     margin-bottom: 10px;

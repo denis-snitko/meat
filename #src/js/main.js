@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // SUB-MENU HIDE / SHOW
 
   window.addEventListener('click', (event) => {
+
     if (event.target == subMenuTrigger) {
       event.target.querySelector('.sub-menu').classList.toggle('sub-menu--show');
     } else {
@@ -261,3 +262,10 @@ $(function () {
   })
 
 });
+
+
+document.querySelector('.select-wrap select').addEventListener('click', function (event) {
+  this.parentNode.classList.toggle('select-wrap--trigger')
+})
+
+

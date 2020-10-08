@@ -45,6 +45,8 @@
       transition: $base-transition;
       cursor: pointer;
 
+      background-color: #628d47;
+
       @include lg-block() {
         padding-right: 13px;
       }
@@ -52,10 +54,6 @@
       &::before {
         padding-right: 10px;
         content: url("../img/icons/catalog-menu.png");
-      }
-
-      &:hover {
-        background-color: #628d47;
       }
 
       .sub-menu {
