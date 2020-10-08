@@ -1006,12 +1006,55 @@ body {
   margin-bottom: 10px;
 }
 
+.filter-btn .filter-btn__sort .select-wrap {
+  position: relative;
+}
+
+.filter-btn .filter-btn__sort .select-wrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10px;
+  height: 5px;
+  background: url("../img/icons/arrow-select.svg") center no-repeat;
+  pointer-events: none;
+}
+
 .filter-btn .filter-btn__sort select {
   padding: 8px 11px;
-  color: #c1c1c1;
+  padding-right: 30px;
+  color: #4d4d4d;
   border-radius: 8px;
   border: 1px solid #b6b6b6;
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.filter-btn .filter-btn__sort select::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+
+.filter-btn .filter-btn__sort select::-moz-placeholder {
+  color: #c1c1c1;
+}
+
+.filter-btn .filter-btn__sort select:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.filter-btn .filter-btn__sort select::-ms-input-placeholder {
+  color: #c1c1c1;
+}
+
+.filter-btn .filter-btn__sort select::placeholder {
+  color: #c1c1c1;
 }
 
 .pagination {
