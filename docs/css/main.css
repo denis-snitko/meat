@@ -3390,6 +3390,7 @@ body.okayNav-loaded {
   -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
           box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .p-shops__search form {
@@ -3452,11 +3453,7 @@ body.okayNav-loaded {
 
 .p-shops .p-shops__item {
   padding: 17px;
-  border-bottom: 1px solid #939393;
-}
-
-.p-shops .p-shops__item:last-child {
-  border-bottom: none;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .p-shops .shop-item {
@@ -3528,6 +3525,11 @@ body.okayNav-loaded {
 
 .p-shops .map {
   height: auto;
+}
+
+.p-shops .swiper-container-shops {
+  overflow: hidden;
+  height: 750px;
 }
 
 .p-about__text {
@@ -4724,8 +4726,8 @@ body.okayNav-loaded {
   }
 
   .s-popular {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   .s-popular .main-card {
@@ -4899,8 +4901,8 @@ body.okayNav-loaded {
   }
 
   .p-shops .title-wrapper {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   .p-about .col-5 {
@@ -5233,8 +5235,8 @@ body.okayNav-loaded {
   }
 
   .s-popular .main-card {
-    width: auto;
     margin: 0 11px;
+    width: auto;
   }
 
   .s-popular .swiper-button-prev {
@@ -5710,8 +5712,8 @@ body.okayNav-loaded {
   }
 
   .p-shops .p-shops__item {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   .p-shops .shop-item__img {

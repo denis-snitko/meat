@@ -109,6 +109,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   })
 
+  let shopSwiper = new Swiper('.swiper-container-shops', {
+    direction: 'vertical',
+    slidesPerView: 5,
+
+    navigation: {
+      nextEl: '.swiper-button-next-shops',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
   // COUNTER
 

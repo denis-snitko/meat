@@ -2,8 +2,8 @@
   padding: 25px 0;
 
   @include md-block() {
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   .main-card {
@@ -12,8 +12,8 @@
     }
 
     @include sm-block() {
-      width: auto;
       margin: 0 11px;
+      width: auto;
     }
   }
 

@@ -15,6 +15,8 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
     border-radius: 8px;
 
+    overflow: hidden;
+
     @include md-block() {
       max-width: 283px;
       left: 30px;
@@ -73,15 +75,11 @@
 
   .p-shops__item {
     padding: 17px;
-    border-bottom: 1px solid #939393;
+    border-bottom: 1px solid #c9c9c9;
 
     @include xs-block() {
-      padding-left: 10px;
       padding-right: 10px;
-    }
-
-    &:last-child {
-      border-bottom: none;
+      padding-left: 10px;
     }
   }
 
@@ -169,12 +167,17 @@
 
   .title-wrapper {
     @include md-block() {
-      padding-left: 10px;
       padding-right: 10px;
+      padding-left: 10px;
     }
   }
 
   .map {
     height: auto;
+  }
+
+  .swiper-container-shops {
+    overflow: hidden;
+    height: 750px;
   }
 }
