@@ -192,9 +192,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // BURGER HIDE / SHOW
 
-  burgerTrigger.addEventListener('click', function (event) {
-    this.nextElementSibling.classList.toggle('burger-menu--show')
+  // burgerTrigger.addEventListener('click', function (event) {
+  //   this.nextElementSibling.classList.toggle('burger-menu--show')
+  // })
+
+  window.addEventListener('click', (event) => {
+    if (event.target == burgerTrigger) {
+      event.target.nextElementSibling.classList.toggle('burger-menu--show');
+    }
   })
+
+
 
   //
 
@@ -219,12 +227,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // document.querySelector('data-show-second-sub');
 
   window.addEventListener('click', (event) => {
     if (event.target.hasAttribute('data-show-second-sub')) {
       document.querySelector('.sub-menu--right-wrap').setAttribute('style', 'display: flex');
-      console.log(event.target);
     }
   })
 
