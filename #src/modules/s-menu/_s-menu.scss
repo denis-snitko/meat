@@ -14,8 +14,8 @@
   }
 
   &__item {
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     white-space: nowrap;
     color: #fefefe;
 
@@ -42,30 +42,32 @@
     &--catalog {
       position: relative;
       padding: 21px 32px;
-      transition: $base-transition;
-      cursor: pointer;
-
       background-color: #628d47;
+      transition: $base-transition;
+
+      cursor: pointer;
 
       @include lg-block() {
         padding-right: 13px;
       }
 
       &::before {
-        padding-right: 10px;
         content: url("../img/icons/catalog-menu.png");
+        padding-right: 10px;
       }
 
       .sub-menu {
         @include hide(0.25s);
         position: absolute;
-        z-index: 100;
         top: 43px;
         left: 0;
+        z-index: 100;
+        // min-width: 667px;
         margin-top: 22px;
         padding: 24px 32px;
-        min-width: 667px;
         background-color: #77aa43;
+
+        cursor: default;
 
         @include md-block() {
           top: 40px;
@@ -73,10 +75,10 @@
 
         p {
           margin-bottom: 20px;
-          font-size: 14px;
           font-weight: 700;
-          text-transform: uppercase;
+          font-size: 14px;
           color: #ffffff;
+          text-transform: uppercase;
         }
 
         &__row {
@@ -89,10 +91,12 @@
         }
 
         &__center {
+          // display: none;
           padding-left: 46px;
         }
 
         &__right {
+          // display: none;
           padding-top: 37px;
           padding-left: 27px;
         }
@@ -101,8 +105,8 @@
           a {
             padding: 0 0 14px 0;
 
-            font-size: 14px;
             font-weight: 400;
+            font-size: 14px;
 
             &:hover {
               font-weight: 700;
@@ -124,10 +128,10 @@
   width: 30px;
   height: 30px;
   font-size: 15px;
+  line-height: 30px;
+  text-align: center;
   letter-spacing: 1.2px;
   color: #ffffff;
-  text-align: center;
-  line-height: 30px;
   background-color: #73a952;
   border-radius: 50%;
 
@@ -135,10 +139,10 @@
 }
 
 .mm-menu .mm-dropdown-menu {
-  display: none;
   position: absolute;
-  z-index: 500;
   top: 56px;
+  z-index: 500;
+  display: none;
   background: #8ac864;
 }
 

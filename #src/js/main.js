@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
   itemSwiper.forEach(swiper => {
     new Swiper(swiper.children, {
       slidesPerView: 1,
-      // spaceBetween: 60,
 
       breakpoints: {
         460: {
@@ -112,10 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let shopSwiper = new Swiper('.swiper-container-shops', {
     direction: 'vertical',
     slidesPerView: 5,
+    allowTouchMove: false,
+    navigationHide: true,
 
     navigation: {
-      nextEl: '.swiper-button-next-shops',
-      prevEl: '.swiper-button-prev',
+      prevEl: '.p-shops__btn--prev',
+      nextEl: '.p-shops__btn--next',
     },
   });
 
@@ -191,15 +192,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
-
-
   // BURGER HIDE / SHOW
 
   burgerTrigger.addEventListener('click', function (event) {
     this.nextElementSibling.classList.toggle('burger-menu--show')
-
-
   })
+
+  //
 
 
   window.addEventListener('click', (event) => {
@@ -235,7 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 });
-
 
 $(function () {
 
@@ -295,9 +293,26 @@ $(function () {
 
 });
 
+document.querySelector('.custom-checkbox__base-express').addEventListener('click', () => {
+  document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: none')
+  document.querySelector('.order-details__row').setAttribute('style', 'display: flex')
+  document.querySelector('.order-details__row--1').setAttribute('style', 'display: flex')
+})
+
+document.querySelector('.custom-checkbox__base-courier').addEventListener('click', () => {
+  document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: flex')
+  document.querySelector('.order-details__row').setAttribute('style', 'display: flex')
+  document.querySelector('.order-details__row--1').setAttribute('style', 'display: flex')
+})
+
+document.querySelector('.custom-checkbox__base--pickup').addEventListener('click', () => {
+  document.querySelector('.order-details__row').setAttribute('style', 'display: none')
+  document.querySelector('.order-details__row--1').setAttribute('style', 'display: none')
+  document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: none')
+})
+
+
 
 document.querySelector('.select-wrap select').addEventListener('click', function (event) {
   this.parentNode.classList.toggle('select-wrap--trigger')
 })
-
-

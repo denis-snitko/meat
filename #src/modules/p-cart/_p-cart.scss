@@ -137,6 +137,10 @@
       opacity: 0;
     }
 
+    &__base-1:checked .p-cart__order-wrapper--time {
+      display: none;
+    }
+
     &__new {
       position: relative;
       display: inline-block;

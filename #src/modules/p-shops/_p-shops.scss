@@ -1,32 +1,31 @@
 .p-shops {
   &__container {
     @include md-block() {
-      padding-left: 30px;
       padding-right: 30px;
+      padding-left: 30px;
     }
   }
   &__search {
-    background-color: #fff;
-
     position: absolute;
-    margin-top: 30px;
-    max-width: 380px;
     width: 100%;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
-    border-radius: 8px;
+    max-width: 380px;
+    margin-top: 15px;
 
+    background-color: #fff;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
 
     @include md-block() {
-      max-width: 283px;
       left: 30px;
+      max-width: 283px;
       margin-bottom: 33px;
     }
 
     @include sm-block() {
       position: static;
-      max-width: 100%;
       width: 100%;
+      max-width: 100%;
     }
 
     form {
@@ -35,11 +34,11 @@
     }
 
     input {
-      padding: 17px 64px 17px 17px;
       width: 100%;
+      padding: 17px 64px 17px 17px;
       font-weight: bold;
-      text-transform: uppercase;
       color: #939393;
+      text-transform: uppercase;
       background-color: #f8f6f6;
       border: none;
       border-bottom: 1px solid rgba(#939393, 0.5);
@@ -68,9 +67,6 @@
     background-color: #8ac864;
     border: none;
     border-radius: 0 0 8px 8px;
-  }
-
-  .p-shops__list {
   }
 
   .p-shops__item {
@@ -177,7 +173,12 @@
   }
 
   .swiper-container-shops {
-    overflow: hidden;
     height: 750px;
+    overflow: hidden;
   }
+}
+
+.p-shops__btn--prev {
+  border-radius: 0;
+  transform: rotate(180deg);
 }
