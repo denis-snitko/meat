@@ -2558,11 +2558,11 @@ body.okayNav-loaded {
 }
 
 .burger-menu {
-  display: none;
   position: absolute;
-  z-index: 1000;
   top: 50%;
   left: 0;
+  z-index: 1000;
+  display: none;
   width: 43px;
   height: 43px;
   -webkit-transform: translateY(-50%);
@@ -2600,20 +2600,20 @@ body.okayNav-loaded {
   -o-transition: 0.25s visibility, 0.25s opacity;
   transition: 0.25s visibility, 0.25s opacity;
   position: absolute;
-  z-index: 1100;
   top: -160px;
   left: -30px;
+  z-index: 1100;
+  width: 100vw;
   margin-top: 5px;
   padding: 10px 0;
-  width: 100vw;
   background-color: #8ac864;
 }
 
 .burger-menu__list li {
   padding: 5px 20px;
-  color: #fefefe;
   font-size: 18px;
   font-weight: 700;
+  color: #fefefe;
 }
 
 .burger-menu__list a {
@@ -2649,6 +2649,15 @@ body.okayNav-loaded {
   font-weight: 700;
   text-decoration: underline;
   background: none;
+}
+
+.burger-menu .sub-menu .sub-menu__list span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.burger-menu .sub-menu .js-sub-trigger + .sub-menu__list {
+  display: none;
 }
 
 .burger-menu .sub-menu--block {
@@ -2773,10 +2782,24 @@ body.okayNav-loaded {
   padding-left: 33px;
 }
 
+.menu__item--catalog .sub-menu__list li[data-show-second-sub] {
+  padding: 0 0 14px 0;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.menu__item--catalog .sub-menu__list li[data-show-second-sub]:hover {
+  font-weight: 700;
+  text-decoration: underline;
+  background: none;
+}
+
 .menu__item--catalog .sub-menu__list a {
   padding: 0 0 14px 0;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .menu__item--catalog .sub-menu__list a:hover {

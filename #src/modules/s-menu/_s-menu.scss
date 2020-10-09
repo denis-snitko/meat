@@ -104,11 +104,28 @@
         }
 
         &__list {
+          li[data-show-second-sub] {
+            padding: 0 0 14px 0;
+
+            font-size: 14px;
+            font-weight: 400;
+
+            cursor: pointer;
+
+            &:hover {
+              font-weight: 700;
+              text-decoration: underline;
+              background: none;
+            }
+          }
+
           a {
             padding: 0 0 14px 0;
 
-            font-weight: 400;
             font-size: 14px;
+            font-weight: 400;
+
+            cursor: pointer;
 
             &:hover {
               font-weight: 700;

@@ -246,6 +246,18 @@ document.addEventListener('DOMContentLoaded', () => {
     orderPopUp.setAttribute('style', 'display: none')
   })
 
+  window.addEventListener('click', (event) => {
+    if (event.target.classList.contains('js-sub-trigger')) {
+
+      if (event.target.nextElementSibling.hasAttribute('style')) {
+        event.target.nextElementSibling.removeAttribute('style', '')
+      } else {
+        event.target.nextElementSibling.setAttribute('style', 'display: block')
+      }
+
+    }
+  })
+
 });
 
 $(function () {
