@@ -6,6 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const elPlusBtn = document.querySelectorAll('.js-plus');
 
+  const elMinusBtnPieces = document.querySelectorAll('.js-minus-pieces');
+
+  const elPlusBtnPieces = document.querySelectorAll('.js-plus-pieces');
+
   const subMenuTrigger = document.querySelector('.menu__item--catalog');
 
   const filterTrigger = document.querySelectorAll('.filter__sub-title');
@@ -124,6 +128,25 @@ document.addEventListener('DOMContentLoaded', () => {
       let input = event.target.previousElementSibling;
 
       input.value = (parseFloat(input.value) + 0.2).toFixed(1);
+    })
+  })
+
+  elMinusBtnPieces.forEach(el => {
+    el.addEventListener('click', (event) => {
+      let input = event.target.nextElementSibling;
+      if (input.value == 1) {
+        input.value = 1;
+      } else {
+        input.value = (parseFloat(input.value) - 1).toFixed(0);
+      }
+    })
+  })
+
+  elPlusBtnPieces.forEach(el => {
+    el.addEventListener('click', (event) => {
+      let input = event.target.previousElementSibling;
+
+      input.value = (parseFloat(input.value) + 1).toFixed(0);
     })
   })
 
