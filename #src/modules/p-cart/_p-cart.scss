@@ -20,8 +20,8 @@
     @include size-sm(14);
 
     @include md-block() {
-      padding-left: 20px;
       padding-right: 10px;
+      padding-left: 20px;
     }
 
     @include sm-block() {
@@ -31,16 +31,16 @@
 
   .title-wrapper {
     @include md-block {
-      margin-left: 0;
       margin-right: 0;
       margin-bottom: 14px;
+      margin-left: 0;
     }
   }
 
   &__title-wrapper {
     @include md-block() {
-      margin-left: 20px !important;
       margin-right: 20px !important;
+      margin-left: 20px !important;
     }
   }
 
@@ -56,14 +56,14 @@
   &__btn {
     margin-bottom: 20px;
     padding: 16px 30px;
-    font-size: 14px;
     font-weight: 700;
+    font-size: 14px;
     color: #ffffff;
+    text-transform: uppercase;
 
     background-color: #8ac864;
-    border-radius: 8px;
     border: 1px solid #8ac864;
-    text-transform: uppercase;
+    border-radius: 8px;
 
     transition: $base-transition;
     cursor: pointer;
@@ -80,9 +80,9 @@
     &--order {
       display: none;
       width: 100%;
-      padding: 11px;
-      margin-left: 30px;
       margin-right: 30px;
+      margin-left: 30px;
+      padding: 11px;
 
       @include sm-block() {
         display: block;
@@ -179,11 +179,11 @@
 
   .swiper-container-cart {
     position: relative;
-    overflow: hidden;
-    margin-left: -30px;
     margin-right: -30px;
     margin-bottom: 50px;
+    margin-left: -30px;
     padding: 10px 30px;
+    overflow: hidden;
 
     .swiper-button-prev {
       left: 6px;
@@ -201,8 +201,8 @@
   justify-content: space-between;
   padding: 20px 30px 14px 15px;
 
-  border-radius: 12px;
   border: 1px solid #b6b6b6;
+  border-radius: 12px;
 
   @include sm400-block() {
     position: relative;
@@ -228,9 +228,9 @@
 
   &__title {
     width: 225px;
-    color: #4d4d4d;
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
+    color: #4d4d4d;
 
     @include md-block() {
       font-size: 14px;
@@ -260,8 +260,8 @@
 
     @include md-block() {
       margin-top: 8px;
-      margin-left: 0;
       margin-right: 30px;
+      margin-left: 0;
     }
 
     @include sm400-block() {
@@ -270,8 +270,8 @@
   }
 
   &__price {
-    font-size: 20px;
     font-weight: 700;
+    font-size: 20px;
 
     @include md-block() {
       margin-top: 8px;
@@ -303,8 +303,8 @@
   justify-content: space-between;
   width: 68px;
   height: 30px;
-  border-radius: 8px;
   border: 1px solid #b6b6b6;
+  border-radius: 8px;
 
   @include sm400-block() {
     width: 128px;
@@ -320,9 +320,9 @@
   input {
     width: 100%;
     max-width: 26px;
-    appearance: none;
-    border: none;
     text-align: center;
+    border: none;
+    appearance: none;
   }
 }
 
@@ -331,24 +331,24 @@
   margin-bottom: 50px;
   padding: 17px 40px 17px 95px;
 
-  color: #4d4d4d;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 21px;
+  color: #4d4d4d;
 
   background-color: #e3f7ff;
-  border-radius: 12px;
   border: 1px solid #b6b6b6;
+  border-radius: 12px;
 
   &::before {
     content: url("../img/icons/icon-warning.png");
     position: absolute;
     top: 50%;
     left: 25px;
-    transform: translateY(-50%);
     display: inline-block;
     width: 45px;
     height: 45px;
+    transform: translateY(-50%);
   }
 
   @include sm400-block() {
@@ -365,38 +365,37 @@
 
 .ordering-block {
   position: fixed;
-  max-width: 218px;
   width: 100%;
+  max-width: 218px;
   .p-cart__btn {
     width: 100%;
     margin-bottom: 10px;
   }
 
   @include sm-block() {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: none;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
 
     padding-bottom: 18px;
 
-    border-radius: 12px;
-    border: 1px solid #b6b6b6;
-
     background-color: rgba($color: #ffffff, $alpha: 0.8);
     border: none;
+    border: 1px solid #b6b6b6;
+    border-radius: 12px;
   }
 
   &__close {
-    display: none;
     position: absolute;
     top: -24px;
     right: -24px;
+    display: none;
 
     @include sm-block() {
       display: block;
@@ -418,11 +417,11 @@
 
   &__title {
     padding: 15px 0;
-    color: #ffffff;
     font-family: $second-typeface;
-    font-size: 21px;
     font-weight: 700;
+    font-size: 21px;
     text-align: center;
+    color: #ffffff;
     background-color: #8ac864;
     border-radius: 12px 12px 0 0;
   }
@@ -435,12 +434,13 @@
       width: 100%;
       margin-bottom: 22px;
       padding: 12px 10px;
-      border-radius: 8px;
-      border: 1px solid #b6b6b6;
 
-      color: #939393;
+      font-weight: 700;
       font-size: 13px;
-      font-weight: bold;
+      color: #939393;
+
+      border: 1px solid #b6b6b6;
+      border-radius: 8px;
 
       &::placeholder {
         text-transform: uppercase;
@@ -450,9 +450,9 @@
 
   &__counter-item {
     h4 {
-      color: #b6b6b6;
-      font-size: 14px;
       font-weight: 400;
+      font-size: 14px;
+      color: #b6b6b6;
     }
   }
 
@@ -463,47 +463,47 @@
     padding-bottom: 12px;
 
     .text {
-      font-size: 14px;
       font-weight: 400;
+      font-size: 14px;
     }
 
     .price {
-      font-size: 14px;
       font-weight: 700;
+      font-size: 14px;
     }
   }
 
   &__counter-total {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
+    justify-content: space-between;
     padding-bottom: 14px;
 
     h4 {
-      color: #b6b6b6;
-      font-size: 14px;
       font-weight: 400;
+      font-size: 14px;
+      color: #b6b6b6;
       text-transform: uppercase;
     }
 
     p {
-      font-size: 21px;
       font-weight: 700;
+      font-size: 21px;
 
       span {
-        color: #8ac864;
-        font-size: 21px;
         font-weight: 700;
+        font-size: 21px;
+        color: #8ac864;
       }
     }
   }
 
   &__privacy {
     padding: 0 10px;
-    text-align: center;
 
-    color: #b6b6b6;
     font-size: 10px;
+    text-align: center;
+    color: #b6b6b6;
 
     a {
       color: #8ac864;
@@ -522,8 +522,8 @@
 
   & .title-wrapper {
     @include md-block {
-      margin-left: 0;
       margin-right: 0;
+      margin-left: 0;
     }
   }
 
@@ -534,16 +534,16 @@
       margin-bottom: 20px;
       padding: 11px;
 
-      font-size: 14px;
       font-weight: 400;
+      font-size: 14px;
 
-      border-radius: 8px;
       border: 1px solid #b6b6b6;
+      border-radius: 8px;
     }
 
     .p-cart__btn {
-      font-size: 18px;
       font-weight: 700;
+      font-size: 18px;
       text-transform: uppercase;
     }
   }
@@ -583,9 +583,9 @@
     display: block;
     & > span {
       margin-bottom: 6px;
+      font-weight: 700;
       font-size: 14px;
       line-height: 14px;
-      font-weight: 700;
     }
 
     input,
@@ -594,8 +594,8 @@
       padding: 8px 10px;
       font-size: 14px;
       color: #4d4d4d;
-      border-radius: 8px;
       border: 1px solid #b6b6b6;
+      border-radius: 8px;
     }
 
     select {
@@ -647,12 +647,12 @@
         right: 9px;
         width: 0;
         height: 0;
-        border-style: solid;
+        pointer-events: none;
         border-width: 8px 4.5px 0 4.5px;
+        border-style: solid;
         border-color: #8ac864 transparent transparent transparent;
 
         cursor: pointer;
-        pointer-events: none;
       }
 
       select {
