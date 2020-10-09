@@ -85,20 +85,22 @@
           display: flex;
         }
 
+        &--right-wrap {
+          display: none;
+        }
+
         &__left {
           padding-right: 46px;
-          border-right: 1px solid #649233;
         }
 
         &__center {
-          // display: none;
           padding-left: 46px;
+          border-left: 1px solid #649233;
         }
 
         &__right {
-          // display: none;
           padding-top: 37px;
-          padding-left: 27px;
+          padding-left: 33px;
         }
 
         &__list {

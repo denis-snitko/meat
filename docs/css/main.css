@@ -2755,18 +2755,22 @@ body.okayNav-loaded {
   display: flex;
 }
 
+.menu__item--catalog .sub-menu--right-wrap {
+  display: none;
+}
+
 .menu__item--catalog .sub-menu__left {
   padding-right: 46px;
-  border-right: 1px solid #649233;
 }
 
 .menu__item--catalog .sub-menu__center {
   padding-left: 46px;
+  border-left: 1px solid #649233;
 }
 
 .menu__item--catalog .sub-menu__right {
   padding-top: 37px;
-  padding-left: 27px;
+  padding-left: 33px;
 }
 
 .menu__item--catalog .sub-menu__list a {

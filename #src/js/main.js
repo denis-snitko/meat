@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
   const elMinusBtn = document.querySelectorAll('.js-minus');
 
   const elPlusBtn = document.querySelectorAll('.js-plus');
@@ -221,6 +219,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  // document.querySelector('data-show-second-sub');
+
+  window.addEventListener('click', (event) => {
+    if (event.target.hasAttribute('data-show-second-sub')) {
+      document.querySelector('.sub-menu--right-wrap').setAttribute('style', 'display: flex');
+      console.log(event.target);
+    }
+  })
+
   // OFFER 
 
   orderTrigger.addEventListener('click', () => {
@@ -310,6 +317,8 @@ document.querySelector('.custom-checkbox__base--pickup').addEventListener('click
   document.querySelector('.order-details__row--1').setAttribute('style', 'display: none')
   document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: none')
 })
+
+
 
 
 
