@@ -191,7 +191,7 @@
   }
 
   &__list {
-    @include hide(0.25s);
+    display: none;
 
     position: absolute;
     top: -160px;
@@ -257,14 +257,6 @@
     .js-sub-trigger + .sub-menu__list {
       display: none;
     }
-  }
-
-  .sub-menu--block {
-    display: block;
-  }
-
-  &--show {
-    @include show();
   }
 
   &__sub-icon {

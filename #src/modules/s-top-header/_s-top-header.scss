@@ -139,11 +139,11 @@
   }
 
   .region-popup {
-    @include hide(0.25s);
     position: absolute;
     top: 25px;
     left: 95px;
     z-index: 100;
+    display: none;
     background-color: #ffffff;
     border: 1px solid rgba(147, 147, 147, 0.5);
     border-radius: 8px;
@@ -159,10 +159,6 @@
       &:hover {
         text-decoration: underline;
       }
-    }
-
-    &--show {
-      @include show();
     }
   }
 }

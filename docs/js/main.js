@@ -1,29 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const elMinusBtn = document.querySelectorAll('.js-minus');
-
   const elPlusBtn = document.querySelectorAll('.js-plus');
-
   const elMinusBtnPieces = document.querySelectorAll('.js-minus-pieces');
-
   const elPlusBtnPieces = document.querySelectorAll('.js-plus-pieces');
-
-  const subMenuTrigger = document.querySelector('.menu__item--catalog');
-
-  const filterTrigger = document.querySelectorAll('.filter__sub-title');
-
-  const filterSubTrigger = document.querySelector('.p-assortment__filter-title--trigger');
-  const mainFilter = document.querySelector('.p-assortment__filter');
-
-  const burgerTrigger = document.querySelector('.burger-menu__icon');
-
-  const regionTrigger = document.querySelector('.top-header__region span');
-  const regionPopup = document.querySelector('.region-popup');
-
-  const orderTrigger = document.querySelector('.p-cart__btn--order');
-  const orderPopUp = document.querySelector('.ordering-block');
-  const orderClose = document.querySelector('.ordering-block__close');
-
 
   let swiperCart = new Swiper('.swiper-container-cart', {
     slidesPerView: 1,
@@ -50,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
   });
-
 
   let itemSwiper = document.querySelectorAll('.swiper-container-wrapper');
   itemSwiper.forEach(swiper => {
@@ -160,17 +139,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // SUB-MENU HIDE / SHOW
-
-  window.addEventListener('click', (event) => {
-
-    if (event.target == subMenuTrigger) {
-      event.target.querySelector('.sub-menu').classList.toggle('sub-menu--show');
-    } else {
-      document.querySelector('.sub-menu').classList.remove('sub-menu--show');
-    }
+  $('.menu__item--catalog').on('click', () => {
+    $('.sub-menu').fadeToggle();
   })
+  // -------------------//
 
   // FILTER HIDE / SHOW
+  const filterTrigger = document.querySelectorAll('.filter__sub-title');
+  const filterSubTrigger = document.querySelector('.p-assortment__filter-title--trigger');
+  const mainFilter = document.querySelector('.p-assortment__filter');
 
   filterTrigger.forEach((el) => {
     el.addEventListener('click', (event) => {
@@ -187,45 +164,43 @@ document.addEventListener('DOMContentLoaded', () => {
         mainFilter.setAttribute('style', 'display: block')
       }
     })
-
   }
+  //---------------//
+
 
   // BURGER HIDE / SHOW
-
-  // burgerTrigger.addEventListener('click', function (event) {
-  //   this.nextElementSibling.classList.toggle('burger-menu--show')
-  // })
-
-  window.addEventListener('click', (event) => {
-    if (event.target == burgerTrigger) {
-      event.target.nextElementSibling.classList.toggle('burger-menu--show');
-    }
+  $('.burger-menu__icon').on('click', () => {
+    $('.burger-menu__list').show(200);
   })
 
-
-
-  //
-
-
-  window.addEventListener('click', (event) => {
-    if (event.target.classList.contains('burger-ctalog-trigger')) {
-      document.querySelector('.burger__sub-menu').classList.toggle('sub-menu--block')
-    }
-
-    if (event.target.classList.contains('burger-menu__close')) {
-      document.querySelector('.burger-menu__list').classList.remove('burger-menu--show')
-    }
+  $('.burger-menu__close').on('click', () => {
+    $('.burger-menu__list').hide(200);
   })
+  // -------------------//
+
+  // BURGER CATALOG
+  $('.burger-ctalog-trigger').on('click', () => {
+    $('.burger__sub-menu').fadeToggle();
+  })
+  // -------------------//
+
+  // ORDER 
+  $(('.p-cart__btn--order')).on('click', () => {
+    $('body').attr('style', 'overflow: hidden');
+    $('.ordering-block').show(270).attr('style', 'display: flex');
+  })
+
+  $(('.ordering-block__close')).on('click', () => {
+    $('body').attr('style', 'overflow: auto');
+    $('.ordering-block').hide(270);
+  })
+  //---------------//
 
   // REGION
-
-  window.addEventListener('click', (event) => {
-    if (event.target == regionTrigger) {
-      regionPopup.classList.toggle('region-popup--show');
-    } else {
-      regionPopup.classList.remove('region-popup--show');
-    }
+  $(('.top-header__region span')).on('click', () => {
+    $('.region-popup').fadeToggle(200);
   })
+  //-------------------//
 
 
   window.addEventListener('click', (event) => {
@@ -234,29 +209,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // OFFER 
 
-  orderTrigger.addEventListener('click', () => {
-    document.querySelector('body').setAttribute('style', 'overflow: hidden')
-    orderPopUp.setAttribute('style', 'display: flex')
+  // BURGER-SUB
+  // window.addEventListener('click', (event) => {
+  //   if (event.target.classList.contains('js-sub-trigger')) {
+  //     if (event.target.nextElementSibling.hasAttribute('style')) {
+  //       event.target.nextElementSibling.removeAttribute('style', '')
+  //     } else {
+  //       event.target.nextElementSibling.setAttribute('style', 'display: block')
+  //     }
+  //   }
+  // })
+
+  $('.js-sub-trigger').on('click', (event) => {
+    console.log(event.target);
   })
-
-  orderClose.addEventListener('click', () => {
-    document.querySelector('body').setAttribute('style', 'overflow: auto')
-    orderPopUp.setAttribute('style', 'display: none')
-  })
-
-  window.addEventListener('click', (event) => {
-    if (event.target.classList.contains('js-sub-trigger')) {
-
-      if (event.target.nextElementSibling.hasAttribute('style')) {
-        event.target.nextElementSibling.removeAttribute('style', '')
-      } else {
-        event.target.nextElementSibling.setAttribute('style', 'display: block')
-      }
-
-    }
-  })
+  //------------------------//
 
 });
 
@@ -318,27 +286,23 @@ $(function () {
 
 });
 
-document.querySelector('.custom-checkbox__base-express').addEventListener('click', () => {
-  document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: none')
-  document.querySelector('.order-details__row').setAttribute('style', 'display: flex')
-  document.querySelector('.order-details__row--1').setAttribute('style', 'display: flex')
+$('.custom-checkbox__base-express').on('click', () => {
+  $('.p-cart__order-wrapper--time').hide(200);
+  $('.order-details__row').show(200);
+  $('.order-details__row--1').show(200);
 })
 
-document.querySelector('.custom-checkbox__base-courier').addEventListener('click', () => {
-  document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: flex')
-  document.querySelector('.order-details__row').setAttribute('style', 'display: flex')
-  document.querySelector('.order-details__row--1').setAttribute('style', 'display: flex')
+$('.custom-checkbox__base-courier').on('click', () => {
+  $('.p-cart__order-wrapper--time').show(200);
+  $('.order-details__row').show(200);
+  $('.order-details__row--1').show(200);
 })
 
-document.querySelector('.custom-checkbox__base--pickup').addEventListener('click', () => {
-  document.querySelector('.order-details__row').setAttribute('style', 'display: none')
-  document.querySelector('.order-details__row--1').setAttribute('style', 'display: none')
-  document.querySelector('.p-cart__order-wrapper--time').setAttribute('style', 'display: none')
+$('.custom-checkbox__base--pickup').on('click', () => {
+  $('.p-cart__order-wrapper--time').hide(200);
+  $('.order-details__row').hide(200);
+  $('.order-details__row--1').hide(200);
 })
-
-
-
-
 
 document.querySelector('.select-wrap select').addEventListener('click', function (event) {
   this.parentNode.classList.toggle('select-wrap--trigger')

@@ -2422,15 +2422,11 @@ body.okayNav-loaded {
 }
 
 .top-header .region-popup {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: 0.25s visibility, 0.25s opacity;
-  -o-transition: 0.25s visibility, 0.25s opacity;
-  transition: 0.25s visibility, 0.25s opacity;
   position: absolute;
   top: 25px;
   left: 95px;
   z-index: 100;
+  display: none;
   background-color: #ffffff;
   border: 1px solid rgba(147, 147, 147, 0.5);
   border-radius: 8px;
@@ -2447,11 +2443,6 @@ body.okayNav-loaded {
 
 .top-header .region-popup__item:hover {
   text-decoration: underline;
-}
-
-.top-header .region-popup--show {
-  visibility: visible;
-  opacity: 1;
 }
 
 .header {
@@ -2594,11 +2585,7 @@ body.okayNav-loaded {
 }
 
 .burger-menu__list {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: 0.25s visibility, 0.25s opacity;
-  -o-transition: 0.25s visibility, 0.25s opacity;
-  transition: 0.25s visibility, 0.25s opacity;
+  display: none;
   position: absolute;
   top: -160px;
   left: -30px;
@@ -2658,15 +2645,6 @@ body.okayNav-loaded {
 
 .burger-menu .sub-menu .js-sub-trigger + .sub-menu__list {
   display: none;
-}
-
-.burger-menu .sub-menu--block {
-  display: block;
-}
-
-.burger-menu--show {
-  visibility: visible;
-  opacity: 1;
 }
 
 .burger-menu__sub-icon {
@@ -2735,15 +2713,11 @@ body.okayNav-loaded {
 }
 
 .menu__item--catalog .sub-menu {
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: 0.25s visibility, 0.25s opacity;
-  -o-transition: 0.25s visibility, 0.25s opacity;
-  transition: 0.25s visibility, 0.25s opacity;
   position: absolute;
   top: 43px;
   left: 0;
   z-index: 100;
+  display: none;
   margin-top: 22px;
   padding: 24px 32px;
   background-color: #77aa43;
@@ -2806,11 +2780,6 @@ body.okayNav-loaded {
   font-weight: 700;
   text-decoration: underline;
   background: none;
-}
-
-.menu__item--catalog .sub-menu--show {
-  visibility: visible;
-  opacity: 1;
 }
 
 .mm-menu {
