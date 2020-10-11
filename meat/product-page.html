@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Мяско | Страница товара</title>
+</head>
+
+<body>
+  <div class="main-body">
+    <div class="top-header">
+  <div class="container">
+    <div class="row-flex">
+      <div class="col-3">
+        <div class="top-header__region">
+          <p>Ваш регион: <span>Москва</span></p>
+          <div class="top-header__region-popup region-popup">
+            <ul class="region-popup__list">
+              <li class="region-popup__item">Москва</li>
+              <li class="region-popup__item">Санкт-Петербург</li>
+            </ul>
+          </div>
+        </div>
+        <div class="green-phone top-header__green-phone">
+          <a href="tel:+74953690010">+7 (495) 369-00-10</a>
+        </div>
+      </div>
+      <div class="col-9">
+        <ul class="top-header__menu">
+          <li><a href="">О компании</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">Качество</a></li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <div class="top-header__sign-wrapper">
+          <div class="top-header__sign">
+            <a href="">Регистрация</a>
+            <span> / </span>
+            <a href="">Вход</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <header class="header">
+  <div class="container">
+    <div class="row-flex">
+      <div class="col-3">
+        <a class="hedaer__logo logo" href="index.html">
+          <img class="logo__img" src="./img/logo.png" alt="#">
+        </a>
+      </div>
+      <div class="col-6">
+        <div class="green-phone header__green-phone">
+          <p>Телефон горячей линии: <a href="tel:+74953690010">+7 (495) 369-00-10</a></p>
+        </div>
+        <div class="burger-menu">
+          <div class="burger-menu__icon"></div>
+          <ul class="burger-menu__list">
+            <li class="burger-menu__close">X</li>
+            <li>
+              <p class="burger-ctalog-trigger">Каталог продукции</p>
+              <div class="sub-menu burger__sub-menu">
+                <div class="sub-menu__row">
+                  <div class="sub-menu__left">
+                    <p>ЧАСТИ ТУШИ</p>
+                    <ul class="sub-menu__list">
+                      <li>
+                        <span class="js-sub-trigger">Вырезка</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                          <li><a href="">Рулька свиная охл</a></li>
+                          <li><a href="">Сало свиное</a></li>
+                          <li><a href="">Шпик</a></li>
+                          <li><a href="">Шпик свиной на коже</a></li>
+                          <li><a href="">Эскалоп охле</a></li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <span class="js-sub-trigger">Грудинка</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <span class="js-sub-trigger">Разделка</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Карбонад/корейка</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Лопаточная часть</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Нога</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Субпродукт</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Тушка</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Ребрышки</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="js-sub-trigger">Шейка</span>
+                        <ul class="sub-menu__list">
+                          <li><a href="">Гуляш свиной охл</a></li>
+                          <li><a href="">Мясо свиное для бульона охл</a></li>
+                          <li><a href="">Мясо свиное для котлет охл</a></li>
+                          <li><a href="">Окорок свиной б/к охл</a></li>
+                          <li><a href="">Окорок свиной н/к с кожей охл</a></li>
+                          <li><a href="">Окорок свиной н/к охл</a></li>
+                          <li><a href="">Отбивные свиные охл</a></li>
+                          <li><a href="">Поджарка свиная охл</a></li>
+                          <li><a href="">Рагу свиное охл</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="">Магазины</a></li>
+            <li><a href="">Специальное меню</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="header__search">
+          <form action="#">
+            <input type="text" name="search" placeholder="ПОИСК ПО САЙТУ">
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+      <div class="col-2-5 col-2-5--social">
+        <div class="social-block">
+          <a class="social-block__link" href="" target="_blank">
+            <img class="social-block__img" src="./img/icons/facebook.png" alt="#">
+          </a>
+          <a class="social-block__link" href="" target="_blank">
+            <img class="social-block__img" src="./img/icons/vk.png" alt="#">
+          </a>
+          <a class="social-block__link" href="" target="_blank">
+            <img class="social-block__img" src="./img/icons/insta.png" alt="#">
+          </a>
+        </div>
+      </div>
+      <div class="col-2-5">
+        <div class="header__cart">
+          <div class="header__cart-text">
+            <p class="header__cart-title">Корзина</p>
+            <p>товаров: <span>4</span></p>
+            <p>на сумму: <span>3500</span>р.</p>
+          </div>
+          <a class="header__cart-img" href="">
+            <img src="./img/icons/cart.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <nav class="menu">
+  <div class="container">
+    <ul class="menu__list" id="primary-nav">
+      <li class="menu__item menu__item--catalog">Каталог продукции<div class="sub-menu">
+          <div class="sub-menu__row">
+            <div class="sub-menu__left">
+              <p>ЧАСТИ ТУШИ</p>
+              <ul class="sub-menu__list">
+                <li data-show-second-sub>Вырезка</li>
+                <li data-show-second-sub>Грудинка</li>
+                <li data-show-second-sub>Разделка</li>
+                <li data-show-second-sub>Карбонад/корейка</li>
+                <li data-show-second-sub>Лопаточная часть</li>
+                <li data-show-second-sub>Нога</li>
+                <li data-show-second-sub>Субпродукт</li>
+                <li data-show-second-sub>Тушка</li>
+                <li data-show-second-sub>Ребрышки</li>
+                <li data-show-second-sub>Шейка</li>
+              </ul>
+            </div>
+
+            <div class="sub-menu--right-wrap">
+              <div class="sub-menu__center">
+                <p>Разделка</p>
+                <ul class="sub-menu__list">
+                  <li><a href="#">Гуляш свиной охл</a></li>
+                  <li><a href="#">Мясо свиное для бульона охл</a></li>
+                  <li><a href="#">Мясо свиное для котлет охл</a></li>
+                  <li><a href="#">Окорок свиной б/к охл</a></li>
+                  <li><a href="#">Окорок свиной н/к с кожей охл</a></li>
+                  <li><a href="#">Окорок свиной н/к охл</a></li>
+                  <li><a href="#">Отбивные свиные охл</a></li>
+                  <li><a href="#">Поджарка свиная охл</a></li>
+                  <li><a href="#">Рагу свиное охл</a></li>
+                  <li><a href="#">Рулька свиная охл</a></li>
+                </ul>
+              </div>
+              <div class="sub-menu__right">
+                <ul class="sub-menu__list">
+                  <li><a href="#">Сало свиное</a></li>
+                  <li><a href="#">Шпик</a></li>
+                  <li><a href="#">Шпик свиной на коже</a></li>
+                  <li><a href="#">Эскалоп охле</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </li>
+      <li class="menu__item"><a href="#">Магазины</a></li>
+      <li class="menu__item"><a href="#">Специальное меню</a></li>
+      <li class="menu__item"><a href="#">Вакансии</a></li>
+      <li class="menu__item"><a href="#">Акции</a></li>
+      <li class="menu__item"><a href="#">Контакты</a></li>
+    </ul>
+  </div>
+</nav>
+    <main class="main-content">
+      <section class="p-product">
+  <div class="container">
+    <div class="s-breadcrumbs">
+    <ul class="s-breadcrumbs__list">
+      <li class="s-breadcrumbs__item">
+        <a href="">Главная</a>
+      </li>
+      <li class="s-breadcrumbs__item">
+        <a href="">Каталог товаров</a>
+      </li>
+      <li class="s-breadcrumbs__item">
+        Свинина
+      </li>
+    </ul>
+</div>
+
+    <div class="row-flex">
+      <div class="col-6">
+
+        <div class="p-product__swiper">
+          <div class="swiper-container swiper-container--product">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/product-1.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/product-1.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/product-1.jpg" alt="" /></div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev swiper-button-prev-p"></div>
+            <div class="swiper-button-next swiper-button-next-p"></div>
+          </div>
+          <div class="swiper-container swiper-container--thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/product-1.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/product-1.jpg" alt="" /></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider__item"><img src="./img/product-1.jpg" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-8">
+
+        <div class="p-product__title">ФАРШ ЭКСТРА ТЕЛЯЧИЙ</div>
+
+        <div class="p-product__price-body">
+          <div class="p-product__counter-wrapper">
+            <div class="p-product__price">650 &#8381;</div>
+            <div class="p-product__counter">
+              <div class="counter">
+                <span class="js-minus">-</span>
+                <input class="js-count" type="text" name="cartCount" value="1">
+                <span class="js-plus">+</span>
+              </div>
+            </div>
+            <span class="weight">кг.</span>
+          </div>
+          <div class="p-product__stars">
+            <svg width="14" height="14" version="1.1" viewBox="0 0 14 14">
+              <path
+                d="M7.20472,0.42958v0l1.74157,4.92781v0l5.2248,0.1335v0l-4.14843,3.17915v0l1.48754,5.01028v0l-4.30549,-2.96292v0l-4.30541,2.96292v0l1.48746,-5.01028v0l-4.14843,-3.17915v0l5.2248,-0.1335v0z"
+                fill="#8ac864" fill-opacity="1">
+              </path>
+            </svg>
+            <svg width="14" height="14" version="1.1" viewBox="0 0 14 14">
+              <path
+                d="M7.20472,0.42958v0l1.74157,4.92781v0l5.2248,0.1335v0l-4.14843,3.17915v0l1.48754,5.01028v0l-4.30549,-2.96292v0l-4.30541,2.96292v0l1.48746,-5.01028v0l-4.14843,-3.17915v0l5.2248,-0.1335v0z"
+                fill="#8ac864" fill-opacity="1">
+              </path>
+            </svg>
+            <svg width="14" height="14" version="1.1" viewBox="0 0 14 14">
+              <path
+                d="M7.20472,0.42958v0l1.74157,4.92781v0l5.2248,0.1335v0l-4.14843,3.17915v0l1.48754,5.01028v0l-4.30549,-2.96292v0l-4.30541,2.96292v0l1.48746,-5.01028v0l-4.14843,-3.17915v0l5.2248,-0.1335v0z"
+                fill="#8ac864" fill-opacity="1">
+              </path>
+            </svg>
+            <svg width="14" height="14" version="1.1" viewBox="0 0 14 14">
+              <path
+                d="M7.20472,0.42958v0l1.74157,4.92781v0l5.2248,0.1335v0l-4.14843,3.17915v0l1.48754,5.01028v0l-4.30549,-2.96292v0l-4.30541,2.96292v0l1.48746,-5.01028v0l-4.14843,-3.17915v0l5.2248,-0.1335v0z"
+                fill="#b6b6b6" fill-opacity="1">
+              </path>
+            </svg>
+            <svg width="14" height="14" version="1.1" viewBox="0 0 14 14">
+              <path
+                d="M7.20472,0.42958v0l1.74157,4.92781v0l5.2248,0.1335v0l-4.14843,3.17915v0l1.48754,5.01028v0l-4.30549,-2.96292v0l-4.30541,2.96292v0l1.48746,-5.01028v0l-4.14843,-3.17915v0l5.2248,-0.1335v0z"
+                fill="#b6b6b6" fill-opacity="1">
+              </path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="p-product__description">
+          <h4>Энергетическая ценностьна 100 грамм продукта</h4>
+          <p>Калорийность:__________
+            <span>118 ккал / 494 кДж</span>
+          </p>
+          <p>
+            Белки:___________________
+            <span> 16г.</span>
+          </p>
+          <p>Жиры:___________________
+            <span>6г.</span>
+          </p>
+          <p>Углеводы:_______________
+            <span>0г.</span>
+          </p>
+          <p>Клетчатка:______________
+            <span>0г.</span>
+          </p>
+
+          <div class="p-product__total">
+            <p>Итого: <span>650 &#8381;</span></p>
+          </div>
+        </div>
+
+        <button class="p-product__btn"><span>В корзину</span></button>
+
+      </div>
+    </div>
+
+    <div class="tabs-wrapper tabs">
+      <ul class="tabs__nav">
+        <li data-tab="tab1" class="tabs__nav--active">Описание</li>
+        <li data-tab="tab2">Доставка</li>
+      </ul>
+
+      <div class="tabs__container">
+        <div class="tab__content" id="tab1">
+          <div class="p-product__descr">
+            <p>Происхождение:
+              <span>Калужская область, Перемышльский район</span>
+            </p>
+            <p>Состав:
+              <span>Полуфабрикат мясной из телятины, без кости, охлаждённый.</span>
+            </p>
+            <p>Хранение:
+              <span>Хранить при температуре от 0 до +4 С</span>
+            </p>
+          </div>
+        </div>
+        <div class="tab__content" id="tab2">
+          Доставка
+        </div>
+      </div>
+    </div>
+
+    <div class="s-popular">
+      <div class="title-wrapper">
+        <h2 class="second-title">Рекомендуем для Вас</h2>
+        <span class="title-line"></span>
+      </div>
+      <div class="swiper-container-wrapper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Фарш Домашний Окраина (свинина, говядина) 500г
+                </a>
+                <div class="main-card__price">
+                  <p>510</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-3.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Сосиски с натуральным молоком Окраина в оболочке амицел 0,8-1,3кг
+                </a>
+                <div class="main-card__price">
+                  <p>250</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-4.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Сардельки с натуральным молоком Окраина 230г шт
+                </a>
+                <div class="main-card__price">
+                  <p>40</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-5.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Ребрышки Cвиные Окраина копчено-вареные 700-1300г
+                </a>
+                <div class="main-card__price">
+                  <p>450</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-6.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Фарш Домашний Окраина (свинина, говядина) 500г
+                </a>
+                <div class="main-card__price">
+                  <p>510</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Фарш Домашний Окраина (свинина, говядина) 500г
+                </a>
+                <div class="main-card__price">
+                  <p>510</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div class="s-popular">
+      <div class="title-wrapper">
+        <h2 class="second-title">С этим товаром покупают</h2>
+        <span class="title-line"></span>
+      </div>
+      <div class="swiper-container-wrapper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Фарш Домашний Окраина (свинина, говядина) 500г
+                </a>
+                <div class="main-card__price">
+                  <p>510</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-3.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Сосиски с натуральным молоком Окраина в оболочке амицел 0,8-1,3кг
+                </a>
+                <div class="main-card__price">
+                  <p>250</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-4.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Сардельки с натуральным молоком Окраина 230г шт
+                </a>
+                <div class="main-card__price">
+                  <p>40</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-5.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Ребрышки Cвиные Окраина копчено-вареные 700-1300г
+                </a>
+                <div class="main-card__price">
+                  <p>450</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-6.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Фарш Домашний Окраина (свинина, говядина) 500г
+                </a>
+                <div class="main-card__price">
+                  <p>510</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="main-card">
+                <div class="main-card__img">
+                  <a href="">
+                    <img src="./img/catalog/item-2.jpg" alt="">
+                  </a>
+                </div>
+                <a class="main-card__descr" href="">
+                  Фарш Домашний Окраина (свинина, говядина) 500г
+                </a>
+                <div class="main-card__price">
+                  <p>510</p>
+                  <div class="main-card__price-count">
+                    <span class="js-minus">-</span>
+                    <input class="js-count" type="text" name="amount" value="1">
+                    <span class="js-plus">+</span>
+                  </div>
+                  <span class="weight">кг.</span>
+                </div>
+                <button class="main-card__btn"><span>В корзину</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="row-flex">
+      <div class="col-3">
+        <div class="footer__logo-wrap">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__img" src="./img/logo-white.png" alt="#">
+          </a>
+          <div class="green-phone footer__green-phone">
+            <p>Телефон горячей линии:</p>
+            <a href="tel:+74953690010">+7 (495) 369-00-10</a>
+          </div>
+          <div class="copyright footer__copyright">
+            <p>&copy; 2010 - 2020 ТМ «#МЯСКО»</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 footer__menu--first">
+        <div class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="">Каталог продукции</a></li>
+            <li class="menu__item"><a href="">О компании</a></li>
+            <li class="menu__item"><a href="">Магазины</a></li>
+            <li class="menu__item"><a href="">Вакансии</a></li>
+            <li class="menu__item"><a href="">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-3 footer__menu--second">
+        <div class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="">Для вашего бизнеса</a></li>
+            <li class="menu__item"><a href="">Пользователькое соглашение</a></li>
+            <li class="menu__item"><a href="">Напишите нам</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="footer__subscribe">
+          <div class="footer__subscribe-title">
+            <p>Будьте вкурсе наших новостей</p>
+          </div>
+
+          <div class="footer__subscribe-form">
+            <form action="#">
+              <input type="text" name="subscribe" placeholder="Ваш e-mail">
+              <button class="base-btn" type="submit">ПОДПИСАТЬСЯ</button>
+            </form>
+          </div>
+
+        </div>
+        <div class="footer__social-title">
+          <p>Мы в социальных сетях:</p>
+        </div>
+        <div class="social-block">
+          <a class="social-block__link" href="" target="_blank">
+            <img class="social-block__img" src="./img/icons/facebook.png" alt="#">
+          </a>
+          <a class="social-block__link" href="" target="_blank">
+            <img class="social-block__img" src="./img/icons/vk.png" alt="#">
+          </a>
+          <a class="social-block__link" href="" target="_blank">
+            <img class="social-block__img" src="./img/icons/insta.png" alt="#">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright footer__copyright--down">
+      <p>&copy; 2010 - 2020 ТМ «#МЯСКО»</p>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="./js/vendors.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

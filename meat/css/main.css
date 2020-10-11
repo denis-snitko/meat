@@ -4183,6 +4183,7 @@ body.okayNav-loaded {
 }
 
 .ordering-block {
+  position: fixed;
   width: 100%;
   max-width: 218px;
 }
