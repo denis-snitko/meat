@@ -2777,13 +2777,18 @@ body.okayNav-loaded {
   padding: 0 0 14px 0;
   font-size: 14px;
   font-weight: 400;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .menu__item--catalog .sub-menu__list li[data-show-second-sub]:hover {
-  font-weight: 700;
   text-decoration: underline;
   background: none;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .menu__item--catalog .sub-menu__list a {
@@ -2794,9 +2799,11 @@ body.okayNav-loaded {
 }
 
 .menu__item--catalog .sub-menu__list a:hover {
-  font-weight: 700;
   text-decoration: underline;
   background: none;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mm-menu {
