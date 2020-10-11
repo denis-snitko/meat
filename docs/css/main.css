@@ -2477,11 +2477,11 @@ body.okayNav-loaded {
 }
 
 .header__search input {
-  padding: 17px 64px 17px 17px;
   width: 100%;
+  padding: 17px 64px 17px 17px;
   font-weight: bold;
-  text-transform: uppercase;
   color: #939393;
+  text-transform: uppercase;
   border: 1px solid rgba(147, 147, 147, 0.5);
   border-radius: 8px;
 }
@@ -2585,11 +2585,11 @@ body.okayNav-loaded {
 }
 
 .burger-menu__list {
-  display: none;
   position: absolute;
   top: -160px;
   left: -30px;
   z-index: 1100;
+  display: none;
   width: 100vw;
   margin-top: 5px;
   padding: 10px 0;
@@ -2613,8 +2613,8 @@ body.okayNav-loaded {
   right: 15px;
   width: 15px;
   font-size: 22px;
-  color: #ffffff;
   font-weight: 400;
+  color: #ffffff;
 }
 
 .burger-menu .sub-menu {
@@ -2643,7 +2643,24 @@ body.okayNav-loaded {
   font-weight: 700;
 }
 
+.burger-menu .sub-menu .js-sub-trigger {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.burger-menu .sub-menu .js-sub-trigger::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  width: 8px;
+  height: 8px;
+  background: url("../img/icons/plus.svg") no-repeat center;
+}
+
 .burger-menu .sub-menu .js-sub-trigger + .sub-menu__list {
+  position: relative;
   display: none;
 }
 
@@ -2678,8 +2695,8 @@ body.okayNav-loaded {
 }
 
 .menu__item {
-  font-weight: 700;
   font-size: 18px;
+  font-weight: 700;
   white-space: nowrap;
   color: #fefefe;
 }
@@ -2726,8 +2743,8 @@ body.okayNav-loaded {
 
 .menu__item--catalog .sub-menu p {
   margin-bottom: 20px;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -2788,7 +2805,6 @@ body.okayNav-loaded {
   font-size: 15px;
   line-height: 30px;
   text-align: center;
-  letter-spacing: 1.2px;
   color: #ffffff;
   background-color: #73a952;
   border-radius: 50%;
@@ -5205,10 +5221,10 @@ body.okayNav-loaded {
 
   .header .col-6 {
     position: relative;
-    margin-top: 20px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-top: 20px;
   }
 
   .header__search {

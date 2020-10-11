@@ -83,7 +83,6 @@
 		//Loop until we've hidden the nav items there isn't space for
 		while (this.containerWidth + (this.hiddenWidth - this.menuWidth) <= this.totalWidth) {
 			this.$element.find('.' + this.options.menuClass).show();
-			console.log('.' + this.options.menuClass);
 			this.lastElementVisble++;
 
 			//Update the length of the hidden and visible nav items

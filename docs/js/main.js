@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  const elMinusBtn = document.querySelectorAll('.js-minus');
-  const elPlusBtn = document.querySelectorAll('.js-plus');
-  const elMinusBtnPieces = document.querySelectorAll('.js-minus-pieces');
-  const elPlusBtnPieces = document.querySelectorAll('.js-plus-pieces');
-
   let swiperCart = new Swiper('.swiper-container-cart', {
     slidesPerView: 1,
-    // spaceBetween: 60,
 
     breakpoints: {
       400: {
@@ -98,6 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // COUNTER
+  const elMinusBtn = document.querySelectorAll('.js-minus');
+  const elPlusBtn = document.querySelectorAll('.js-plus');
+  const elMinusBtnPieces = document.querySelectorAll('.js-minus-pieces');
+  const elPlusBtnPieces = document.querySelectorAll('.js-plus-pieces');
 
   elMinusBtn.forEach(el => {
     el.addEventListener('click', (event) => {
@@ -136,37 +134,33 @@ document.addEventListener('DOMContentLoaded', () => {
       input.value = (parseFloat(input.value) + 1).toFixed(0);
     })
   })
+  //-------------------------//
 
 
   // SUB-MENU HIDE / SHOW
-  $('.menu__item--catalog').on('click', () => {
-    $('.sub-menu').fadeToggle();
+  $('.menu__item--catalog').on('click', function (event) {
+
+    if (event.target.hasAttribute('data-show-second-sub')) {
+      event.target.stopPropagation();
+    }
+
+    if ($('.sub-menu').attr('style')) {
+      $('.sub-menu').hide();
+      $('.sub-menu').removeAttr('style');
+
+    } else {
+      $('.sub-menu').show();
+    }
+
   })
   // -------------------//
 
-  // FILTER HIDE / SHOW
-  const filterTrigger = document.querySelectorAll('.filter__sub-title');
-  const filterSubTrigger = document.querySelector('.p-assortment__filter-title--trigger');
-  const mainFilter = document.querySelector('.p-assortment__filter');
 
-  filterTrigger.forEach((el) => {
-    el.addEventListener('click', (event) => {
-      event.target.classList.toggle('filter__sub-title--arrow-right')
-      event.target.nextElementSibling.classList.toggle('hide-filter-list')
-    })
+  // ARROW IN SELECT (FILTER)
+  $('.select-wrap select').on('click', function () {
+    $(this).parent('.select-wrap').toggleClass('select-wrap--trigger');
   })
-
-  if (filterSubTrigger) {
-    filterSubTrigger.addEventListener('click', () => {
-      if (mainFilter.style.display == 'block')
-        mainFilter.setAttribute('style', 'display: none')
-      else {
-        mainFilter.setAttribute('style', 'display: block')
-      }
-    })
-  }
-  //---------------//
-
+  //-------------//
 
   // BURGER HIDE / SHOW
   $('.burger-menu__icon').on('click', () => {
@@ -211,18 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // BURGER-SUB
-  // window.addEventListener('click', (event) => {
-  //   if (event.target.classList.contains('js-sub-trigger')) {
-  //     if (event.target.nextElementSibling.hasAttribute('style')) {
-  //       event.target.nextElementSibling.removeAttribute('style', '')
-  //     } else {
-  //       event.target.nextElementSibling.setAttribute('style', 'display: block')
-  //     }
-  //   }
-  // })
-
-  $('.js-sub-trigger').on('click', (event) => {
-    console.log(event.target);
+  $('.js-sub-trigger').on('click', function (event) {
+    $('.js-sub-trigger').next('.sub-menu__list').hide()
+    $(this).next('.sub-menu__list').fadeToggle();
   })
   //------------------------//
 
@@ -286,6 +271,7 @@ $(function () {
 
 });
 
+// DELIVERY
 $('.custom-checkbox__base-express').on('click', () => {
   $('.p-cart__order-wrapper--time').hide(200);
   $('.order-details__row').show(200);
@@ -303,7 +289,28 @@ $('.custom-checkbox__base--pickup').on('click', () => {
   $('.order-details__row').hide(200);
   $('.order-details__row--1').hide(200);
 })
+//-------------//
 
-document.querySelector('.select-wrap select').addEventListener('click', function (event) {
-  this.parentNode.classList.toggle('select-wrap--trigger')
+
+// FILTER HIDE / SHOW
+const filterTrigger = document.querySelectorAll('.filter__sub-title');
+const filterSubTrigger = document.querySelector('.p-assortment__filter-title--trigger');
+const mainFilter = document.querySelector('.p-assortment__filter');
+
+filterTrigger.forEach((el) => {
+  el.addEventListener('click', (event) => {
+    event.target.classList.toggle('filter__sub-title--arrow-right')
+    event.target.nextElementSibling.classList.toggle('hide-filter-list')
+  })
 })
+
+if (filterSubTrigger) {
+  filterSubTrigger.addEventListener('click', () => {
+    if (mainFilter.style.display == 'block')
+      mainFilter.setAttribute('style', 'display: none')
+    else {
+      mainFilter.setAttribute('style', 'display: block')
+    }
+  })
+}
+  //---------------//
